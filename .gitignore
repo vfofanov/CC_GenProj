@@ -1,0 +1,8 @@
+/CCService/
+/Chernichka_2.0/
+/node_modules/
+.vs/
+packages/
+bin/
+obj/
+/Northwind_Demo/trace.out.txt

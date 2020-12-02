@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;ccLabel2.Parent" xml:space="preserve">
+    <value>newPasswordPanel.ClientArea</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="resource.BoldAsString1" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ccLabel1.Name" xml:space="preserve">
+    <value>ccLabel1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="loginLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="loginTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 125</value>
+  </data>
+  <data name="newPasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 1</value>
+  </data>
+  <data name="repeatPasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 27</value>
+  </data>
+  <data name="resource.ItalicAsString" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="newPasswordPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 67</value>
+  </data>
+  <data name="&gt;&gt;changePasswordButton.Name" xml:space="preserve">
+    <value>changePasswordButton</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>405, 158</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>CcButton, BusinessFramework.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;changePasswordButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="newPasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;newPasswordPanel.ClientArea.Name" xml:space="preserve">
+    <value>newPasswordPanel.ClientArea</value>
+  </data>
+  <data name="&gt;&gt;repeatNewPasswordTextBox.Name" xml:space="preserve">
+    <value>repeatNewPasswordTextBox</value>
+  </data>
+  <data name="ccLabel2.Text" xml:space="preserve">
+    <value>Repeat new password:</value>
+  </data>
+  <data name="&gt;&gt;newPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;passwordLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ccLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;loginLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="resource.StrikeoutAsString1" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;loginTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;okButton.Name" xml:space="preserve">
+    <value>okButton</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox1.Parent" xml:space="preserve">
+    <value>newPasswordPanel.ClientArea</value>
+  </data>
+  <data name="loginLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 16</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 42</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loginTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="passwordLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ccLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 2</value>
+  </data>
+  <data name="&gt;&gt;passwordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changePasswordButton.Type" xml:space="preserve">
+    <value>CcButton, BusinessFramework.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ccLabel1.Parent" xml:space="preserve">
+    <value>newPasswordPanel.ClientArea</value>
+  </data>
+  <data name="newPasswordPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 49</value>
+  </data>
+  <data name="changePasswordButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 125</value>
+  </data>
+  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="&gt;&gt;passwordTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="resource.UnderlineAsString" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="ccLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 18</value>
+  </data>
+  <data name="loginLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="&gt;&gt;newPasswordTextBox.Name" xml:space="preserve">
+    <value>newPasswordTextBox</value>
+  </data>
+  <data name="passwordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="ccLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ccLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="newPasswordPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="maskedTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="resource.StrikeoutAsString" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;passwordLabel.Name" xml:space="preserve">
+    <value>passwordLabel</value>
+  </data>
+  <data name="&gt;&gt;okButton.Type" xml:space="preserve">
+    <value>CcButton, BusinessFramework.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;loginLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="changePasswordButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 23</value>
+  </data>
+  <data name="&gt;&gt;repeatNewPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="okButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 125</value>
+  </data>
+  <data name="&gt;&gt;passwordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="maskedTextBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;ccLabel2.Type" xml:space="preserve">
+    <value>CcLabel, BusinessFramework.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;newPasswordPanel.ClientArea.Parent" xml:space="preserve">
+    <value>newPasswordPanel</value>
+  </data>
+  <data name="&gt;&gt;newPasswordTextBox.Parent" xml:space="preserve">
+    <value>newPasswordPanel.ClientArea</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;newPasswordPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="maskedTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 1</value>
+  </data>
+  <data name="changePasswordButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="repeatPasswordTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="ccLabel1.Text" xml:space="preserve">
+    <value>New password:</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 46</value>
+  </data>
+  <data name="&gt;&gt;ccLabel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;passwordLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;newPasswordPanel.ClientArea.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;repeatNewPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;repeatPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;newPasswordPanel.Name" xml:space="preserve">
+    <value>newPasswordPanel</value>
+  </data>
+  <data name="&gt;&gt;ccLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;okButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;repeatPasswordTextBox.Name" xml:space="preserve">
+    <value>repeatPasswordTextBox</value>
+  </data>
+  <data name="ccLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maskedTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;newPasswordPanel.Type" xml:space="preserve">
+    <value>CcPanel, BusinessFramework.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="resource.BoldAsString" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;passwordTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loginLabel.Text" xml:space="preserve">
+    <value>Login:</value>
+  </data>
+  <data name="&gt;&gt;loginTextBox.Name" xml:space="preserve">
+    <value>loginTextBox</value>
+  </data>
+  <data name="passwordTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="resource.ItalicAsString1" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="passwordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="loginTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="repeatPasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox1.Name" xml:space="preserve">
+    <value>maskedTextBox1</value>
+  </data>
+  <data name="&gt;&gt;ccLabel1.Type" xml:space="preserve">
+    <value>CcLabel, BusinessFramework.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;passwordTextBox.Name" xml:space="preserve">
+    <value>passwordTextBox</value>
+  </data>
+  <data name="&gt;&gt;newPasswordPanel.ClientArea.Type" xml:space="preserve">
+    <value>Infragistics.Win.Misc.UltraPanelClientAreaUnsafe, Infragistics4.Win.Misc.v15.1, Version=15.1.20151.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="passwordLabel.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="resource.UnderlineAsString1" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;newPasswordPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="loginTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="&gt;&gt;repeatPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="repeatNewPasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;changePasswordButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;loginLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="repeatNewPasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 27</value>
+  </data>
+  <data name="loginLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 39</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="changePasswordButton.Text" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="ccLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;repeatPasswordTextBox.Parent" xml:space="preserve">
+    <value>newPasswordPanel.ClientArea</value>
+  </data>
+  <data name="ccLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 18</value>
+  </data>
+  <data name="&gt;&gt;okButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loginTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 13</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>BusinessFramework.Client.Forms.CcDialogBase, BusinessFramework.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="changePasswordButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="&gt;&gt;loginLabel.Name" xml:space="preserve">
+    <value>loginLabel</value>
+  </data>
+  <data name="repeatPasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="&gt;&gt;loginTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;repeatNewPasswordTextBox.Parent" xml:space="preserve">
+    <value>newPasswordPanel.ClientArea</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ccLabel2.Name" xml:space="preserve">
+    <value>ccLabel2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ru</value>
+  </metadata>
+</root>

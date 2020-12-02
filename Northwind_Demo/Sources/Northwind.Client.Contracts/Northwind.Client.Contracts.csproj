@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D648785-A742-4354-A01B-012E70020819}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Northwind.Client.Contracts</RootNamespace>
+    <AssemblyName>Northwind.Client.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+            <Reference Include="Microsoft.OData.Client, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Client.7.5.0\lib\net45\Microsoft.OData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Core.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.OData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Edm.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Spatial, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Spatial.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\Category.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCategory.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCustomer.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindEmployee.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrder.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrderDetail.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrderStatus.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindProduct.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQCategories.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQCustomers.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQEmployees.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQOrderProducts.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQOrders.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQProducts.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQShippers.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQSuppliers.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindShipper.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindSupplier.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindVSalesByCategory.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysOperationLock.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysResetPasswordToken.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysRole.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysSetting.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysSettingProperty.cs" />
+    <Compile Include="BusinessObjects\Customer.cs" />
+    <Compile Include="BusinessObjects\Employee.cs" />
+    <Compile Include="BusinessObjects\Order.cs" />
+    <Compile Include="BusinessObjects\OrderDetail.cs" />
+    <Compile Include="BusinessObjects\OrderStatus.cs" />
+    <Compile Include="BusinessObjects\Product.cs" />
+    <Compile Include="BusinessObjects\QCategories.cs" />
+    <Compile Include="BusinessObjects\QCustomers.cs" />
+    <Compile Include="BusinessObjects\QEmployees.cs" />
+    <Compile Include="BusinessObjects\QOrderProducts.cs" />
+    <Compile Include="BusinessObjects\QOrders.cs" />
+    <Compile Include="BusinessObjects\QProducts.cs" />
+    <Compile Include="BusinessObjects\QShippers.cs" />
+    <Compile Include="BusinessObjects\QSuppliers.cs" />
+    <Compile Include="BusinessObjects\Shipper.cs" />
+    <Compile Include="BusinessObjects\Supplier.cs" />
+    <Compile Include="BusinessObjects\System\SysOperationLock.cs" />
+    <Compile Include="BusinessObjects\System\SysResetPasswordToken.cs" />
+    <Compile Include="BusinessObjects\System\SysRole.cs" />
+    <Compile Include="BusinessObjects\System\SysSetting.cs" />
+    <Compile Include="BusinessObjects\System\SysSettingProperty.cs" />
+    <Compile Include="BusinessObjects\VSalesByCategory.cs" />
+    <Compile Include="DomainObjectKeys.cs" />
+    <Compile Include="Properties\ObjectResources.Designer.cs">
+      <DependentUpon>ObjectResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\QueryResources.Designer.cs">
+      <DependentUpon>QueryResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+      <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
+      <Name>Northwind.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Contracts\BusinessFramework.Client.Contracts.csproj">
+       <Project>{9C997456-B515-4678-9F1C-A4131F85E6A3}</Project>
+      <Name>BusinessFramework.Client.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
+       <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>
+      <Name>BusinessFramework.Contracts</Name>
+    </ProjectReference>
+
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\ObjectResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ObjectResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\QueryResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>QueryResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

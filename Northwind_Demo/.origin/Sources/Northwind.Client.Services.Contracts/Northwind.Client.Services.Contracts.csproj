@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAFEB21C-959C-4025-9848-856F5F5671C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Northwind.Client.Services.Contracts</RootNamespace>
+    <AssemblyName>Northwind.Client.Services.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+            <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionServices\IClientOrderManagerService.cs" />
+    <Compile Include="ActionServices\ITestDynamicColumnsActionService.cs" />
+    <Compile Include="DomainModel\ICategoryCollectionManager.cs" />
+    <Compile Include="DomainModel\ICustomerCollectionManager.cs" />
+    <Compile Include="DomainModel\IEmployeeCollectionManager.cs" />
+    <Compile Include="DomainModel\IOrderCollectionManager.cs" />
+    <Compile Include="DomainModel\IOrderDetailCollectionManager.cs" />
+    <Compile Include="DomainModel\IOrderStatusCollectionManager.cs" />
+    <Compile Include="DomainModel\IProductCollectionManager.cs" />
+    <Compile Include="DomainModel\IQCategoriesCollectionManager.cs" />
+    <Compile Include="DomainModel\IQCustomersCollectionManager.cs" />
+    <Compile Include="DomainModel\IQEmployeesCollectionManager.cs" />
+    <Compile Include="DomainModel\IQOrderProductsCollectionManager.cs" />
+    <Compile Include="DomainModel\IQOrdersCollectionManager.cs" />
+    <Compile Include="DomainModel\IQProductsCollectionManager.cs" />
+    <Compile Include="DomainModel\IQShippersCollectionManager.cs" />
+    <Compile Include="DomainModel\IQSuppliersCollectionManager.cs" />
+    <Compile Include="DomainModel\IShipperCollectionManager.cs" />
+    <Compile Include="DomainModel\ISupplierCollectionManager.cs" />
+    <Compile Include="DomainModel\IVSalesByCategoryCollectionManager.cs" />
+    <Compile Include="DomainModel\System\ISysOperationLockCollectionManager.cs" />
+    <Compile Include="DomainModel\System\ISysResetPasswordTokenCollectionManager.cs" />
+    <Compile Include="DomainModel\System\ISysRoleCollectionManager.cs" />
+    <Compile Include="DomainModel\System\ISysSettingCollectionManager.cs" />
+    <Compile Include="DomainModel\System\ISysSettingPropertyCollectionManager.cs" />
+    <Compile Include="IDomainSecurityService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Client.Contracts\Northwind.Client.Contracts.csproj">
+      <Project>{8d648785-a742-4354-a01b-012e70020819}</Project>
+      <Name>Northwind.Client.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+      <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
+      <Name>Northwind.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Contracts\BusinessFramework.Client.Contracts.csproj">
+       <Project>{9C997456-B515-4678-9F1C-A4131F85E6A3}</Project>
+      <Name>BusinessFramework.Client.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
+       <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>
+      <Name>BusinessFramework.Contracts</Name>
+    </ProjectReference>
+
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

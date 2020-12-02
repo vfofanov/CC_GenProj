@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6D0E345-B891-482D-84EF-72434418B8F5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Northwind.Console</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Northwind.Console</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <TargetZone>LocalIntranet</TargetZone>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\mallorn\gps_build\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <ApplicationRevision>29</ApplicationRevision>
+    <ApplicationVersion>1.2.0.29</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>\\mallorn\gps_build\Prerequisites</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.4.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Aspose.Cells.7.4.2\lib\net40-client\Aspose.Cells.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+                                                <Reference Include="CommonServiceLocator, Version=2.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.8.6\lib\net47\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.DevExpress.ForReportSystem.9.6.0\lib\net35\DevExpress.Data.v9.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.DevExpress.ForReportSystem.9.6.0\lib\net35\DevExpress.Utils.v9.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.DevExpress.ForReportSystem.9.6.0\lib\net35\DevExpress.XtraBars.v9.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.DevExpress.ForReportSystem.9.6.0\lib\net35\DevExpress.XtraEditors.v9.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.DevExpress.ForReportSystem.9.6.0\lib\net35\DevExpress.XtraGrid.v9.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+                <Reference Include="Infragistics4.Documents.Core.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Documents.Core.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Documents.Excel.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Reports.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Documents.Reports.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Shared.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.AppStylistSupport.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.Misc.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraChart.v15.1.Design, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraChart.v15.1.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinChart.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinChart.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinDataSource.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinEditors.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinExplorerBar.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinGrid.ExcelExport.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinGrid.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListBar.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinListBar.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListView.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinListView.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinMaskedEdit.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPivotGrid.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinPivotGrid.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPrintPreviewDialog.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinPrintPreviewDialog.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinSchedule.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinStatusBar.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinTabControl.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinToolbars.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTree.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.UltraWinTree.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v15.1, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v15.1.Design, Version=15.1.20151.2203, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Future.Technologies.Infragistics.WinForms.15.1.20151.2203\lib\net40\Infragistics4.Win.v15.1.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.OData, Version=7.0.1.20718, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.OData.7.0.1\lib\net45\Microsoft.AspNet.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Azure.KeyVault.Core.3.0.0\lib\net452\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.2.1.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Client, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Client.7.5.0\lib\net45\Microsoft.OData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Core.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.OData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Edm.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\..\packages\Future.Technologies.Interop.Excel.11.0.0\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\..\packages\Future.Technologies.Interop.Word.11.0.0\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Spatial, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Spatial.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WindowsAzure.Storage.9.3.1\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+        <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+                                                <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.Extensions.4.3.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.8.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Spatial.5.8.3\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.6\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Thinktecture.IdentityModel.Client.Net45, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Thinktecture.IdentityModel.Client.4.0.1\lib\net45\Thinktecture.IdentityModel.Client.Net45.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.8.6\lib\net47\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.2.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.8.6\lib\net47\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.8.6\lib\net47\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.8.6\lib\net47\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.1.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.8.6\lib\net47\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.1.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.8.6\lib\net47\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.8.6\lib\net47\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DependencyInjectionConfig.ClientGlobalContexts.cs" />
+    <Compile Include="DependencyInjectionConfig.ClientServices.cs" />
+    <Compile Include="DependencyInjectionConfig.Reporting.cs" />
+    <Compile Include="DependencyInjectionConfig.Custom.cs" />
+    <Compile Include="DependencyInjectionConfig.Screens.cs" />
+    <Compile Include="DependencyInjectionConfig.Wizards.cs" />
+    <Compile Include="ScreenViewModelFactory.cs" />
+    <Compile Include="DependencyInjectionConfig.CommonGui.cs" />
+    <Compile Include="DependencyInjectionConfig.Common.cs" />
+    <Compile Include="DependencyInjectionConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DomainSecurityService.cs" />
+    <Compile Include="Services\MessageDialogServiceExceptionResolver.cs" />
+    <Compile Include="Services\WizardsService.cs" />
+    <Compile Include="Services\MainMenuService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logging.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="app.ico" />
+    <EmbeddedResource Include="Resources\Images\action-create-new16.png" />
+    <EmbeddedResource Include="Resources\Images\action-create-new24.png" />
+    <EmbeddedResource Include="Resources\Images\action-delete16.png" />
+    <EmbeddedResource Include="Resources\Images\action-delete24.png" />
+    <EmbeddedResource Include="Resources\Images\action-edit16.png" />
+    <EmbeddedResource Include="Resources\Images\action-edit24.png" />
+    <EmbeddedResource Include="Resources\Images\action-open-report16.png" />
+    <EmbeddedResource Include="Resources\Images\action-open-report24.png" />
+    <EmbeddedResource Include="Resources\Images\action-refresh16.png" />
+    <EmbeddedResource Include="Resources\Images\action-refresh24.png" />
+    <EmbeddedResource Include="Resources\Images\action-view16.png" />
+    <EmbeddedResource Include="Resources\Images\action-view24.png" />
+    <EmbeddedResource Include="Resources\Images\Categories16.png" />
+    <EmbeddedResource Include="Resources\Images\Categories24.png" />
+    <EmbeddedResource Include="Resources\Images\Categories32.png" />
+    <EmbeddedResource Include="Resources\Images\Categories48.png" />
+    <EmbeddedResource Include="Resources\Images\Customers16.png" />
+    <EmbeddedResource Include="Resources\Images\Customers24.png" />
+    <EmbeddedResource Include="Resources\Images\Customers32.png" />
+    <EmbeddedResource Include="Resources\Images\Customers48.png" />
+    <EmbeddedResource Include="Resources\Images\Employees16.png" />
+    <EmbeddedResource Include="Resources\Images\Employees24.png" />
+    <EmbeddedResource Include="Resources\Images\Employees32.png" />
+    <EmbeddedResource Include="Resources\Images\Employees48.png" />
+    <EmbeddedResource Include="Resources\Images\Orders16.png" />
+    <EmbeddedResource Include="Resources\Images\Orders24.png" />
+    <EmbeddedResource Include="Resources\Images\Orders32.png" />
+    <EmbeddedResource Include="Resources\Images\Orders48.png" />
+    <EmbeddedResource Include="Resources\Images\Printer16.png" />
+    <EmbeddedResource Include="Resources\Images\Printer24.png" />
+    <EmbeddedResource Include="Resources\Images\Printer32.png" />
+    <EmbeddedResource Include="Resources\Images\Printer48.png" />
+    <EmbeddedResource Include="Resources\Images\Products16.png" />
+    <EmbeddedResource Include="Resources\Images\Products24.png" />
+    <EmbeddedResource Include="Resources\Images\Products32.png" />
+    <EmbeddedResource Include="Resources\Images\Products48.png" />
+    <EmbeddedResource Include="Resources\Images\Shippers16.png" />
+    <EmbeddedResource Include="Resources\Images\Shippers24.png" />
+    <EmbeddedResource Include="Resources\Images\Shippers32.png" />
+    <EmbeddedResource Include="Resources\Images\Shippers48.png" />
+    <EmbeddedResource Include="Resources\Images\SplashBackground.png" />
+    <EmbeddedResource Include="Resources\Images\Suppliers16.png" />
+    <EmbeddedResource Include="Resources\Images\Suppliers24.png" />
+    <EmbeddedResource Include="Resources\Images\Suppliers32.png" />
+    <EmbeddedResource Include="Resources\Images\Suppliers48.png" />
+    <EmbeddedResource Include="Resources\Images\VSalesByCategory16.png" />
+    <EmbeddedResource Include="Resources\Images\VSalesByCategory24.png" />
+    <EmbeddedResource Include="Resources\Images\VSalesByCategory32.png" />
+    <EmbeddedResource Include="Resources\Images\VSalesByCategory48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{5AD368F8-9AD3-4E4C-97D8-1F4F1C124158}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports115.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports XI Release 2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Infragistics2.Documents.Excel.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Shared.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.AppStylistSupport.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.Misc.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraChart.v11.2.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinChart.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinDataSource.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinEditors.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinExplorerBar.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinGrid.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinListView.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinMaskedEdit.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinSchedule.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinStatusBar.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinTabbedMdi.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinTabControl.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinToolbars.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinTree.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics3.Documents.Excel.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics3.Win.UltraWinGrid.ExcelExport.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Client.Contracts\Northwind.Client.Contracts.csproj">
+      <Project>{8d648785-a742-4354-a01b-012e70020819}</Project>
+      <Name>Northwind.Client.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Client.ServerServices\Northwind.Client.ServerServices.csproj">
+      <Project>{3e976800-d63b-4011-ab41-001a2e67624e}</Project>
+      <Name>Northwind.Client.ServerServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Client.Services.Contracts\Northwind.Client.Services.Contracts.csproj">
+      <Project>{eafeb21c-959c-4025-9848-856f5f5671c6}</Project>
+      <Name>Northwind.Client.Services.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Client\Northwind.Client.csproj">
+      <Project>{7df16b04-8d03-4d28-a137-3b1d12bb1d71}</Project>
+      <Name>Northwind.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Common\Northwind.Common.csproj">
+      <Project>{ec1bcd80-f9b3-4ee9-be46-99792ee1997d}</Project>
+      <Name>Northwind.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+      <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
+      <Name>Northwind.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Common\BusinessFramework.Client.Common.csproj">
+       <Project>{EA9EB61E-B762-4401-86F2-0ACBF16944D8}</Project>
+      <Name>BusinessFramework.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Connection\BusinessFramework.Client.Connection.csproj">
+       <Project>{240FD6AD-45D4-4643-827F-A3CE580E136B}</Project>
+      <Name>BusinessFramework.Client.Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Contracts\BusinessFramework.Client.Contracts.csproj">
+       <Project>{9C997456-B515-4678-9F1C-A4131F85E6A3}</Project>
+      <Name>BusinessFramework.Client.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Startup\BusinessFramework.Client.Startup.csproj">
+       <Project>{4F6D0D4C-B747-4121-967F-B91C1BC53D4C}</Project>
+      <Name>BusinessFramework.Client.Startup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms\BusinessFramework.Client.WinForms.csproj">
+       <Project>{81C29E87-3010-4F04-8C1E-DC02BE451DC5}</Project>
+      <Name>BusinessFramework.Client.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms.Infragistics\BusinessFramework.Client.WinForms.Infragistics.csproj">
+       <Project>{93E5B3E2-458B-44EC-BBD5-3BD0C07A9475}</Project>
+      <Name>BusinessFramework.Client.WinForms.Infragistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms.Infragistics.Controls\BusinessFramework.Client.WinForms.Infragistics.Controls.csproj">
+       <Project>{E7F9E630-2A4C-45A4-881D-B4AC741825CB}</Project>
+      <Name>BusinessFramework.Client.WinForms.Infragistics.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
+       <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>
+      <Name>BusinessFramework.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.EnterpriseLibrary.Logging\BusinessFramework.EnterpriseLibrary.Logging.csproj">
+       <Project>{B33236D6-CABB-447E-876B-FC0412AE9A7C}</Project>
+      <Name>BusinessFramework.EnterpriseLibrary.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Excel\BusinessFramework.Excel.csproj">
+       <Project>{E63B4895-C203-494F-97CC-10FD22646780}</Project>
+      <Name>BusinessFramework.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Utils\BusinessFramework.Utils.csproj">
+       <Project>{357D61AA-BDB3-4B93-8B70-9A04D016BE64}</Project>
+      <Name>BusinessFramework.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\..\CommonFramework\FutureTechnologies.DI\FutureTechnologies.DI.csproj">
+       <Project>{4496FB78-A8D3-4CB8-97BA-D30E80AD2A5C}</Project>
+      <Name>FutureTechnologies.DI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\..\CommonFramework\FutureTechnologies.DI.Contracts\FutureTechnologies.DI.Contracts.csproj">
+       <Project>{677E39DA-B58F-4C38-BCD2-6A26FF0AE49F}</Project>
+      <Name>FutureTechnologies.DI.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\..\CommonFramework\FutureTechnologies.DI.UnityContainer\FutureTechnologies.DI.UnityContainer.csproj">
+       <Project>{B37DBB11-13C7-4900-BF6A-2C167E46ACF9}</Project>
+      <Name>FutureTechnologies.DI.UnityContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportSystem\Modules\MSSQL.ReportModule\MSSQL.ReportModule.csproj">
+       <Project>{972E657A-9CB2-474A-AD0E-C4DF1739699F}</Project>
+      <Name>MSSQL.ReportModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central\ReportingFramework.Central.csproj">
+       <Project>{1CA29023-8602-4BB6-8782-A32565FA7B46}</Project>
+      <Name>ReportingFramework.Central</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Aspose.Cells\ReportingFramework.Central.Aspose.Cells.csproj">
+       <Project>{45DC9296-A097-4C0A-9DF0-2E95CE9976C3}</Project>
+      <Name>ReportingFramework.Central.Aspose.Cells</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Contracts\ReportingFramework.Central.Contracts.csproj">
+       <Project>{D5AEFA5B-5336-4D00-A59C-D51381216270}</Project>
+      <Name>ReportingFramework.Central.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Interop.Excel\ReportingFramework.Central.Interop.Excel.csproj">
+       <Project>{A44A869C-E64C-4F02-94B9-83B6DD124B1C}</Project>
+      <Name>ReportingFramework.Central.Interop.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Interop.Word\ReportingFramework.Central.Interop.Word.csproj">
+       <Project>{DE4B7BC6-674F-4465-9860-96DDF5246077}</Project>
+      <Name>ReportingFramework.Central.Interop.Word</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Client\ReportingFramework.Client.csproj">
+       <Project>{57CA5C28-09C7-4EBC-9D9B-D3A86712D4E8}</Project>
+      <Name>ReportingFramework.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Manager\ReportingFramework.Manager.csproj">
+       <Project>{DB240A9A-F63D-4C09-9CB7-D977CFB25CBB}</Project>
+      <Name>ReportingFramework.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Updater\ReportingFramework.Updater.csproj">
+       <Project>{4B72E55B-825E-4CC1-AD3E-E822419696A5}</Project>
+      <Name>ReportingFramework.Updater</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Contracts\ReportSystem.Contracts.csproj">
+       <Project>{01E31E29-726D-4A73-8237-EB3EB0FCB3D7}</Project>
+      <Name>ReportSystem.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Core\ReportSystem.Core.csproj">
+       <Project>{EE34A43C-AC18-4EF1-B8D2-7A037DDBA9C9}</Project>
+      <Name>ReportSystem.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportSystem\ReportSystem.UI\ReportSystem.UI.csproj">
+       <Project>{8A930223-B9FD-4DCE-8E4C-66517EB89638}</Project>
+      <Name>ReportSystem.UI</Name>
+    </ProjectReference>
+
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+</Project>

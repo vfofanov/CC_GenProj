@@ -1,0 +1,427 @@
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:DataServices>
+  <Schema Namespace="BusinessFramework.Contracts.Files" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <ComplexType Name="FileLinkBase" Abstract="true">
+        <Property Name="Id" Type="Edm.Int32" />
+        <Property Name="FileName" Type="Edm.String" />
+        <Property Name="Length" Type="Edm.Int64" />
+        <Property Name="CreateDate" Type="Edm.DateTimeOffset" />
+        <Property Name="UploadLink" Type="Edm.String" />
+      </ComplexType>
+      </Schema>
+    <Schema Namespace="BusinessFramework.WebAPI.Contracts.Files" Alias="Files" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <ComplexType Name="FileLink" BaseType="BusinessFramework.Contracts.Files.FileLinkBase">
+      </ComplexType>
+    </Schema>
+
+    <Schema Namespace="Northwind.WebAPI.Contracts.DataObjects" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityType Name="OrderStatus">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int16" />
+          <Property Name="Name" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="Product">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="CategoryID" Type="Edm.Int32" />
+          <Property Name="Discontinued" Type="Edm.Boolean" />
+          <Property Name="ProductName" Type="Edm.String" />
+          <Property Name="QuantityPerUnit" Type="Edm.String" />
+          <Property Name="ReorderLevel" Type="Edm.Int16" />
+          <Property Name="SupplierID" Type="Edm.Int32" />
+          <Property Name="UnitPrice" Type="Edm.Decimal" />
+          <Property Name="UnitsInStock" Type="Edm.Int16" />
+          <Property Name="UnitsOnOrder" Type="Edm.Int16" />
+      </EntityType>      
+      <EntityType Name="SysResetPasswordToken">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="IsExecuted" Type="Edm.Boolean" />
+          <Property Name="Token" Type="Edm.String" />
+          <Property Name="UserId" Type="Edm.Int32" />
+          <Property Name="ValidFrom" Type="Edm.DateTimeOffset" />
+      </EntityType>      
+      <EntityType Name="SysRole">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Description" Type="Edm.String" />
+          <Property Name="IsOwnByUser" Type="Edm.Boolean" />
+          <Property Name="IsSystem" Type="Edm.Boolean" />
+          <Property Name="Name" Type="Edm.String" />
+          <Property Name="OwnerUserID" Type="Edm.Int32" />
+      </EntityType>      
+      <EntityType Name="Customer">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Address" Type="Edm.String" />
+          <Property Name="City" Type="Edm.String" />
+          <Property Name="CompanyName" Type="Edm.String" />
+          <Property Name="ContactName" Type="Edm.String" />
+          <Property Name="ContactTitle" Type="Edm.String" />
+          <Property Name="Country" Type="Edm.String" />
+          <Property Name="Fax" Type="Edm.String" />
+          <Property Name="Phone" Type="Edm.String" />
+          <Property Name="PostalCode" Type="Edm.String" />
+          <Property Name="Region" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="Category">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="CategoryName" Type="Edm.String" />
+          <Property Name="Description" Type="Edm.String" />
+          <Property Name="Picture" Type="Edm.Binary" />
+      </EntityType>      
+      <EntityType Name="Supplier">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Address" Type="Edm.String" />
+          <Property Name="City" Type="Edm.String" />
+          <Property Name="CompanyName" Type="Edm.String" />
+          <Property Name="ContactName" Type="Edm.String" />
+          <Property Name="ContactTitle" Type="Edm.String" />
+          <Property Name="Country" Type="Edm.String" />
+          <Property Name="Fax" Type="Edm.String" />
+          <Property Name="HomePage" Type="Edm.String" />
+          <Property Name="Phone" Type="Edm.String" />
+          <Property Name="PostalCode" Type="Edm.String" />
+          <Property Name="Region" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="SysOperationLock">
+        <Key>
+          <PropertyRef Name="OperationName" />
+          <PropertyRef Name="OperationContext" />
+        </Key>
+          <Property Name="OperationName" Type="Edm.String" />
+          <Property Name="OperationContext" Type="Edm.String" />
+          <Property Name="AquiredTime" Type="Edm.DateTimeOffset" />
+          <Property Name="ExpirationTime" Type="Edm.DateTimeOffset" />
+          <Property Name="MachineName" Type="Edm.String" />
+          <Property Name="ProcessId" Type="Edm.Int32" />
+          <Property Name="UserId" Type="Edm.Int32" />
+      </EntityType>      
+      <EntityType Name="Order">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="CustomerID" Type="Edm.Int32" />
+          <Property Name="EmployeeID" Type="Edm.Int32" />
+          <Property Name="Freight" Type="Edm.Decimal" />
+          <Property Name="OrderDate" Type="Edm.DateTimeOffset" />
+          <Property Name="RequiredDate" Type="Edm.DateTimeOffset" />
+          <Property Name="ShipAddress" Type="Edm.String" />
+          <Property Name="ShipCity" Type="Edm.String" />
+          <Property Name="ShipCountry" Type="Edm.String" />
+          <Property Name="ShipName" Type="Edm.String" />
+          <Property Name="ShippedDate" Type="Edm.DateTimeOffset" />
+          <Property Name="ShipPostalCode" Type="Edm.String" />
+          <Property Name="ShipRegion" Type="Edm.String" />
+          <Property Name="ShipVia" Type="Edm.Int32" />
+          <Property Name="StatusID" Type="Edm.Int16" />
+      </EntityType>      
+      <EntityType Name="OrderDetail">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Discount" Type="Edm.Single" />
+          <Property Name="OrderID" Type="Edm.Int32" />
+          <Property Name="ProductID" Type="Edm.Int32" />
+          <Property Name="Quantity" Type="Edm.Int16" />
+          <Property Name="UnitPrice" Type="Edm.Decimal" />
+      </EntityType>      
+      <EntityType Name="SysSetting">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="SettingPropertyId" Type="Edm.Int32" />
+          <Property Name="StringValue" Type="Edm.String" />
+          <Property Name="UserId" Type="Edm.Int32" />
+      </EntityType>      
+      <EntityType Name="Employee">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Address" Type="Edm.String" />
+          <Property Name="BirthDate" Type="Edm.DateTimeOffset" />
+          <Property Name="City" Type="Edm.String" />
+          <Property Name="Country" Type="Edm.String" />
+          <Property Name="Extension" Type="Edm.String" />
+          <Property Name="FirstName" Type="Edm.String" />
+          <Property Name="HireDate" Type="Edm.DateTimeOffset" />
+          <Property Name="HomePhone" Type="Edm.String" />
+          <Property Name="LastName" Type="Edm.String" />
+          <Property Name="Notes" Type="Edm.String" />
+          <Property Name="Photo" Type="Edm.Binary" />
+          <Property Name="PhotoPath" Type="Edm.String" />
+          <Property Name="PostalCode" Type="Edm.String" />
+          <Property Name="Region" Type="Edm.String" />
+          <Property Name="ReportsTo" Type="Edm.Int32" />
+          <Property Name="Title" Type="Edm.String" />
+          <Property Name="TitleOfCourtesy" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="SysSettingProperty">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="DefaultType" Type="Edm.String" />
+          <Property Name="Description" Type="Edm.String" />
+          <Property Name="GroupName" Type="Edm.String" />
+          <Property Name="IsManaged" Type="Edm.Boolean" />
+          <Property Name="IsOverridable" Type="Edm.Boolean" />
+          <Property Name="Name" Type="Edm.String" />
+          <Property Name="UIEditorType" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="VSalesByCategory">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="CategoryName" Type="Edm.String" />
+          <Property Name="ProductName" Type="Edm.String" />
+          <Property Name="ProductSales" Type="Edm.Decimal" />
+      </EntityType>      
+      <EntityType Name="Shipper">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="CompanyName" Type="Edm.String" />
+          <Property Name="Phone" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="QSuppliers">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Address" Type="Edm.String" />
+          <Property Name="City" Type="Edm.String" />
+          <Property Name="CompanyName" Type="Edm.String" />
+          <Property Name="ContactName" Type="Edm.String" />
+          <Property Name="ContactTitle" Type="Edm.String" />
+          <Property Name="Country" Type="Edm.String" />
+          <Property Name="Fax" Type="Edm.String" />
+          <Property Name="HomePage" Type="Edm.String" />
+          <Property Name="Phone" Type="Edm.String" />
+          <Property Name="PostalCode" Type="Edm.String" />
+          <Property Name="Region" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="QEmployees">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Address" Type="Edm.String" />
+          <Property Name="BirthDate" Type="Edm.DateTimeOffset" />
+          <Property Name="City" Type="Edm.String" />
+          <Property Name="Country" Type="Edm.String" />
+          <Property Name="Employee_FullName" Type="Edm.String" />
+          <Property Name="Extension" Type="Edm.String" />
+          <Property Name="FirstName" Type="Edm.String" />
+          <Property Name="HireDate" Type="Edm.DateTimeOffset" />
+          <Property Name="HomePhone" Type="Edm.String" />
+          <Property Name="LastName" Type="Edm.String" />
+          <Property Name="Notes" Type="Edm.String" />
+          <Property Name="PostalCode" Type="Edm.String" />
+          <Property Name="Region" Type="Edm.String" />
+          <Property Name="ReportsTo" Type="Edm.Int32" />
+          <Property Name="Title" Type="Edm.String" />
+          <Property Name="TitleOfCourtesy" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="QShippers">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="CompanyName" Type="Edm.String" />
+          <Property Name="Phone" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="QCategories">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="CategoryName" Type="Edm.String" />
+          <Property Name="Description" Type="Edm.String" />
+          <Property Name="Picture" Type="Edm.Binary" />
+      </EntityType>      
+      <EntityType Name="QCustomers">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Address" Type="Edm.String" />
+          <Property Name="City" Type="Edm.String" />
+          <Property Name="CompanyName" Type="Edm.String" />
+          <Property Name="ContactName" Type="Edm.String" />
+          <Property Name="ContactTitle" Type="Edm.String" />
+          <Property Name="Country" Type="Edm.String" />
+          <Property Name="Fax" Type="Edm.String" />
+          <Property Name="Phone" Type="Edm.String" />
+          <Property Name="PostalCode" Type="Edm.String" />
+          <Property Name="Region" Type="Edm.String" />
+      </EntityType>      
+      <EntityType Name="QProducts">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Categories_CategoryName" Type="Edm.String" />
+          <Property Name="Categories_Description" Type="Edm.String" />
+          <Property Name="Categories_Id" Type="Edm.Int32" />
+          <Property Name="CategoryID" Type="Edm.Int32" />
+          <Property Name="Discontinued" Type="Edm.Boolean" />
+          <Property Name="ProductName" Type="Edm.String" />
+          <Property Name="QuantityPerUnit" Type="Edm.String" />
+          <Property Name="ReorderLevel" Type="Edm.Int16" />
+          <Property Name="SupplierID" Type="Edm.Int32" />
+          <Property Name="Suppliers_Address" Type="Edm.String" />
+          <Property Name="Suppliers_City" Type="Edm.String" />
+          <Property Name="Suppliers_CompanyName" Type="Edm.String" />
+          <Property Name="Suppliers_ContactName" Type="Edm.String" />
+          <Property Name="Suppliers_ContactTitle" Type="Edm.String" />
+          <Property Name="Suppliers_Country" Type="Edm.String" />
+          <Property Name="Suppliers_Fax" Type="Edm.String" />
+          <Property Name="Suppliers_HomePage" Type="Edm.String" />
+          <Property Name="Suppliers_Id" Type="Edm.Int32" />
+          <Property Name="Suppliers_Phone" Type="Edm.String" />
+          <Property Name="Suppliers_PostalCode" Type="Edm.String" />
+          <Property Name="Suppliers_Region" Type="Edm.String" />
+          <Property Name="UnitPrice" Type="Edm.Decimal" />
+          <Property Name="UnitsInStock" Type="Edm.Int16" />
+          <Property Name="UnitsOnOrder" Type="Edm.Int16" />
+      </EntityType>      
+      <EntityType Name="QOrderProducts">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="Discount" Type="Edm.Single" />
+          <Property Name="OrderID" Type="Edm.Int32" />
+          <Property Name="Orders_CustomerID" Type="Edm.Int32" />
+          <Property Name="Orders_EmployeeID" Type="Edm.Int32" />
+          <Property Name="Orders_Freight" Type="Edm.Decimal" />
+          <Property Name="Orders_Id" Type="Edm.Int32" />
+          <Property Name="Orders_OrderDate" Type="Edm.DateTimeOffset" />
+          <Property Name="Orders_RequiredDate" Type="Edm.DateTimeOffset" />
+          <Property Name="Orders_ShipAddress" Type="Edm.String" />
+          <Property Name="Orders_ShipCity" Type="Edm.String" />
+          <Property Name="Orders_ShipCountry" Type="Edm.String" />
+          <Property Name="Orders_ShipName" Type="Edm.String" />
+          <Property Name="Orders_ShippedDate" Type="Edm.DateTimeOffset" />
+          <Property Name="Orders_ShipPostalCode" Type="Edm.String" />
+          <Property Name="Orders_ShipRegion" Type="Edm.String" />
+          <Property Name="Orders_ShipVia" Type="Edm.Int32" />
+          <Property Name="ProductID" Type="Edm.Int32" />
+          <Property Name="Products_CategoryID" Type="Edm.Int32" />
+          <Property Name="Products_Discontinued" Type="Edm.Boolean" />
+          <Property Name="Products_Id" Type="Edm.Int32" />
+          <Property Name="Products_ProductName" Type="Edm.String" />
+          <Property Name="Products_QuantityPerUnit" Type="Edm.String" />
+          <Property Name="Products_ReorderLevel" Type="Edm.Int16" />
+          <Property Name="Products_SupplierID" Type="Edm.Int32" />
+          <Property Name="Products_UnitPrice" Type="Edm.Decimal" />
+          <Property Name="Products_UnitsInStock" Type="Edm.Int16" />
+          <Property Name="Products_UnitsOnOrder" Type="Edm.Int16" />
+          <Property Name="Quantity" Type="Edm.Int16" />
+          <Property Name="UnitPrice" Type="Edm.Decimal" />
+      </EntityType>      
+      <EntityType Name="QOrders">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+          <Property Name="Id" Type="Edm.Int32" />
+          <Property Name="CustomerID" Type="Edm.Int32" />
+          <Property Name="Customers_Address" Type="Edm.String" />
+          <Property Name="Customers_City" Type="Edm.String" />
+          <Property Name="Customers_CompanyName" Type="Edm.String" />
+          <Property Name="Customers_ContactName" Type="Edm.String" />
+          <Property Name="Customers_ContactTitle" Type="Edm.String" />
+          <Property Name="Customers_Country" Type="Edm.String" />
+          <Property Name="Customers_Fax" Type="Edm.String" />
+          <Property Name="Customers_Id" Type="Edm.Int32" />
+          <Property Name="Customers_Phone" Type="Edm.String" />
+          <Property Name="Customers_PostalCode" Type="Edm.String" />
+          <Property Name="Customers_Region" Type="Edm.String" />
+          <Property Name="EmployeeFullName" Type="Edm.String" />
+          <Property Name="EmployeeID" Type="Edm.Int32" />
+          <Property Name="Employees_Address" Type="Edm.String" />
+          <Property Name="Employees_BirthDate" Type="Edm.DateTimeOffset" />
+          <Property Name="Employees_City" Type="Edm.String" />
+          <Property Name="Employees_Country" Type="Edm.String" />
+          <Property Name="Employees_Extension" Type="Edm.String" />
+          <Property Name="Employees_FirstName" Type="Edm.String" />
+          <Property Name="Employees_HireDate" Type="Edm.DateTimeOffset" />
+          <Property Name="Employees_HomePhone" Type="Edm.String" />
+          <Property Name="Employees_Id" Type="Edm.Int32" />
+          <Property Name="Employees_LastName" Type="Edm.String" />
+          <Property Name="Employees_Notes" Type="Edm.String" />
+          <Property Name="Employees_PhotoPath" Type="Edm.String" />
+          <Property Name="Employees_PostalCode" Type="Edm.String" />
+          <Property Name="Employees_Region" Type="Edm.String" />
+          <Property Name="Employees_ReportsTo" Type="Edm.Int32" />
+          <Property Name="Employees_Title" Type="Edm.String" />
+          <Property Name="Employees_TitleOfCourtesy" Type="Edm.String" />
+          <Property Name="Freight" Type="Edm.Decimal" />
+          <Property Name="OrderDate" Type="Edm.DateTimeOffset" />
+          <Property Name="RequiredDate" Type="Edm.DateTimeOffset" />
+          <Property Name="ShipAddress" Type="Edm.String" />
+          <Property Name="ShipCity" Type="Edm.String" />
+          <Property Name="ShipCountry" Type="Edm.String" />
+          <Property Name="ShipName" Type="Edm.String" />
+          <Property Name="ShippedDate" Type="Edm.DateTimeOffset" />
+          <Property Name="Shippers_CompanyName" Type="Edm.String" />
+          <Property Name="Shippers_Id" Type="Edm.Int32" />
+          <Property Name="Shippers_Phone" Type="Edm.String" />
+          <Property Name="ShipPostalCode" Type="Edm.String" />
+          <Property Name="ShipRegion" Type="Edm.String" />
+          <Property Name="ShipVia" Type="Edm.Int32" />
+      </EntityType>      
+      
+    </Schema>
+    <Schema Namespace="Services" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="Container">
+        <EntitySet Name="OrderStatus" EntityType="Northwind.WebAPI.Contracts.DataObjects.OrderStatus"/>
+        <EntitySet Name="Product" EntityType="Northwind.WebAPI.Contracts.DataObjects.Product"/>
+        <EntitySet Name="SysResetPasswordToken" EntityType="Northwind.WebAPI.Contracts.DataObjects.SysResetPasswordToken"/>
+        <EntitySet Name="SysRole" EntityType="Northwind.WebAPI.Contracts.DataObjects.SysRole"/>
+        <EntitySet Name="Customer" EntityType="Northwind.WebAPI.Contracts.DataObjects.Customer"/>
+        <EntitySet Name="Category" EntityType="Northwind.WebAPI.Contracts.DataObjects.Category"/>
+        <EntitySet Name="Supplier" EntityType="Northwind.WebAPI.Contracts.DataObjects.Supplier"/>
+        <EntitySet Name="SysOperationLock" EntityType="Northwind.WebAPI.Contracts.DataObjects.SysOperationLock"/>
+        <EntitySet Name="Order" EntityType="Northwind.WebAPI.Contracts.DataObjects.Order"/>
+        <EntitySet Name="OrderDetail" EntityType="Northwind.WebAPI.Contracts.DataObjects.OrderDetail"/>
+        <EntitySet Name="SysSetting" EntityType="Northwind.WebAPI.Contracts.DataObjects.SysSetting"/>
+        <EntitySet Name="Employee" EntityType="Northwind.WebAPI.Contracts.DataObjects.Employee"/>
+        <EntitySet Name="SysSettingProperty" EntityType="Northwind.WebAPI.Contracts.DataObjects.SysSettingProperty"/>
+        <EntitySet Name="VSalesByCategory" EntityType="Northwind.WebAPI.Contracts.DataObjects.VSalesByCategory"/>
+        <EntitySet Name="Shipper" EntityType="Northwind.WebAPI.Contracts.DataObjects.Shipper"/>
+        <EntitySet Name="QSuppliers" EntityType="Northwind.WebAPI.Contracts.DataObjects.QSuppliers"/>
+        <EntitySet Name="QEmployees" EntityType="Northwind.WebAPI.Contracts.DataObjects.QEmployees"/>
+        <EntitySet Name="QShippers" EntityType="Northwind.WebAPI.Contracts.DataObjects.QShippers"/>
+        <EntitySet Name="QCategories" EntityType="Northwind.WebAPI.Contracts.DataObjects.QCategories"/>
+        <EntitySet Name="QCustomers" EntityType="Northwind.WebAPI.Contracts.DataObjects.QCustomers"/>
+        <EntitySet Name="QProducts" EntityType="Northwind.WebAPI.Contracts.DataObjects.QProducts"/>
+        <EntitySet Name="QOrderProducts" EntityType="Northwind.WebAPI.Contracts.DataObjects.QOrderProducts"/>
+        <EntitySet Name="QOrders" EntityType="Northwind.WebAPI.Contracts.DataObjects.QOrders"/>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AFA703C-B408-42DC-8490-5726A12506F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Northwind.WebAPI.DataAccess</RootNamespace>
+    <AssemblyName>Northwind.WebAPI.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>bin\Debug\Northwind.WebAPI.DataAccess.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Build\Server\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Build\Server\Northwind.WebAPI.DataAccess.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+                            <Reference Include="ColoredConsole, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ColoredConsole.1.0.0\lib\netstandard1.3\ColoredConsole.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+        <Reference Include="Microsoft.Azure.KeyVault.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Azure.KeyVault.Core.3.0.0\lib\net452\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.2.1.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Spatial.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WindowsAzure.Storage.9.3.1\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.Extensions.4.3.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.8.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Spatial.5.8.3\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiDbContext.cs" />
+    <Compile Include="ApiDbContext.Entities.cs" />
+    <Compile Include="Mapping\ApiDbContextMapping.cs" />
+    <Compile Include="Mapping\CategoryDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindCategoryDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindCustomerDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindEmployeeDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindOrderDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindOrderDetailDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindOrderStatusDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindProductDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindShipperDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindSupplierDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindVSalesByCategoryDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysInfoDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysObjectClassDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysObjectDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysObjectTypeDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysOperationDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysOperationLockDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysOperationResultDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysPermissionDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysPermissionTypeDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysRefreshTokenDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysResetPasswordTokenDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysRoleDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysRolePermissionDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysSettingDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysSettingPropertyDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysUserDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysUserPermissionsDisplayViewDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysUserRoleDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\System\CodeBehindSysUsersDisplayViewDatabaseMapping.cs" />
+    <Compile Include="Mapping\CustomerDatabaseMapping.cs" />
+    <Compile Include="Mapping\EmployeeDatabaseMapping.cs" />
+    <Compile Include="Mapping\OrderDatabaseMapping.cs" />
+    <Compile Include="Mapping\OrderDetailDatabaseMapping.cs" />
+    <Compile Include="Mapping\OrderStatusDatabaseMapping.cs" />
+    <Compile Include="Mapping\ProductDatabaseMapping.cs" />
+    <Compile Include="Mapping\ShipperDatabaseMapping.cs" />
+    <Compile Include="Mapping\SupplierDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\FileLinkMapping.cs" />
+    <Compile Include="Mapping\System\SysInfoDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysObjectClassDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysObjectDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysObjectTypeDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysOperationDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysOperationLockDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysOperationResultDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysPermissionDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysPermissionTypeDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysRefreshTokenDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysResetPasswordTokenDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysRoleDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysRolePermissionDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysSettingDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysSettingPropertyDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysUserDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysUserPermissionsDisplayViewDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysUserRoleDatabaseMapping.cs" />
+    <Compile Include="Mapping\System\SysUsersDisplayViewDatabaseMapping.cs" />
+    <Compile Include="Mapping\VSalesByCategoryDatabaseMapping.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\CommonResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ValidationResources.Designer.cs">
+      <DependentUpon>ValidationResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindCategoryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindCustomerRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindEmployeeRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindOrderDetailRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindOrderRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindOrderStatusRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindProductRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindQCategoriesRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindQCustomersRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindQEmployeesRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindQOrderProductsRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindQOrdersRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindQProductsRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindQShippersRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindQSuppliersRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindShipperRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindSupplierRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindVSalesByCategoryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysInfoRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysObjectClassRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysObjectRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysObjectTypeRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysOperationLockRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysOperationRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysOperationResultRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysPermissionRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysPermissionTypeRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysRefreshTokenRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysResetPasswordTokenRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysRolePermissionRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysRoleRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysSettingPropertyRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysSettingRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysUserPermissionsDisplayViewRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysUserRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysUserRoleRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\System\CodeBehindSysUsersDisplayViewRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\EmployeeRepository.cs" />
+    <Compile Include="Repositories\OrderDetailRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\OrderStatusRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\QCategoriesRepository.cs" />
+    <Compile Include="Repositories\QCustomersRepository.cs" />
+    <Compile Include="Repositories\QEmployeesRepository.cs" />
+    <Compile Include="Repositories\QOrderProductsRepository.cs" />
+    <Compile Include="Repositories\QOrdersRepository.cs" />
+    <Compile Include="Repositories\QProductsRepository.cs" />
+    <Compile Include="Repositories\QShippersRepository.cs" />
+    <Compile Include="Repositories\QSuppliersRepository.cs" />
+    <Compile Include="Repositories\ShipperRepository.cs" />
+    <Compile Include="Repositories\SupplierRepository.cs" />
+    <Compile Include="Repositories\System\FileLinkRepository.cs" />
+    <Compile Include="Repositories\System\SysInfoRepository.cs" />
+    <Compile Include="Repositories\System\SysObjectClassRepository.cs" />
+    <Compile Include="Repositories\System\SysObjectRepository.cs" />
+    <Compile Include="Repositories\System\SysObjectTypeRepository.cs" />
+    <Compile Include="Repositories\System\SysOperationLockRepository.cs" />
+    <Compile Include="Repositories\System\SysOperationRepository.cs" />
+    <Compile Include="Repositories\System\SysOperationResultRepository.cs" />
+    <Compile Include="Repositories\System\SysPermissionRepository.cs" />
+    <Compile Include="Repositories\System\SysPermissionTypeRepository.cs" />
+    <Compile Include="Repositories\System\SysRefreshTokenRepository.cs" />
+    <Compile Include="Repositories\System\SysResetPasswordTokenRepository.cs" />
+    <Compile Include="Repositories\System\SysRolePermissionRepository.cs" />
+    <Compile Include="Repositories\System\SysRoleRepository.cs" />
+    <Compile Include="Repositories\System\SysSettingPropertyRepository.cs" />
+    <Compile Include="Repositories\System\SysSettingRepository.cs" />
+    <Compile Include="Repositories\System\SysUserPermissionsDisplayViewRepository.cs" />
+    <Compile Include="Repositories\System\SysUserRepository.cs" />
+    <Compile Include="Repositories\System\SysUserRoleRepository.cs" />
+    <Compile Include="Repositories\System\SysUsersDisplayViewRepository.cs" />
+    <Compile Include="Repositories\VSalesByCategoryRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+      <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
+      <Name>Northwind.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.WebAPI.Contracts\Northwind.WebAPI.Contracts.csproj">
+      <Project>{d3460f1a-d56e-4d69-ae87-050f54ebc01f}</Project>
+      <Name>Northwind.WebAPI.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
+       <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>
+      <Name>BusinessFramework.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Excel\BusinessFramework.Excel.csproj">
+       <Project>{E63B4895-C203-494F-97CC-10FD22646780}</Project>
+      <Name>BusinessFramework.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Utils\BusinessFramework.Utils.csproj">
+       <Project>{357D61AA-BDB3-4B93-8B70-9A04D016BE64}</Project>
+      <Name>BusinessFramework.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI\BusinessFramework.WebAPI.csproj">
+       <Project>{741C0D65-29B5-447C-8515-87A769FCAD8A}</Project>
+      <Name>BusinessFramework.WebAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Common\BusinessFramework.WebAPI.Common.csproj">
+       <Project>{F11DCACF-B95A-441F-AE34-870EDDA7D5A8}</Project>
+      <Name>BusinessFramework.WebAPI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Contracts\BusinessFramework.WebAPI.Contracts.csproj">
+       <Project>{F5AB7E34-8A40-49EF-816D-335B4C6A1A98}</Project>
+      <Name>BusinessFramework.WebAPI.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\..\CommonFramework\FutureTechnologies.DI.Contracts\FutureTechnologies.DI.Contracts.csproj">
+       <Project>{677E39DA-B58F-4C38-BCD2-6A26FF0AE49F}</Project>
+      <Name>FutureTechnologies.DI.Contracts</Name>
+    </ProjectReference>
+
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\CommonResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\CommonResources.ru.resx" />
+    <EmbeddedResource Include="Properties\ValidationResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

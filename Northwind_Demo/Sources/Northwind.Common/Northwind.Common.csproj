@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC1BCD80-F9B3-4EE9-BE46-99792EE1997D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Northwind.Common</RootNamespace>
+    <AssemblyName>Northwind.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+                        <Reference Include="Microsoft.Azure.KeyVault.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Azure.KeyVault.Core.3.0.0\lib\net452\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Client, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Client.7.5.0\lib\net45\Microsoft.OData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Core.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.OData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.OData.Edm.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Spatial, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Spatial.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WindowsAzure.Storage.9.3.1\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Spatial, Version=5.8.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Spatial.5.8.3\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Thinktecture.IdentityModel.Client.Net45, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Thinktecture.IdentityModel.Client.4.0.1\lib\net45\Thinktecture.IdentityModel.Client.Net45.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IDomainSecurityService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\ScreenGroupResources.Designer.cs">
+      <DependentUpon>ScreenGroupResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\ScreenResources.Designer.cs">
+      <DependentUpon>ScreenResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Screens\CategoriesScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindCategoriesScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindCustomersScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindEmployeesScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindOrdersScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindProductsScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindShippersScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindSuppliersScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindTestDynamicColumnsScreenViewModel.cs" />
+    <Compile Include="Screens\CustomersScreenViewModel.cs" />
+    <Compile Include="Screens\EmployeesScreenViewModel.cs" />
+    <Compile Include="Screens\OrdersScreenViewModel.cs" />
+    <Compile Include="Screens\ProductsScreenViewModel.cs" />
+    <Compile Include="Screens\ShippersScreenViewModel.cs" />
+    <Compile Include="Screens\SuppliersScreenViewModel.cs" />
+    <Compile Include="Screens\TestDynamicColumnsScreenViewModel.cs" />
+    <Compile Include="Settings\SessionSettingsProvider.cs" />
+    <Compile Include="Settings\SessionSettingsService.cs" />
+    <Compile Include="Wizards\CategoriesWizardParameters.cs" />
+    <Compile Include="Wizards\CustomersWizardParameters.cs" />
+    <Compile Include="Wizards\DomainWizards.cs" />
+    <Compile Include="Wizards\EmployeesWizardParameters.cs" />
+    <Compile Include="Wizards\Initialization\CategoriesWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindCategoriesWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindCustomersWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindEmployeesWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindOrderDetailsWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindOrdersWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindProductsWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindShippersWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindSuppliersWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CustomersWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\EmployeesWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\OrderDetailsWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\OrdersWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\ProductsWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\ShippersWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\SuppliersWizardInitialization.cs" />
+    <Compile Include="Wizards\OrderDetailsWizardParameters.cs" />
+    <Compile Include="Wizards\OrdersWizardParameters.cs" />
+    <Compile Include="Wizards\ProductsWizardParameters.cs" />
+    <Compile Include="Wizards\ShippersWizardParameters.cs" />
+    <Compile Include="Wizards\SuppliersWizardParameters.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Client.Contracts\Northwind.Client.Contracts.csproj">
+      <Project>{8d648785-a742-4354-a01b-012e70020819}</Project>
+      <Name>Northwind.Client.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Client.Services.Contracts\Northwind.Client.Services.Contracts.csproj">
+      <Project>{eafeb21c-959c-4025-9848-856f5f5671c6}</Project>
+      <Name>Northwind.Client.Services.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+      <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
+      <Name>Northwind.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Common\BusinessFramework.Client.Common.csproj">
+       <Project>{EA9EB61E-B762-4401-86F2-0ACBF16944D8}</Project>
+      <Name>BusinessFramework.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Connection\BusinessFramework.Client.Connection.csproj">
+       <Project>{240FD6AD-45D4-4643-827F-A3CE580E136B}</Project>
+      <Name>BusinessFramework.Client.Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Contracts\BusinessFramework.Client.Contracts.csproj">
+       <Project>{9C997456-B515-4678-9F1C-A4131F85E6A3}</Project>
+      <Name>BusinessFramework.Client.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
+       <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>
+      <Name>BusinessFramework.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Utils\BusinessFramework.Utils.csproj">
+       <Project>{357D61AA-BDB3-4B93-8B70-9A04D016BE64}</Project>
+      <Name>BusinessFramework.Utils</Name>
+    </ProjectReference>
+
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\ScreenGroupResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScreenGroupResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ScreenResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScreenResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
