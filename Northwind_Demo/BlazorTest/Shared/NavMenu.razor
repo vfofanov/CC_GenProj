@@ -1,0 +1,66 @@
+﻿@inject HttpClient Http
+
+@if (mainMenuSettings == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <DxTreeView @ref="@treeView"
+                 CssClass="app-sidebar"
+                 AllowSelectNodes="true"
+                 NodeExpandCollapseAction="TreeViewNodeExpandCollapseAction.NodeClick"
+                 BeforeExpand="@BeforeExpand"
+                 SelectionChanged="@SelectionChanged">
+        <Nodes>
+            <DxTreeViewNode Text="Overview" NavigateUrl=""/>
+            @foreach (var grp in mainMenuSettings.Groups)
+            {
+                <DxTreeViewNode Text="@grp.Title">
+                    <Nodes>
+                        @foreach (var screen in grp.Screens)
+                        {
+                            <DxTreeViewNode Text="@screen.Title" NavigateUrl="@("screen/"+ screen.Controller)" />
+                        }
+                    </Nodes>
+                </DxTreeViewNode>
+            }
+        </Nodes>
+    </DxTreeView>
+}
+
+@code {
+    DxTreeView treeView;
+
+    protected void SelectionChanged(TreeViewNodeEventArgs e)
+    {
+        if (e.NodeInfo.IsLeaf)
+        {
+            var parentInfo = e.NodeInfo.Parent;
+            if (parentInfo != null)
+            {
+                var parentSiblingNodesInfo = treeView.GetNodesInfo(n => !n.IsLeaf && n.Level == parentInfo.Level && !string.Equals(n.Text, parentInfo.Text));
+                foreach (var nodeInfo in parentSiblingNodesInfo)
+                    treeView.SetNodeExpanded(n => string.Equals(n.Text, nodeInfo.Text), false);
+            }
+            else
+                treeView.CollapseAll();
+        }
+    }
+
+    protected void BeforeExpand(TreeViewNodeCancelEventArgs e)
+    {
+        if (!e.CausedByAPI)
+            treeView.CollapseAll();
+    }
+
+    private MainMenuSettings mainMenuSettings;
+
+    protected override async Task OnInitializedAsync()
+    {
+        mainMenuSettings = await Http.GetFromJsonAsync<MainMenuSettings>("api/MainMenuSettings");
+    }
+
+}
