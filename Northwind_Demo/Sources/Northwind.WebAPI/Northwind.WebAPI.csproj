@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -7,8 +7,8 @@
     <ProjectGuid>{6FB82326-D6FA-4A4E-A4CA-82B5C6B9BD4E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.WebAPI</RootNamespace>
-    <AssemblyName>Northwind.WebAPI</AssemblyName>
+    <RootNamespace>NorthWind.WebAPI</RootNamespace>
+    <AssemblyName>NorthWind.WebAPI</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -23,7 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
-    <DocumentationFile>bin\Debug\Northwind.WebAPI.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\NorthWind.WebAPI.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Build\Server\Northwind.WebAPI.xml</DocumentationFile>
+    <DocumentationFile>..\..\Build\Server\NorthWind.WebAPI.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -44,7 +44,7 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ColoredConsole, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+                            <Reference Include="ColoredConsole, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\ColoredConsole.1.0.0\lib\netstandard1.3\ColoredConsole.dll</HintPath>
       <Private>True</Private>
     </Reference>
@@ -52,7 +52,7 @@
       <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="LumenWorks.Framework.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5ad3ea2f85776344, processorArchitecture=MSIL">
+        <Reference Include="LumenWorks.Framework.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5ad3ea2f85776344, processorArchitecture=MSIL">
       <HintPath>..\..\packages\LumenWorksCsvReader.4.0.0\lib\net461\LumenWorks.Framework.IO.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.OData, Version=7.0.1.20718, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -73,11 +73,11 @@
     <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\WindowsAzure.Storage.9.3.1\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+        <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System" />
+                        <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -116,12 +116,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionServices\CodeBehind\CodeBehindTestDynamicColumnsActionService.cs" />
-    <Compile Include="ActionServices\TestDynamicColumnsActionService.cs" />
+    <Compile Include="ActionServices\CodeBehind\CodeBehindReportService.cs" />
+    <Compile Include="ActionServices\ReportService.cs" />
     <Compile Include="AppSettingsService.cs" />
-    <Compile Include="Custom\DynamicColumn.cs" />
-    <Compile Include="Custom\DynamicData.cs" />
-    <Compile Include="Custom\PeriodExtensions.cs" />
+    <Compile Include="File\CodeBehind\CodeBehindEmployeesFileStorageSaveOptionsResolver.cs" />
+    <Compile Include="File\EmployeesFileStorageSaveOptionsResolver.cs" />
     <Compile Include="File\FileStorageSaveOptionsSwitcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\CommonResources.Designer.cs">
@@ -148,66 +147,67 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.WebAPI.Contracts\Northwind.WebAPI.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.WebAPI.Contracts\NorthWind.WebAPI.Contracts.csproj">
       <Project>{d3460f1a-d56e-4d69-ae87-050f54ebc01f}</Project>
-      <Name>Northwind.WebAPI.Contracts</Name>
+      <Name>NorthWind.WebAPI.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
-      <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>
+       <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>
       <Name>BusinessFramework.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Excel\BusinessFramework.Excel.csproj">
-      <Project>{E63B4895-C203-494F-97CC-10FD22646780}</Project>
+       <Project>{E63B4895-C203-494F-97CC-10FD22646780}</Project>
       <Name>BusinessFramework.Excel</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Utils\BusinessFramework.Utils.csproj">
-      <Project>{357D61AA-BDB3-4B93-8B70-9A04D016BE64}</Project>
+       <Project>{357D61AA-BDB3-4B93-8B70-9A04D016BE64}</Project>
       <Name>BusinessFramework.Utils</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI\BusinessFramework.WebAPI.csproj">
-      <Project>{741C0D65-29B5-447C-8515-87A769FCAD8A}</Project>
+       <Project>{741C0D65-29B5-447C-8515-87A769FCAD8A}</Project>
       <Name>BusinessFramework.WebAPI</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Common\BusinessFramework.WebAPI.Common.csproj">
-      <Project>{F11DCACF-B95A-441F-AE34-870EDDA7D5A8}</Project>
+       <Project>{F11DCACF-B95A-441F-AE34-870EDDA7D5A8}</Project>
       <Name>BusinessFramework.WebAPI.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Contracts\BusinessFramework.WebAPI.Contracts.csproj">
-      <Project>{F5AB7E34-8A40-49EF-816D-335B4C6A1A98}</Project>
+       <Project>{F5AB7E34-8A40-49EF-816D-335B4C6A1A98}</Project>
       <Name>BusinessFramework.WebAPI.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\..\CommonFramework\FutureTechnologies.DI.Contracts\FutureTechnologies.DI.Contracts.csproj">
-      <Project>{677E39DA-B58F-4C38-BCD2-6A26FF0AE49F}</Project>
+       <Project>{677E39DA-B58F-4C38-BCD2-6A26FF0AE49F}</Project>
       <Name>FutureTechnologies.DI.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportSystem\Modules\MSSQL.ReportModule\MSSQL.ReportModule.csproj">
-      <Project>{972E657A-9CB2-474A-AD0E-C4DF1739699F}</Project>
+       <Project>{972E657A-9CB2-474A-AD0E-C4DF1739699F}</Project>
       <Name>MSSQL.ReportModule</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central\ReportingFramework.Central.csproj">
-      <Project>{1CA29023-8602-4BB6-8782-A32565FA7B46}</Project>
+       <Project>{1CA29023-8602-4BB6-8782-A32565FA7B46}</Project>
       <Name>ReportingFramework.Central</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Contracts\ReportingFramework.Central.Contracts.csproj">
-      <Project>{D5AEFA5B-5336-4D00-A59C-D51381216270}</Project>
+       <Project>{D5AEFA5B-5336-4D00-A59C-D51381216270}</Project>
       <Name>ReportingFramework.Central.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Updater\ReportingFramework.Updater.csproj">
-      <Project>{4B72E55B-825E-4CC1-AD3E-E822419696A5}</Project>
+       <Project>{4B72E55B-825E-4CC1-AD3E-E822419696A5}</Project>
       <Name>ReportingFramework.Updater</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportingFramework.WebAPI\ReportingFramework.WebAPI.csproj">
-      <Project>{8EC2C2A4-EE97-41E3-AF1D-DA1B11D40D43}</Project>
+       <Project>{8EC2C2A4-EE97-41E3-AF1D-DA1B11D40D43}</Project>
       <Name>ReportingFramework.WebAPI</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Contracts\ReportSystem.Contracts.csproj">
-      <Project>{01E31E29-726D-4A73-8237-EB3EB0FCB3D7}</Project>
+       <Project>{01E31E29-726D-4A73-8237-EB3EB0FCB3D7}</Project>
       <Name>ReportSystem.Contracts</Name>
     </ProjectReference>
+
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\CommonResources.resx">

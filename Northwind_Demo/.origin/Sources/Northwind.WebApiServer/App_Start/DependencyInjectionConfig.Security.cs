@@ -3,13 +3,13 @@ using BusinessFramework.WebAPI.Security;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.Contracts.Security.Hash;
 using FutureTechnologies.DI.Contracts;
-using Northwind.WebApiServer.Security;
-using Northwind.WebAPI;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.Security;
-using Northwind.WebAPI.Security;
+using NorthWind.WebApiServer.Security;
+using NorthWind.WebAPI;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.Security;
+using NorthWind.WebAPI.Security;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     internal static partial class DependencyInjectionConfig
     {

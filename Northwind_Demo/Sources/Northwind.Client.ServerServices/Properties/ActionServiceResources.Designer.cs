@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Northwind.Client.ServerServices.Properties {
+namespace NorthWind.Client.ServerServices.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Northwind.Client.ServerServices.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.Client.ServerServices.Properties.ActionServiceResources", typeof(ActionServiceResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.Client.ServerServices.Properties.ActionServiceResources", typeof(ActionServiceResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,18 +63,54 @@ namespace Northwind.Client.ServerServices.Properties {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string TestDynamicColumnsActionService_GetTestData_ConfirmationMessage {
+        public static string ReportService_ServerPrintSimple_ConfirmationMessage {
             get {
-                return ResourceManager.GetString("TestDynamicColumnsActionService_GetTestData_ConfirmationMessage", resourceCulture);
+                return ResourceManager.GetString("ReportService_ServerPrintSimple_ConfirmationMessage", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string TestDynamicColumnsActionService_GetTestData_WaitMessage {
+        public static string ReportService_ServerPrintSimple_WaitMessage {
             get {
-                return ResourceManager.GetString("TestDynamicColumnsActionService_GetTestData_WaitMessage", resourceCulture);
+                return ResourceManager.GetString("ReportService_ServerPrintSimple_WaitMessage", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ReportService_ServerPrintWithParameter_ConfirmationMessage {
+            get {
+                return ResourceManager.GetString("ReportService_ServerPrintWithParameter_ConfirmationMessage", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ReportService_ServerPrintWithParameter_WaitMessage {
+            get {
+                return ResourceManager.GetString("ReportService_ServerPrintWithParameter_WaitMessage", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ReportService_ServerPrintWithForm_ConfirmationMessage {
+            get {
+                return ResourceManager.GetString("ReportService_ServerPrintWithForm_ConfirmationMessage", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ReportService_ServerPrintWithForm_WaitMessage {
+            get {
+                return ResourceManager.GetString("ReportService_ServerPrintWithForm_WaitMessage", resourceCulture);
             }
 		}
         

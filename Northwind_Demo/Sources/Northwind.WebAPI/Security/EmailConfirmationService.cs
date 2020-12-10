@@ -1,10 +1,10 @@
 ﻿using System.Net.Mail;
 using BusinessFramework.WebAPI.Contracts.Notifiers;
 using BusinessFramework.WebAPI.Contracts.Security;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Properties;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Properties;
 
-namespace Northwind.WebAPI.Security
+namespace NorthWind.WebAPI.Security
 {
     /// <summary>
     ///     Service for confirmation user emails

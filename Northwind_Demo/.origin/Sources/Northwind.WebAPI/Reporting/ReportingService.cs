@@ -8,9 +8,9 @@ using ReportingFramework.Central.Contracts.Engine;
 using ReportingFramework.Central.Contracts.Reports;
 using ReportingFramework.Central.Contracts.Spreadsheet.Engine;
 using ReportingFramework.Central.Spreadsheet;
-using Northwind.WebAPI.Contracts.Reporting;
+using NorthWind.WebAPI.Contracts.Reporting;
 
-namespace Northwind.WebAPI.Reporting
+namespace NorthWind.WebAPI.Reporting
 {
     /// <inheritdoc />
     public sealed class ReportingService : IReportingService

@@ -16,31 +16,31 @@ using BusinessFramework.Client.Contracts.Wizards;
 using BusinessFramework.Contracts;
 using BusinessFramework.Contracts.Actions;
 using BusinessFramework.Contracts.Reporting;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.ActionServices;
-using Northwind.Client.Services.Contracts.DomainModel;
-using Northwind.Common.Properties;
-using Northwind.Common.Wizards;
-using Northwind.Contracts.DataObjects;
-using Northwind.Contracts.Enums;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.ActionServices;
+using NorthWind.Client.Services.Contracts.DomainModel;
+using NorthWind.Common.Properties;
+using NorthWind.Common.Wizards;
+using NorthWind.Contracts.DataObjects;
+using NorthWind.Contracts.Enums;
 
 
-namespace Northwind.Common.Screens.CodeBehind
+namespace NorthWind.Common.Screens.CodeBehind
 {
     public abstract class CodeBehindCategoriesScreenViewModel : ScreenViewModel
     {
-        protected CodeBehindCategoriesScreenViewModel(IEntityManagementService entityManagementService, IQCategoriesCollectionManager qCategoriesCollectionManager, IQProductsCollectionManager qProductsCollectionManager, IReportViewer reportViewer, IScreenCommandFactory screenCommandFactory)
+        protected CodeBehindCategoriesScreenViewModel(ICategoryQueryCollectionManager categoryQueryCollectionManager, IEntityManagementService entityManagementService, IProductQueryCollectionManager productQueryCollectionManager, IReportViewer reportViewer, IScreenCommandFactory screenCommandFactory)
         {
+            CategoryQueryCollectionManager = categoryQueryCollectionManager;
             EntityManagementService = entityManagementService;
-            QCategoriesCollectionManager = qCategoriesCollectionManager;
-            QProductsCollectionManager = qProductsCollectionManager;
+            ProductQueryCollectionManager = productQueryCollectionManager;
             ReportViewer = reportViewer;
             ScreenCommandFactory = screenCommandFactory;
 
 	        //DataBlocks
-            QCategories = new MultiItemsScreenBlockViewModel<QCategories, int>("qCategories", GetqCategoriesData, QCategoriesCollectionManager, GetqCategoriesRowStyle);
+            QCategories = new MultiItemsScreenBlockViewModel<CategoryQuery, int>("qCategories", GetqCategoriesData, CategoryQueryCollectionManager, GetqCategoriesRowStyle);
 			QCategories.PropertyChanged += OnqCategoriesPropertyChanged;
-            QProducts = new MultiItemsScreenBlockViewModel<QProducts, int>("qProducts", GetqProductsData, QProductsCollectionManager, GetqProductsRowStyle);
+            QProducts = new MultiItemsScreenBlockViewModel<ProductQuery, int>("qProducts", GetqProductsData, ProductQueryCollectionManager, GetqProductsRowStyle);
 			QProducts.PropertyChanged += OnqProductsPropertyChanged;
             //Actions
             QCategoriesCreateNew1 = ScreenCommandFactory.CreateFunc("qCategoriesCreateNew1", DoQCategoriesCreateNew1, CanExecuteQCategoriesCreateNew1);
@@ -57,11 +57,11 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 
 		//Dependencies
+        protected ICategoryQueryCollectionManager CategoryQueryCollectionManager { get; private set; }
+
         protected IEntityManagementService EntityManagementService { get; private set; }
 
-        protected IQCategoriesCollectionManager QCategoriesCollectionManager { get; private set; }
-
-        protected IQProductsCollectionManager QProductsCollectionManager { get; private set; }
+        protected IProductQueryCollectionManager ProductQueryCollectionManager { get; private set; }
 
         protected IReportViewer ReportViewer { get; private set; }
 
@@ -69,8 +69,8 @@ namespace Northwind.Common.Screens.CodeBehind
 
 
 	    //DataBlocks
-        protected MultiItemsScreenBlockViewModel<QCategories, int> QCategories { get; private set; }
-        protected MultiItemsScreenBlockViewModel<QProducts, int> QProducts { get; private set; }
+        protected MultiItemsScreenBlockViewModel<CategoryQuery, int> QCategories { get; private set; }
+        protected MultiItemsScreenBlockViewModel<ProductQuery, int> QProducts { get; private set; }
         //Actions
         protected ScreenCommand QCategoriesCreateNew1 { get; private set; }
         protected ScreenCommand QCategoriesActionView1 { get; private set; }
@@ -166,13 +166,13 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 
         #region	Data Blocks
-        protected virtual IQueryable<QCategories> GetqCategoriesData(QuickFilter filter)
+        protected virtual IQueryable<CategoryQuery> GetqCategoriesData(QuickFilter filter)
         {
 
-            return QCategoriesCollectionManager.GetObjects(filter);
+            return CategoryQueryCollectionManager.GetObjects(filter);
         }
 
-        protected virtual IRowStyle GetqCategoriesRowStyle(QCategories qCategories)
+        protected virtual IRowStyle GetqCategoriesRowStyle(CategoryQuery categoryQuery)
         {
             return null;
         }
@@ -208,7 +208,7 @@ namespace Northwind.Common.Screens.CodeBehind
 			    QProductsCreateNew1.RaiseCanExecuteChanged();
 			}
         }
-        protected virtual IQueryable<QProducts> GetqProductsData(QuickFilter filter)
+        protected virtual IQueryable<ProductQuery> GetqProductsData(QuickFilter filter)
         {
             if(QCategories.ActiveItem == null)
 			{
@@ -216,10 +216,10 @@ namespace Northwind.Common.Screens.CodeBehind
 			}
             var cond1 = QCategories.ActiveItem.Id;
 
-            return QProductsCollectionManager.GetObjects(filter).Where(obj => obj.CategoryID == cond1);
+            return ProductQueryCollectionManager.GetObjects(filter).Where(obj => obj.CategoryID == cond1);
         }
 
-        protected virtual IRowStyle GetqProductsRowStyle(QProducts qProducts)
+        protected virtual IRowStyle GetqProductsRowStyle(ProductQuery productQuery)
         {
             return null;
         }
@@ -247,9 +247,9 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 		#endregion
 		#region	Actions
-        protected virtual WizardNewResult<Category> DoQCategoriesCreateNew1(ScreenActionCommand command)
+        protected virtual WizardNewResult<Categories> DoQCategoriesCreateNew1(ScreenActionCommand command)
         {
-            var result = EntityManagementService.New(DomainWizards.CategoriesWizard, DoQCategoriesCreateNew1_SetParameters, DoQCategoriesCreateNew1_SetDefaults);
+            var result = EntityManagementService.New(DomainWizards.CategoryWizard, DoQCategoriesCreateNew1_SetParameters, DoQCategoriesCreateNew1_SetDefaults);
             if (result.SaveToServerComplete)
             {
                 QCategories.RaiseDataChanged();
@@ -258,12 +258,12 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
         
-        protected virtual void DoQCategoriesCreateNew1_SetDefaults(CategoriesWizardParameters parameters, Category entity)
+        protected virtual void DoQCategoriesCreateNew1_SetDefaults(CategoryWizardParameters parameters, Categories entity)
         {
         }
         
           
-        protected virtual void DoQCategoriesCreateNew1_SetParameters(CategoriesWizardParameters parameters)
+        protected virtual void DoQCategoriesCreateNew1_SetParameters(CategoryWizardParameters parameters)
         {
         }
 
@@ -278,10 +278,10 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var key = QCategories.ActiveItem.Id;
             
-            EntityManagementService.View(DomainWizards.CategoriesWizard, key, DoQCategoriesActionView1_SetParameters);
+            EntityManagementService.View(DomainWizards.CategoryWizard, key, DoQCategoriesActionView1_SetParameters);
         }
           
-        protected virtual void DoQCategoriesActionView1_SetParameters(CategoriesWizardParameters parameters)
+        protected virtual void DoQCategoriesActionView1_SetParameters(CategoryWizardParameters parameters)
         {
         }
 
@@ -295,11 +295,11 @@ namespace Northwind.Common.Screens.CodeBehind
            return true;
         }
 
-        protected virtual WizardEditResult<Category> DoQCategoriesEdit1(ScreenActionCommand command)
+        protected virtual WizardEditResult<Categories> DoQCategoriesEdit1(ScreenActionCommand command)
         {
         
             var key = QCategories.ActiveItem.Id;
-            var result = EntityManagementService.Edit(DomainWizards.CategoriesWizard, key, DoQCategoriesEdit1_SetParameters);
+            var result = EntityManagementService.Edit(DomainWizards.CategoryWizard, key, DoQCategoriesEdit1_SetParameters);
             if (result.SaveToServerComplete)
             {
                 QCategories.UpdateActiveObject();
@@ -308,7 +308,7 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
           
-        protected virtual void DoQCategoriesEdit1_SetParameters(CategoriesWizardParameters parameters)
+        protected virtual void DoQCategoriesEdit1_SetParameters(CategoryWizardParameters parameters)
         {
         }
 
@@ -327,7 +327,7 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var keys = QCategories.SelectedItems.Select(obj => obj.Id).ToArray();
             
-            var result = EntityManagementService.Delete<Category, int>(keys);
+            var result = EntityManagementService.Delete<Categories, int>(keys);
             if(result)
             {
                 QCategories.RemoveSelectedObjects();
@@ -376,9 +376,9 @@ namespace Northwind.Common.Screens.CodeBehind
            return true;
         }
 
-        protected virtual WizardNewResult<Product> DoQProductsCreateNew1(ScreenActionCommand command)
+        protected virtual WizardNewResult<Products> DoQProductsCreateNew1(ScreenActionCommand command)
         {
-            var result = EntityManagementService.New(DomainWizards.ProductsWizard, DoQProductsCreateNew1_SetParameters, DoQProductsCreateNew1_SetDefaults);
+            var result = EntityManagementService.New(DomainWizards.ProductWizard, DoQProductsCreateNew1_SetParameters, DoQProductsCreateNew1_SetDefaults);
             if (result.SaveToServerComplete)
             {
                 QProducts.RaiseDataChanged();
@@ -387,13 +387,13 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
         
-        protected virtual void DoQProductsCreateNew1_SetDefaults(ProductsWizardParameters parameters, Product entity)
+        protected virtual void DoQProductsCreateNew1_SetDefaults(ProductWizardParameters parameters, Products entity)
         {
             entity.CategoryID = QCategories.ActiveItem.Id;
         }
         
           
-        protected virtual void DoQProductsCreateNew1_SetParameters(ProductsWizardParameters parameters)
+        protected virtual void DoQProductsCreateNew1_SetParameters(ProductWizardParameters parameters)
         {
         }
 
@@ -412,10 +412,10 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var key = QProducts.ActiveItem.Id;
             
-            EntityManagementService.View(DomainWizards.ProductsWizard, key, DoQProductsActionView1_SetParameters);
+            EntityManagementService.View(DomainWizards.ProductWizard, key, DoQProductsActionView1_SetParameters);
         }
           
-        protected virtual void DoQProductsActionView1_SetParameters(ProductsWizardParameters parameters)
+        protected virtual void DoQProductsActionView1_SetParameters(ProductWizardParameters parameters)
         {
         }
 
@@ -429,11 +429,11 @@ namespace Northwind.Common.Screens.CodeBehind
            return true;
         }
 
-        protected virtual WizardEditResult<Product> DoQProductsEdit1(ScreenActionCommand command)
+        protected virtual WizardEditResult<Products> DoQProductsEdit1(ScreenActionCommand command)
         {
         
             var key = QProducts.ActiveItem.Id;
-            var result = EntityManagementService.Edit(DomainWizards.ProductsWizard, key, DoQProductsEdit1_SetParameters);
+            var result = EntityManagementService.Edit(DomainWizards.ProductWizard, key, DoQProductsEdit1_SetParameters);
             if (result.SaveToServerComplete)
             {
                 QProducts.UpdateActiveObject();
@@ -442,7 +442,7 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
           
-        protected virtual void DoQProductsEdit1_SetParameters(ProductsWizardParameters parameters)
+        protected virtual void DoQProductsEdit1_SetParameters(ProductWizardParameters parameters)
         {
         }
 
@@ -461,7 +461,7 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var keys = QProducts.SelectedItems.Select(obj => obj.Id).ToArray();
             
-            var result = EntityManagementService.Delete<Product, int>(keys);
+            var result = EntityManagementService.Delete<Products, int>(keys);
             if(result)
             {
                 QProducts.RemoveSelectedObjects();

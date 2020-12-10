@@ -15,27 +15,27 @@ using BusinessFramework.Client.Contracts.Wizards;
 using BusinessFramework.Contracts;
 using BusinessFramework.Contracts.Actions;
 using BusinessFramework.Contracts.Reporting;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.ActionServices;
-using Northwind.Client.Services.Contracts.DomainModel;
-using Northwind.Common.Properties;
-using Northwind.Common.Wizards;
-using Northwind.Contracts.DataObjects;
-using Northwind.Contracts.Enums;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.ActionServices;
+using NorthWind.Client.Services.Contracts.DomainModel;
+using NorthWind.Common.Properties;
+using NorthWind.Common.Wizards;
+using NorthWind.Contracts.DataObjects;
+using NorthWind.Contracts.Enums;
 
 
-namespace Northwind.Common.Screens.CodeBehind
+namespace NorthWind.Common.Screens.CodeBehind
 {
     public abstract class CodeBehindCustomersScreenViewModel : ScreenViewModel
     {
-        protected CodeBehindCustomersScreenViewModel(IEntityManagementService entityManagementService, IQCustomersCollectionManager qCustomersCollectionManager, IScreenCommandFactory screenCommandFactory)
+        protected CodeBehindCustomersScreenViewModel(ICustomerQueryCollectionManager customerQueryCollectionManager, IEntityManagementService entityManagementService, IScreenCommandFactory screenCommandFactory)
         {
+            CustomerQueryCollectionManager = customerQueryCollectionManager;
             EntityManagementService = entityManagementService;
-            QCustomersCollectionManager = qCustomersCollectionManager;
             ScreenCommandFactory = screenCommandFactory;
 
 	        //DataBlocks
-            QCustomers = new MultiItemsScreenBlockViewModel<QCustomers, int>("qCustomers", GetqCustomersData, QCustomersCollectionManager, GetqCustomersRowStyle);
+            QCustomers = new MultiItemsScreenBlockViewModel<CustomerQuery, int>("qCustomers", GetqCustomersData, CustomerQueryCollectionManager, GetqCustomersRowStyle);
 			QCustomers.PropertyChanged += OnqCustomersPropertyChanged;
             //Actions
             QCustomersWizardCreateNew = ScreenCommandFactory.CreateFunc("qCustomersWizardCreateNew", DoQCustomersWizardCreateNew, CanExecuteQCustomersWizardCreateNew);
@@ -46,15 +46,15 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 
 		//Dependencies
-        protected IEntityManagementService EntityManagementService { get; private set; }
+        protected ICustomerQueryCollectionManager CustomerQueryCollectionManager { get; private set; }
 
-        protected IQCustomersCollectionManager QCustomersCollectionManager { get; private set; }
+        protected IEntityManagementService EntityManagementService { get; private set; }
 
         protected IScreenCommandFactory ScreenCommandFactory { get; private set; }
 
 
 	    //DataBlocks
-        protected MultiItemsScreenBlockViewModel<QCustomers, int> QCustomers { get; private set; }
+        protected MultiItemsScreenBlockViewModel<CustomerQuery, int> QCustomers { get; private set; }
         //Actions
         protected ScreenCommand QCustomersWizardCreateNew { get; private set; }
         protected ScreenCommand QCustomersWizardView { get; private set; }
@@ -123,13 +123,13 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 
         #region	Data Blocks
-        protected virtual IQueryable<QCustomers> GetqCustomersData(QuickFilter filter)
+        protected virtual IQueryable<CustomerQuery> GetqCustomersData(QuickFilter filter)
         {
 
-            return QCustomersCollectionManager.GetObjects(filter);
+            return CustomerQueryCollectionManager.GetObjects(filter);
         }
 
-        protected virtual IRowStyle GetqCustomersRowStyle(QCustomers qCustomers)
+        protected virtual IRowStyle GetqCustomersRowStyle(CustomerQuery customerQuery)
         {
             return null;
         }
@@ -157,9 +157,9 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 		#endregion
 		#region	Actions
-        protected virtual WizardNewResult<Customer> DoQCustomersWizardCreateNew(ScreenActionCommand command)
+        protected virtual WizardNewResult<Customers> DoQCustomersWizardCreateNew(ScreenActionCommand command)
         {
-            var result = EntityManagementService.New(DomainWizards.CustomersWizard, DoQCustomersWizardCreateNew_SetParameters, DoQCustomersWizardCreateNew_SetDefaults);
+            var result = EntityManagementService.New(DomainWizards.CustomerWizard, DoQCustomersWizardCreateNew_SetParameters, DoQCustomersWizardCreateNew_SetDefaults);
             if (result.SaveToServerComplete)
             {
                 QCustomers.RaiseDataChanged();
@@ -168,12 +168,12 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
         
-        protected virtual void DoQCustomersWizardCreateNew_SetDefaults(CustomersWizardParameters parameters, Customer entity)
+        protected virtual void DoQCustomersWizardCreateNew_SetDefaults(CustomerWizardParameters parameters, Customers entity)
         {
         }
         
           
-        protected virtual void DoQCustomersWizardCreateNew_SetParameters(CustomersWizardParameters parameters)
+        protected virtual void DoQCustomersWizardCreateNew_SetParameters(CustomerWizardParameters parameters)
         {
         }
 
@@ -188,10 +188,10 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var key = QCustomers.ActiveItem.Id;
             
-            EntityManagementService.View(DomainWizards.CustomersWizard, key, DoQCustomersWizardView_SetParameters);
+            EntityManagementService.View(DomainWizards.CustomerWizard, key, DoQCustomersWizardView_SetParameters);
         }
           
-        protected virtual void DoQCustomersWizardView_SetParameters(CustomersWizardParameters parameters)
+        protected virtual void DoQCustomersWizardView_SetParameters(CustomerWizardParameters parameters)
         {
         }
 
@@ -205,11 +205,11 @@ namespace Northwind.Common.Screens.CodeBehind
            return true;
         }
 
-        protected virtual WizardEditResult<Customer> DoQCustomersWizardEdit(ScreenActionCommand command)
+        protected virtual WizardEditResult<Customers> DoQCustomersWizardEdit(ScreenActionCommand command)
         {
         
             var key = QCustomers.ActiveItem.Id;
-            var result = EntityManagementService.Edit(DomainWizards.CustomersWizard, key, DoQCustomersWizardEdit_SetParameters);
+            var result = EntityManagementService.Edit(DomainWizards.CustomerWizard, key, DoQCustomersWizardEdit_SetParameters);
             if (result.SaveToServerComplete)
             {
                 QCustomers.UpdateActiveObject();
@@ -218,7 +218,7 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
           
-        protected virtual void DoQCustomersWizardEdit_SetParameters(CustomersWizardParameters parameters)
+        protected virtual void DoQCustomersWizardEdit_SetParameters(CustomerWizardParameters parameters)
         {
         }
 
@@ -237,7 +237,7 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var keys = QCustomers.SelectedItems.Select(obj => obj.Id).ToArray();
             
-            var result = EntityManagementService.Delete<Customer, int>(keys);
+            var result = EntityManagementService.Delete<Customers, int>(keys);
             if(result)
             {
                 QCustomers.RemoveSelectedObjects();

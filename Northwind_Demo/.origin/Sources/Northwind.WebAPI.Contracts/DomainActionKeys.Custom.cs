@@ -1,4 +1,4 @@
-﻿namespace Northwind.WebAPI.Contracts
+﻿namespace NorthWind.WebAPI.Contracts
 {
     /// <summary>
     ///     Domain actions' keys
@@ -7,7 +7,9 @@
     {
         public static class Custom
         {
-             public const int TestDynamicColumnsActionService_GetTestData = 445;
+             public const int ReportService_ServerPrintSimple = 477;
+             public const int ReportService_ServerPrintWithParameter = 478;
+             public const int ReportService_ServerPrintWithForm = 479;
         }
     }
 }

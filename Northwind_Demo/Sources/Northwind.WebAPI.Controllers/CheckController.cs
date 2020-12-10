@@ -7,12 +7,12 @@ using BusinessFramework.WebAPI.Common.Controllers;
 using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.Contracts.ServerStatus;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
 
 
-namespace Northwind.WebAPI.Controllers
+namespace NorthWind.WebAPI.Controllers
 {
     /// <summary>
     ///     Check connection and get version of server
@@ -67,7 +67,7 @@ namespace Northwind.WebAPI.Controllers
 
                 case "scripts":
                     SysInfo sysInfo = _sysInfoRepository.Set().First();
-                    return _serverStatusService.Scripts(new Version("1.0.0.17"), new DateTime(2020, 12, 2, 12, 54, 35), () => (new Version(sysInfo.SystemVersion), sysInfo.LastInitialization));
+                    return _serverStatusService.Scripts(new Version("1.0.0.17"), new DateTime(2020, 12, 9, 8, 40, 47), () => (new Version(sysInfo.SystemVersion), sysInfo.LastInitialization));
 
                 case "filestorages":
                     return _serverStatusService.FileStorages();

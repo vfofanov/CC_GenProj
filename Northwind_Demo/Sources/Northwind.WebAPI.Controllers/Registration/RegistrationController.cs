@@ -9,12 +9,12 @@ using System.Net;
 using System.Net.Http;
 using BusinessFramework.WebAPI.Contracts.Services;
 using Newtonsoft.Json.Linq;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
-using Northwind.WebAPI.Contracts.Security;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
+using NorthWind.WebAPI.Contracts.Security;
+using NorthWind.WebAPI.Controllers.Properties;
 
-namespace Northwind.WebAPI.Controllers.Registration
+namespace NorthWind.WebAPI.Controllers.Registration
 {
     /// <summary>
     /// Registration controller

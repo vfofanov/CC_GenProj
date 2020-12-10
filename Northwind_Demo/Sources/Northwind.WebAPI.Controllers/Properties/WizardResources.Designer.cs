@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Northwind.WebAPI.Controllers.Properties {
+namespace NorthWind.WebAPI.Controllers.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Northwind.WebAPI.Controllers.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.WebAPI.Controllers.Properties.WizardResources", typeof(WizardResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.WebAPI.Controllers.Properties.WizardResources", typeof(WizardResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,918 +63,1116 @@ namespace Northwind.WebAPI.Controllers.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Product Details .
         /// </summary>
-        public static string ProductsWizard_Page1 {
+        public static string ProductWizard_Page1 {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add product details.
         /// </summary>
-        public static string ProductsWizard_Page1_BannerTitle {
+        public static string ProductWizard_Page1_BannerTitle {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Product Details .
         /// </summary>
-        public static string ProductsWizard_Page1_BannerDescription {
+        public static string ProductWizard_Page1_BannerDescription {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Product Name.
         /// </summary>
-        public static string ProductsWizard_Page1_ProductName_DisplayName {
+        public static string ProductWizard_Page1_ProductName_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_ProductName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_ProductName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Category.
         /// </summary>
-        public static string ProductsWizard_Page1_CategoryID_DisplayName {
+        public static string ProductWizard_Page1_CategoryID_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_CategoryID_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_CategoryID_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Quantity Per Unit.
         /// </summary>
-        public static string ProductsWizard_Page1_QuantityPerUnit_DisplayName {
+        public static string ProductWizard_Page1_QuantityPerUnit_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_QuantityPerUnit_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_QuantityPerUnit_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Unit Price.
         /// </summary>
-        public static string ProductsWizard_Page1_UnitPrice_DisplayName {
+        public static string ProductWizard_Page1_UnitPrice_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_UnitPrice_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_UnitPrice_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Units In Stock.
         /// </summary>
-        public static string ProductsWizard_Page1_UnitsInStock_DisplayName {
+        public static string ProductWizard_Page1_UnitsInStock_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_UnitsInStock_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_UnitsInStock_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Units On Order.
         /// </summary>
-        public static string ProductsWizard_Page1_UnitsOnOrder_DisplayName {
+        public static string ProductWizard_Page1_UnitsOnOrder_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_UnitsOnOrder_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_UnitsOnOrder_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Reorder Level.
         /// </summary>
-        public static string ProductsWizard_Page1_ReorderLevel_DisplayName {
+        public static string ProductWizard_Page1_ReorderLevel_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_ReorderLevel_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_ReorderLevel_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Discontinued.
         /// </summary>
-        public static string ProductsWizard_Page1_Discontinued_DisplayName {
+        public static string ProductWizard_Page1_Discontinued_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_Discontinued_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_Discontinued_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Supplier.
         /// </summary>
-        public static string ProductsWizard_Page1_SupplierID_DisplayName {
+        public static string ProductWizard_Page1_SupplierID_DisplayName {
             get {
-                return ResourceManager.GetString("ProductsWizard_Page1_SupplierID_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ProductWizard_Page1_SupplierID_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Main Info.
         /// </summary>
-        public static string CustomersWizard_Page1 {
+        public static string CustomerWizard_Page1 {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page1", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page1", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add customer main info.
         /// </summary>
-        public static string CustomersWizard_Page1_BannerTitle {
+        public static string CustomerWizard_Page1_BannerTitle {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page1_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page1_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Customer Main Info.
         /// </summary>
-        public static string CustomersWizard_Page1_BannerDescription {
+        public static string CustomerWizard_Page1_BannerDescription {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page1_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page1_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Company Name.
         /// </summary>
-        public static string CustomersWizard_Page1_CompanyName_DisplayName {
+        public static string CustomerWizard_Page1_CompanyName_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page1_CompanyName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page1_CompanyName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Contact Name.
         /// </summary>
-        public static string CustomersWizard_Page1_ContactName_DisplayName {
+        public static string CustomerWizard_Page1_ContactName_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page1_ContactName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page1_ContactName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Contact Title.
         /// </summary>
-        public static string CustomersWizard_Page1_ContactTitle_DisplayName {
+        public static string CustomerWizard_Page1_ContactTitle_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page1_ContactTitle_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page1_ContactTitle_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Phone.
         /// </summary>
-        public static string CustomersWizard_Page1_Phone_DisplayName {
+        public static string CustomerWizard_Page1_Phone_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page1_Phone_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page1_Phone_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Fax.
         /// </summary>
-        public static string CustomersWizard_Page1_Fax_DisplayName {
+        public static string CustomerWizard_Page1_Fax_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page1_Fax_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page1_Fax_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
-        public static string CustomersWizard_Page2 {
+        public static string CustomerWizard_Page2 {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page2", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page2", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add customer address.
         /// </summary>
-        public static string CustomersWizard_Page2_BannerTitle {
+        public static string CustomerWizard_Page2_BannerTitle {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page2_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page2_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Customer Address.
         /// </summary>
-        public static string CustomersWizard_Page2_BannerDescription {
+        public static string CustomerWizard_Page2_BannerDescription {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page2_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page2_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
-        public static string CustomersWizard_Page2_Address_DisplayName {
+        public static string CustomerWizard_Page2_Address_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page2_Address_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page2_Address_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to City.
         /// </summary>
-        public static string CustomersWizard_Page2_City_DisplayName {
+        public static string CustomerWizard_Page2_City_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page2_City_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page2_City_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Region.
         /// </summary>
-        public static string CustomersWizard_Page2_Region_DisplayName {
+        public static string CustomerWizard_Page2_Region_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page2_Region_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page2_Region_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Postal Code.
         /// </summary>
-        public static string CustomersWizard_Page2_PostalCode_DisplayName {
+        public static string CustomerWizard_Page2_PostalCode_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page2_PostalCode_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page2_PostalCode_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Country.
         /// </summary>
-        public static string CustomersWizard_Page2_Country_DisplayName {
+        public static string CustomerWizard_Page2_Country_DisplayName {
             get {
-                return ResourceManager.GetString("CustomersWizard_Page2_Country_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CustomerWizard_Page2_Country_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Main Info.
         /// </summary>
-        public static string EmployeesWizard_Page1 {
+        public static string EmployeeWizard_Page1 {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add empolyee main info.
         /// </summary>
-        public static string EmployeesWizard_Page1_BannerTitle {
+        public static string EmployeeWizard_Page1_BannerTitle {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Employee Main Info.
         /// </summary>
-        public static string EmployeesWizard_Page1_BannerDescription {
+        public static string EmployeeWizard_Page1_BannerDescription {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Last Name.
         /// </summary>
-        public static string EmployeesWizard_Page1_LastName_DisplayName {
+        public static string EmployeeWizard_Page1_LastName_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_LastName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_LastName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
-        public static string EmployeesWizard_Page1_FirstName_DisplayName {
+        public static string EmployeeWizard_Page1_FirstName_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_FirstName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_FirstName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Title.
         /// </summary>
-        public static string EmployeesWizard_Page1_Title_DisplayName {
+        public static string EmployeeWizard_Page1_Title_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_Title_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_Title_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Title Of Courtesy.
         /// </summary>
-        public static string EmployeesWizard_Page1_TitleOfCourtesy_DisplayName {
+        public static string EmployeeWizard_Page1_TitleOfCourtesy_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_TitleOfCourtesy_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_TitleOfCourtesy_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Birth Date.
         /// </summary>
-        public static string EmployeesWizard_Page1_BirthDate_DisplayName {
+        public static string EmployeeWizard_Page1_BirthDate_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_BirthDate_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_BirthDate_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Hire Date.
         /// </summary>
-        public static string EmployeesWizard_Page1_HireDate_DisplayName {
+        public static string EmployeeWizard_Page1_HireDate_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_HireDate_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_HireDate_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Photo.
         /// </summary>
-        public static string EmployeesWizard_Page1_Photo_DisplayName {
+        public static string EmployeeWizard_Page1_Photo_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_Photo_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_Photo_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Notes.
         /// </summary>
-        public static string EmployeesWizard_Page1_Notes_DisplayName {
+        public static string EmployeeWizard_Page1_Notes_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page1_Notes_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page1_Notes_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Document scan file.
+        /// </summary>
+        public static string EmployeeWizard_Page1_DocumentScanFileId_DisplayName {
+            get {
+                return ResourceManager.GetString("EmployeeWizard_Page1_DocumentScanFileId_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
-        public static string EmployeesWizard_Page2 {
+        public static string EmployeeWizard_Page2 {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add employee address.
         /// </summary>
-        public static string EmployeesWizard_Page2_BannerTitle {
+        public static string EmployeeWizard_Page2_BannerTitle {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Employee Address.
         /// </summary>
-        public static string EmployeesWizard_Page2_BannerDescription {
+        public static string EmployeeWizard_Page2_BannerDescription {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
-        public static string EmployeesWizard_Page2_Address_DisplayName {
+        public static string EmployeeWizard_Page2_Address_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2_Address_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2_Address_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to City.
         /// </summary>
-        public static string EmployeesWizard_Page2_City_DisplayName {
+        public static string EmployeeWizard_Page2_City_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2_City_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2_City_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Region.
         /// </summary>
-        public static string EmployeesWizard_Page2_Region_DisplayName {
+        public static string EmployeeWizard_Page2_Region_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2_Region_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2_Region_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Postal Code.
         /// </summary>
-        public static string EmployeesWizard_Page2_PostalCode_DisplayName {
+        public static string EmployeeWizard_Page2_PostalCode_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2_PostalCode_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2_PostalCode_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Country.
         /// </summary>
-        public static string EmployeesWizard_Page2_Country_DisplayName {
+        public static string EmployeeWizard_Page2_Country_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2_Country_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2_Country_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Home Phone.
         /// </summary>
-        public static string EmployeesWizard_Page2_HomePhone_DisplayName {
+        public static string EmployeeWizard_Page2_HomePhone_DisplayName {
             get {
-                return ResourceManager.GetString("EmployeesWizard_Page2_HomePhone_DisplayName", resourceCulture);
+                return ResourceManager.GetString("EmployeeWizard_Page2_HomePhone_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Page -1.
         /// </summary>
-        public static string ShippersWizard_Page1 {
+        public static string ShipperWizard_Page1 {
             get {
-                return ResourceManager.GetString("ShippersWizard_Page1", resourceCulture);
+                return ResourceManager.GetString("ShipperWizard_Page1", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add shipper details.
         /// </summary>
-        public static string ShippersWizard_Page1_BannerTitle {
+        public static string ShipperWizard_Page1_BannerTitle {
             get {
-                return ResourceManager.GetString("ShippersWizard_Page1_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("ShipperWizard_Page1_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Shipper Details.
         /// </summary>
-        public static string ShippersWizard_Page1_BannerDescription {
+        public static string ShipperWizard_Page1_BannerDescription {
             get {
-                return ResourceManager.GetString("ShippersWizard_Page1_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("ShipperWizard_Page1_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Company Name.
         /// </summary>
-        public static string ShippersWizard_Page1_CompanyName_DisplayName {
+        public static string ShipperWizard_Page1_CompanyName_DisplayName {
             get {
-                return ResourceManager.GetString("ShippersWizard_Page1_CompanyName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ShipperWizard_Page1_CompanyName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Phone.
         /// </summary>
-        public static string ShippersWizard_Page1_Phone_DisplayName {
+        public static string ShipperWizard_Page1_Phone_DisplayName {
             get {
-                return ResourceManager.GetString("ShippersWizard_Page1_Phone_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ShipperWizard_Page1_Phone_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Page -1.
         /// </summary>
-        public static string OrderDetailsWizard_Page1 {
+        public static string OrderDetailWizard_Page1 {
             get {
-                return ResourceManager.GetString("OrderDetailsWizard_Page1", resourceCulture);
+                return ResourceManager.GetString("OrderDetailWizard_Page1", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add order product info.
         /// </summary>
-        public static string OrderDetailsWizard_Page1_BannerTitle {
+        public static string OrderDetailWizard_Page1_BannerTitle {
             get {
-                return ResourceManager.GetString("OrderDetailsWizard_Page1_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("OrderDetailWizard_Page1_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Order Product Info.
         /// </summary>
-        public static string OrderDetailsWizard_Page1_BannerDescription {
+        public static string OrderDetailWizard_Page1_BannerDescription {
             get {
-                return ResourceManager.GetString("OrderDetailsWizard_Page1_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("OrderDetailWizard_Page1_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Product Name.
         /// </summary>
-        public static string OrderDetailsWizard_Page1_ProductID_DisplayName {
+        public static string OrderDetailWizard_Page1_ProductID_DisplayName {
             get {
-                return ResourceManager.GetString("OrderDetailsWizard_Page1_ProductID_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderDetailWizard_Page1_ProductID_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Unit Price.
         /// </summary>
-        public static string OrderDetailsWizard_Page1_UnitPrice_DisplayName {
+        public static string OrderDetailWizard_Page1_UnitPrice_DisplayName {
             get {
-                return ResourceManager.GetString("OrderDetailsWizard_Page1_UnitPrice_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderDetailWizard_Page1_UnitPrice_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Quantity.
         /// </summary>
-        public static string OrderDetailsWizard_Page1_Quantity_DisplayName {
+        public static string OrderDetailWizard_Page1_Quantity_DisplayName {
             get {
-                return ResourceManager.GetString("OrderDetailsWizard_Page1_Quantity_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderDetailWizard_Page1_Quantity_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Discount, %.
         /// </summary>
-        public static string OrderDetailsWizard_Page1_Discount_DisplayName {
+        public static string OrderDetailWizard_Page1_Discount_DisplayName {
             get {
-                return ResourceManager.GetString("OrderDetailsWizard_Page1_Discount_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderDetailWizard_Page1_Discount_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Order Details.
         /// </summary>
-        public static string OrdersWizard_Page1 {
+        public static string OrderWizard_Page1 {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page1", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page1", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add order details.
         /// </summary>
-        public static string OrdersWizard_Page1_BannerTitle {
+        public static string OrderWizard_Page1_BannerTitle {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page1_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page1_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Order Details.
         /// </summary>
-        public static string OrdersWizard_Page1_BannerDescription {
+        public static string OrderWizard_Page1_BannerDescription {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page1_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page1_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Order Date.
         /// </summary>
-        public static string OrdersWizard_Page1_OrderDate_DisplayName {
+        public static string OrderWizard_Page1_OrderDate_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page1_OrderDate_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page1_OrderDate_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Customer Company Name.
         /// </summary>
-        public static string OrdersWizard_Page1_CustomerID_DisplayName {
+        public static string OrderWizard_Page1_CustomerID_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page1_CustomerID_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page1_CustomerID_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Employee.
         /// </summary>
-        public static string OrdersWizard_Page1_EmployeeID_DisplayName {
+        public static string OrderWizard_Page1_EmployeeID_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page1_EmployeeID_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page1_EmployeeID_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required Date.
         /// </summary>
-        public static string OrdersWizard_Page1_RequiredDate_DisplayName {
+        public static string OrderWizard_Page1_RequiredDate_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page1_RequiredDate_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page1_RequiredDate_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Order Shipping Info.
         /// </summary>
-        public static string OrdersWizard_Page2 {
+        public static string OrderWizard_Page2 {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add order shipping info.
         /// </summary>
-        public static string OrdersWizard_Page2_BannerTitle {
+        public static string OrderWizard_Page2_BannerTitle {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Order Shipping Info.
         /// </summary>
-        public static string OrdersWizard_Page2_BannerDescription {
+        public static string OrderWizard_Page2_BannerDescription {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Shipper Company Name.
         /// </summary>
-        public static string OrdersWizard_Page2_ShipVia_DisplayName {
+        public static string OrderWizard_Page2_ShipVia_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_ShipVia_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_ShipVia_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Shipped Date.
         /// </summary>
-        public static string OrdersWizard_Page2_ShippedDate_DisplayName {
+        public static string OrderWizard_Page2_ShippedDate_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_ShippedDate_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_ShippedDate_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Freight.
         /// </summary>
-        public static string OrdersWizard_Page2_Freight_DisplayName {
+        public static string OrderWizard_Page2_Freight_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_Freight_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_Freight_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Ship Name.
         /// </summary>
-        public static string OrdersWizard_Page2_ShipName_DisplayName {
+        public static string OrderWizard_Page2_ShipName_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_ShipName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_ShipName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Ship Address.
         /// </summary>
-        public static string OrdersWizard_Page2_ShipAddress_DisplayName {
+        public static string OrderWizard_Page2_ShipAddress_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_ShipAddress_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_ShipAddress_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Ship City.
         /// </summary>
-        public static string OrdersWizard_Page2_ShipCity_DisplayName {
+        public static string OrderWizard_Page2_ShipCity_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_ShipCity_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_ShipCity_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Ship Region.
         /// </summary>
-        public static string OrdersWizard_Page2_ShipRegion_DisplayName {
+        public static string OrderWizard_Page2_ShipRegion_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_ShipRegion_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_ShipRegion_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Ship Postal Code.
         /// </summary>
-        public static string OrdersWizard_Page2_ShipPostalCode_DisplayName {
+        public static string OrderWizard_Page2_ShipPostalCode_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_ShipPostalCode_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_ShipPostalCode_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Ship Country.
         /// </summary>
-        public static string OrdersWizard_Page2_ShipCountry_DisplayName {
+        public static string OrderWizard_Page2_ShipCountry_DisplayName {
             get {
-                return ResourceManager.GetString("OrdersWizard_Page2_ShipCountry_DisplayName", resourceCulture);
+                return ResourceManager.GetString("OrderWizard_Page2_ShipCountry_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Category Details.
         /// </summary>
-        public static string CategoriesWizard_Page1 {
+        public static string CategoryWizard_Page1 {
             get {
-                return ResourceManager.GetString("CategoriesWizard_Page1", resourceCulture);
+                return ResourceManager.GetString("CategoryWizard_Page1", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add category details .
         /// </summary>
-        public static string CategoriesWizard_Page1_BannerTitle {
+        public static string CategoryWizard_Page1_BannerTitle {
             get {
-                return ResourceManager.GetString("CategoriesWizard_Page1_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("CategoryWizard_Page1_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Category Details.
         /// </summary>
-        public static string CategoriesWizard_Page1_BannerDescription {
+        public static string CategoryWizard_Page1_BannerDescription {
             get {
-                return ResourceManager.GetString("CategoriesWizard_Page1_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("CategoryWizard_Page1_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Category Name.
         /// </summary>
-        public static string CategoriesWizard_Page1_CategoryName_DisplayName {
+        public static string CategoryWizard_Page1_CategoryName_DisplayName {
             get {
-                return ResourceManager.GetString("CategoriesWizard_Page1_CategoryName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CategoryWizard_Page1_CategoryName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
-        public static string CategoriesWizard_Page1_Description_DisplayName {
+        public static string CategoryWizard_Page1_Description_DisplayName {
             get {
-                return ResourceManager.GetString("CategoriesWizard_Page1_Description_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CategoryWizard_Page1_Description_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Picture.
         /// </summary>
-        public static string CategoriesWizard_Page1_Picture_DisplayName {
+        public static string CategoryWizard_Page1_Picture_DisplayName {
             get {
-                return ResourceManager.GetString("CategoriesWizard_Page1_Picture_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CategoryWizard_Page1_Picture_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Supplier Details.
         /// </summary>
-        public static string SuppliersWizard_Page1 {
+        public static string SupplierWizard_Page1 {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page1", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page1", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add supplier details.
         /// </summary>
-        public static string SuppliersWizard_Page1_BannerTitle {
+        public static string SupplierWizard_Page1_BannerTitle {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page1_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page1_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Supplier Details.
         /// </summary>
-        public static string SuppliersWizard_Page1_BannerDescription {
+        public static string SupplierWizard_Page1_BannerDescription {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page1_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page1_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Company Name.
         /// </summary>
-        public static string SuppliersWizard_Page1_CompanyName_DisplayName {
+        public static string SupplierWizard_Page1_CompanyName_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page1_CompanyName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page1_CompanyName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Contact Name.
         /// </summary>
-        public static string SuppliersWizard_Page1_ContactName_DisplayName {
+        public static string SupplierWizard_Page1_ContactName_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page1_ContactName_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page1_ContactName_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Contact Title.
         /// </summary>
-        public static string SuppliersWizard_Page1_ContactTitle_DisplayName {
+        public static string SupplierWizard_Page1_ContactTitle_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page1_ContactTitle_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page1_ContactTitle_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Supplier Details.
         /// </summary>
-        public static string SuppliersWizard_Page2 {
+        public static string SupplierWizard_Page2 {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Please add supplier details.
         /// </summary>
-        public static string SuppliersWizard_Page2_BannerTitle {
+        public static string SupplierWizard_Page2_BannerTitle {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_BannerTitle", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_BannerTitle", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Supplier Details.
         /// </summary>
-        public static string SuppliersWizard_Page2_BannerDescription {
+        public static string SupplierWizard_Page2_BannerDescription {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_BannerDescription", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_BannerDescription", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
-        public static string SuppliersWizard_Page2_Address_DisplayName {
+        public static string SupplierWizard_Page2_Address_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_Address_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_Address_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to City.
         /// </summary>
-        public static string SuppliersWizard_Page2_City_DisplayName {
+        public static string SupplierWizard_Page2_City_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_City_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_City_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Country.
         /// </summary>
-        public static string SuppliersWizard_Page2_Country_DisplayName {
+        public static string SupplierWizard_Page2_Country_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_Country_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_Country_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Fax.
         /// </summary>
-        public static string SuppliersWizard_Page2_Fax_DisplayName {
+        public static string SupplierWizard_Page2_Fax_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_Fax_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_Fax_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Home Page.
         /// </summary>
-        public static string SuppliersWizard_Page2_HomePage_DisplayName {
+        public static string SupplierWizard_Page2_HomePage_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_HomePage_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_HomePage_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Phone.
         /// </summary>
-        public static string SuppliersWizard_Page2_Phone_DisplayName {
+        public static string SupplierWizard_Page2_Phone_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_Phone_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_Phone_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Postal Code.
         /// </summary>
-        public static string SuppliersWizard_Page2_PostalCode_DisplayName {
+        public static string SupplierWizard_Page2_PostalCode_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_PostalCode_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_PostalCode_DisplayName", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Region.
         /// </summary>
-        public static string SuppliersWizard_Page2_Region_DisplayName {
+        public static string SupplierWizard_Page2_Region_DisplayName {
             get {
-                return ResourceManager.GetString("SuppliersWizard_Page2_Region_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SupplierWizard_Page2_Region_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Main Info.
+        /// </summary>
+        public static string CustomerCompactWizard_Page1 {
+            get {
+                return ResourceManager.GetString("CustomerCompactWizard_Page1", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please add customer main info.
+        /// </summary>
+        public static string CustomerCompactWizard_Page1_BannerTitle {
+            get {
+                return ResourceManager.GetString("CustomerCompactWizard_Page1_BannerTitle", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer Main Info.
+        /// </summary>
+        public static string CustomerCompactWizard_Page1_BannerDescription {
+            get {
+                return ResourceManager.GetString("CustomerCompactWizard_Page1_BannerDescription", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company Name.
+        /// </summary>
+        public static string CustomerCompactWizard_Page1_CompanyName_DisplayName {
+            get {
+                return ResourceManager.GetString("CustomerCompactWizard_Page1_CompanyName_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Name.
+        /// </summary>
+        public static string CustomerCompactWizard_Page1_ContactName_DisplayName {
+            get {
+                return ResourceManager.GetString("CustomerCompactWizard_Page1_ContactName_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Title.
+        /// </summary>
+        public static string CustomerCompactWizard_Page1_ContactTitle_DisplayName {
+            get {
+                return ResourceManager.GetString("CustomerCompactWizard_Page1_ContactTitle_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone.
+        /// </summary>
+        public static string CustomerCompactWizard_Page1_Phone_DisplayName {
+            get {
+                return ResourceManager.GetString("CustomerCompactWizard_Page1_Phone_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fax.
+        /// </summary>
+        public static string CustomerCompactWizard_Page1_Fax_DisplayName {
+            get {
+                return ResourceManager.GetString("CustomerCompactWizard_Page1_Fax_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page1.
+        /// </summary>
+        public static string RegionWizard_Page1 {
+            get {
+                return ResourceManager.GetString("RegionWizard_Page1", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page1.
+        /// </summary>
+        public static string RegionWizard_Page1_BannerTitle {
+            get {
+                return ResourceManager.GetString("RegionWizard_Page1_BannerTitle", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page1.
+        /// </summary>
+        public static string RegionWizard_Page1_BannerDescription {
+            get {
+                return ResourceManager.GetString("RegionWizard_Page1_BannerDescription", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Region id.
+        /// </summary>
+        public static string RegionWizard_Page1_Id_DisplayName {
+            get {
+                return ResourceManager.GetString("RegionWizard_Page1_Id_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Region description.
+        /// </summary>
+        public static string RegionWizard_Page1_RegionDescription_DisplayName {
+            get {
+                return ResourceManager.GetString("RegionWizard_Page1_RegionDescription_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orders Report.
+        /// </summary>
+        public static string ReportFormQueryWizard_Page1 {
+            get {
+                return ResourceManager.GetString("ReportFormQueryWizard_Page1", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orders Report.
+        /// </summary>
+        public static string ReportFormQueryWizard_Page1_BannerTitle {
+            get {
+                return ResourceManager.GetString("ReportFormQueryWizard_Page1_BannerTitle", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get list of orders by selected criteria.
+        /// </summary>
+        public static string ReportFormQueryWizard_Page1_BannerDescription {
+            get {
+                return ResourceManager.GetString("ReportFormQueryWizard_Page1_BannerDescription", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee.
+        /// </summary>
+        public static string ReportFormQueryWizard_Page1_EmployeeId_DisplayName {
+            get {
+                return ResourceManager.GetString("ReportFormQueryWizard_Page1_EmployeeId_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer.
+        /// </summary>
+        public static string ReportFormQueryWizard_Page1_CustomerId_DisplayName {
+            get {
+                return ResourceManager.GetString("ReportFormQueryWizard_Page1_CustomerId_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string ReportFormQueryWizard_Page1_From_DisplayName {
+            get {
+                return ResourceManager.GetString("ReportFormQueryWizard_Page1_From_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string ReportFormQueryWizard_Page1_To_DisplayName {
+            get {
+                return ResourceManager.GetString("ReportFormQueryWizard_Page1_To_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use Excel Format.
+        /// </summary>
+        public static string ReportFormQueryWizard_Page1_useExcel_DisplayName {
+            get {
+                return ResourceManager.GetString("ReportFormQueryWizard_Page1_useExcel_DisplayName", resourceCulture);
             }
 		}
         

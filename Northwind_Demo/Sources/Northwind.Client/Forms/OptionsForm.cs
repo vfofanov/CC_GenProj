@@ -9,10 +9,10 @@ using BusinessFramework.Client.WinForms.IG;
 using BusinessFramework.Client.WinForms.IG.Controls;
 using BusinessFramework.Client.WinForms.IG.Explorer;
 using BusinessFramework.Contracts;
-using Northwind.Client.CustomSettings;
-using Northwind.Client.Services.Contracts.DomainModel;
+using NorthWind.Client.CustomSettings;
+using NorthWind.Client.Services.Contracts.DomainModel;
 
-namespace Northwind.Client.Forms
+namespace NorthWind.Client.Forms
 {
     public partial class OptionsForm : BaseForm
     {

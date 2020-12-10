@@ -12,13 +12,13 @@ using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Common.Security;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.GuiSettingsControllers;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Controllers.Properties;
 
 // ReSharper disable UnusedParameter.Local
 
-namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
+namespace NorthWind.WebAPI.Controllers.GuiSettings.Screens
 {
     /// <summary>
     ///  Suppliers screen settings controller
@@ -41,7 +41,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
         /// <returns></returns>		
         public IHttpActionResult Get()
         {            
-            if (!(Security.AuthorizeAll(DomainPermissions.QSuppliers_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.SupplierQuery_Read)))
             {
                 return GetInternalForbiddenResult();
             }
@@ -64,7 +64,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                 {
 				    Name = "blockRegion1",
                     Actions = GetBlockRegion1Actions(),
-				    Controller = "QSuppliers",
+				    Controller = "SupplierQuery",
 				    Content = GetBlockRegion1Content(context),
                 };
 				           
@@ -78,7 +78,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetBlockRegion1Content(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QSuppliers_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.SupplierQuery_Read)))
             {
 			    return null;
 			}
@@ -86,67 +86,67 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "CompanyName", Key = DomainObjectPropertyKeys.QSuppliers.CompanyName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "CompanyName", Key = DomainObjectPropertyKeys.SupplierQuery.CompanyName, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_CompanyName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "ContactName", Key = DomainObjectPropertyKeys.QSuppliers.ContactName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "ContactName", Key = DomainObjectPropertyKeys.SupplierQuery.ContactName, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_ContactName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "ContactTitle", Key = DomainObjectPropertyKeys.QSuppliers.ContactTitle, DataType = FieldDataType.String},
+			    Field = new Field {Name = "ContactTitle", Key = DomainObjectPropertyKeys.SupplierQuery.ContactTitle, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_ContactTitle,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Address", Key = DomainObjectPropertyKeys.QSuppliers.Address, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Address", Key = DomainObjectPropertyKeys.SupplierQuery.Address, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_Address,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "City", Key = DomainObjectPropertyKeys.QSuppliers.City, DataType = FieldDataType.String},
+			    Field = new Field {Name = "City", Key = DomainObjectPropertyKeys.SupplierQuery.City, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_City,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Region", Key = DomainObjectPropertyKeys.QSuppliers.Region, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Region", Key = DomainObjectPropertyKeys.SupplierQuery.Region, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_Region,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "PostalCode", Key = DomainObjectPropertyKeys.QSuppliers.PostalCode, DataType = FieldDataType.String},
+			    Field = new Field {Name = "PostalCode", Key = DomainObjectPropertyKeys.SupplierQuery.PostalCode, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_PostalCode,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Country", Key = DomainObjectPropertyKeys.QSuppliers.Country, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Country", Key = DomainObjectPropertyKeys.SupplierQuery.Country, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_Country,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Phone", Key = DomainObjectPropertyKeys.QSuppliers.Phone, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Phone", Key = DomainObjectPropertyKeys.SupplierQuery.Phone, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_Phone,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Fax", Key = DomainObjectPropertyKeys.QSuppliers.Fax, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Fax", Key = DomainObjectPropertyKeys.SupplierQuery.Fax, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_Fax,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "HomePage", Key = DomainObjectPropertyKeys.QSuppliers.HomePage, DataType = FieldDataType.String},
+			    Field = new Field {Name = "HomePage", Key = DomainObjectPropertyKeys.SupplierQuery.HomePage, DataType = FieldDataType.String},
 				Title = ScreenResources.Suppliers_blockRegion1_HomePage,                
 				Sortable = true,
 			});
@@ -166,7 +166,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private WorkActionItem[] GetBlockRegion1Actions()
         {
 		    var actions = new List<WorkActionItem>(5);
-            if (Security.AuthorizeAll(DomainPermissions.Supplier_Create))
+            if (Security.AuthorizeAll(DomainPermissions.Suppliers_Create))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -178,7 +178,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "blockRegion1CreateNew1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Supplier_Read))
+            if (Security.AuthorizeAll(DomainPermissions.Suppliers_Read))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -190,7 +190,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "blockRegion1ActionView1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Supplier_Update))
+            if (Security.AuthorizeAll(DomainPermissions.Suppliers_Update))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -202,7 +202,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "blockRegion1Edit1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Supplier_Delete))
+            if (Security.AuthorizeAll(DomainPermissions.Suppliers_Delete))
 		    {
     		    actions.Add(new WorkAction
                 {

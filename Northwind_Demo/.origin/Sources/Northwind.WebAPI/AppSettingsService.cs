@@ -1,9 +1,9 @@
 ﻿using System.Configuration;
 using BusinessFramework.Contracts.Services;
 using BusinessFramework.WebAPI.Services;
-using Northwind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts;
 
-namespace Northwind.WebAPI
+namespace NorthWind.WebAPI
 {
     /// <summary>
     /// App settings service

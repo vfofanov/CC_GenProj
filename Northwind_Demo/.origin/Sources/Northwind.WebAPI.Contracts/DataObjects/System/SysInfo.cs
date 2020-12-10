@@ -5,9 +5,9 @@ using BusinessFramework.Contracts.DataObjects;
 using BusinessFramework.WebAPI.Contracts.DataObjects;
 using BusinessFramework.WebAPI.Contracts.Metadata;
 using Newtonsoft.Json;
-using Northwind.Contracts.DataObjects;
+using NorthWind.Contracts.DataObjects;
 
-namespace Northwind.WebAPI.Contracts.DataObjects
+namespace NorthWind.WebAPI.Contracts.DataObjects
 {    
     public partial class SysInfo : AbstractApiEntity<SysInfoKey>
     {	

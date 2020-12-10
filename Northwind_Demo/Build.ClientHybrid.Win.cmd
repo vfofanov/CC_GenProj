@@ -2,7 +2,7 @@
 
 SET currentDir=%CD%
 cd Sources
-cd Northwind.Web.Angular
+cd NorthWind.Web.Angular
 
 CALL npm run electron:win
 
@@ -12,8 +12,8 @@ cd Build
 if exist "WinClientHybrid" rmdir /s /q WinClientHybrid
 
 ECHO Copy WinClientHybrid Files ...
-cd "%currentDir%\Sources\Northwind.Web.Angular"
-xcopy /s /i Northwind-win32-x64\*.* "%currentDir%\Build\WinClientHybrid" >NUL
+cd "%currentDir%\Sources\NorthWind.Web.Angular"
+xcopy /s /i NorthWind-win32-x64\*.* "%currentDir%\Build\WinClientHybrid" >NUL
 
 if NOT "%1" == "nopause" (
 pause

@@ -7,10 +7,10 @@ using ReportingFramework.Central.Aspose.Cells;
 using ReportingFramework.Central.Contracts.Engine;
 using ReportingFramework.Central.Contracts.Spreadsheet.Engine;
 using ReportingFramework.WebAPI.DataSources;
-using Northwind.WebAPI.Contracts.Reporting;
-using Northwind.WebAPI.Reporting;
+using NorthWind.WebAPI.Contracts.Reporting;
+using NorthWind.WebAPI.Reporting;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     internal static partial class DependencyInjectionConfig
     {

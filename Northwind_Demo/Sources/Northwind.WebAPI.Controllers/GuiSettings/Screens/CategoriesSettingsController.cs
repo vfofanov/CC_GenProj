@@ -12,13 +12,13 @@ using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Common.Security;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.GuiSettingsControllers;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Controllers.Properties;
 
 // ReSharper disable UnusedParameter.Local
 
-namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
+namespace NorthWind.WebAPI.Controllers.GuiSettings.Screens
 {
     /// <summary>
     ///  Categories screen settings controller
@@ -41,7 +41,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
         /// <returns></returns>		
         public IHttpActionResult Get()
         {            
-            if (!(Security.AuthorizeAll(DomainPermissions.QCategories_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.CategoryQuery_Read)))
             {
                 return GetInternalForbiddenResult();
             }
@@ -93,7 +93,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                 {
 				    Name = "qCategories",
                     Actions = GetQCategoriesActions(),
-				    Controller = "QCategories",
+				    Controller = "CategoryQuery",
 				    Content = GetQCategoriesContent(context),
                 };
 				           
@@ -107,7 +107,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetQCategoriesContent(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QCategories_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.CategoryQuery_Read)))
             {
 			    return null;
 			}
@@ -115,14 +115,14 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "CategoryName", Key = DomainObjectPropertyKeys.QCategories.CategoryName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "CategoryName", Key = DomainObjectPropertyKeys.CategoryQuery.CategoryName, DataType = FieldDataType.String},
 				Title = ScreenResources.Categories_qCategories_CategoryName,                
 				Sortable = true,
 				Width = 177.0,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Description", Key = DomainObjectPropertyKeys.QCategories.Description, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Description", Key = DomainObjectPropertyKeys.CategoryQuery.Description, DataType = FieldDataType.String},
 				Title = ScreenResources.Categories_qCategories_Description,                
 				Sortable = true,
 				Width = 357.0,
@@ -178,7 +178,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                 {
 				    Name = "qProducts",
                     Actions = GetQProductsActions(),
-				    Controller = "QProducts",
+				    Controller = "ProductQuery",
 				    Content = GetQProductsContent(context),
                     Depends = new[]
                     {
@@ -196,7 +196,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetQProductsContent(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QProducts_Read) && Security.AuthorizeAll(DomainPermissions.QCategories_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.ProductQuery_Read) && Security.AuthorizeAll(DomainPermissions.CategoryQuery_Read)))
             {
 			    return null;
 			}
@@ -204,20 +204,21 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "ProductName", Key = DomainObjectPropertyKeys.QProducts.ProductName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "ProductName", Key = DomainObjectPropertyKeys.ProductQuery.ProductName, DataType = FieldDataType.String},
 				Title = ScreenResources.Categories_qProducts_ProductName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "QuantityPerUnit", Key = DomainObjectPropertyKeys.QProducts.QuantityPerUnit, DataType = FieldDataType.String},
+			    Field = new Field {Name = "QuantityPerUnit", Key = DomainObjectPropertyKeys.ProductQuery.QuantityPerUnit, DataType = FieldDataType.String},
 				Title = ScreenResources.Categories_qProducts_QuantityPerUnit,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "UnitPrice", Key = DomainObjectPropertyKeys.QProducts.UnitPrice, DataType = FieldDataType.Decimal},
+			    Field = new Field {Name = "UnitPrice", Key = DomainObjectPropertyKeys.ProductQuery.UnitPrice, DataType = FieldDataType.Decimal},
 				Title = ScreenResources.Categories_qProducts_UnitPrice,                
+				Format = 1,
 				Sortable = true,
 			});
 
@@ -236,7 +237,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private WorkActionItem[] GetQCategoriesActions()
         {
 		    var actions = new List<WorkActionItem>(6);
-            if (Security.AuthorizeAll(DomainPermissions.Category_Create))
+            if (Security.AuthorizeAll(DomainPermissions.Categories_Create))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -248,7 +249,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qCategoriesCreateNew1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Category_Read))
+            if (Security.AuthorizeAll(DomainPermissions.Categories_Read))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -260,7 +261,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qCategoriesActionView1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Category_Update))
+            if (Security.AuthorizeAll(DomainPermissions.Categories_Update))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -272,7 +273,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qCategoriesEdit1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Category_Delete))
+            if (Security.AuthorizeAll(DomainPermissions.Categories_Delete))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -294,7 +295,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                 ActionName = "qCategoriesRefresh1",
                 Shortcut = ShortcutKey.F5,
             });
-            if (Security.AuthorizeAll(DomainPermissions.QCategories_Read))
+            if (Security.AuthorizeAll(DomainPermissions.CategoryQuery_Read))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -313,7 +314,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private WorkActionItem[] GetQProductsActions()
         {
 		    var actions = new List<WorkActionItem>(5);
-            if (Security.AuthorizeAll(DomainPermissions.Product_Create))
+            if (Security.AuthorizeAll(DomainPermissions.Products_Create))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -325,7 +326,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qProductsCreateNew1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Product_Read))
+            if (Security.AuthorizeAll(DomainPermissions.Products_Read))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -337,7 +338,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qProductsActionView1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Product_Update))
+            if (Security.AuthorizeAll(DomainPermissions.Products_Update))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -349,7 +350,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qProductsEdit1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Product_Delete))
+            if (Security.AuthorizeAll(DomainPermissions.Products_Delete))
 		    {
     		    actions.Add(new WorkAction
                 {

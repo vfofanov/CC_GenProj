@@ -1,4 +1,4 @@
-﻿namespace Northwind.WebAPI.Contracts
+﻿namespace NorthWind.WebAPI.Contracts
 {
     /// <summary>
     ///     Domain actions' keys
@@ -7,51 +7,61 @@
     {
         public static class Object
         {
-             public const int OrderStatus_Create = 2;
-             public const int OrderStatus_Update = 3;
-             public const int OrderStatus_Delete = 4;
-             public const int Product_Create = 39;
-             public const int Product_Update = 40;
-             public const int Product_Delete = 41;
-             public const int SysResetPasswordToken_Create = 55;
-             public const int SysResetPasswordToken_Update = 56;
-             public const int SysResetPasswordToken_Delete = 57;
-             public const int SysRole_Create = 71;
-             public const int SysRole_Update = 72;
-             public const int SysRole_Delete = 73;
-             public const int Customer_Create = 105;
-             public const int Customer_Update = 106;
-             public const int Customer_Delete = 107;
-             public const int Category_Create = 120;
-             public const int Category_Update = 121;
-             public const int Category_Delete = 122;
-             public const int Supplier_Create = 128;
-             public const int Supplier_Update = 129;
-             public const int Supplier_Delete = 130;
-             public const int SysOperationLock_Create = 144;
-             public const int SysOperationLock_Update = 145;
-             public const int SysOperationLock_Delete = 146;
-             public const int Order_Create = 162;
-             public const int Order_Update = 163;
-             public const int Order_Delete = 164;
-             public const int OrderDetail_Create = 196;
-             public const int OrderDetail_Update = 197;
-             public const int OrderDetail_Delete = 198;
-             public const int SysSetting_Create = 208;
-             public const int SysSetting_Update = 209;
-             public const int SysSetting_Delete = 210;
-             public const int Employee_Create = 222;
-             public const int Employee_Update = 223;
-             public const int Employee_Delete = 224;
-             public const int SysSettingProperty_Create = 258;
-             public const int SysSettingProperty_Update = 259;
-             public const int SysSettingProperty_Delete = 260;
-             public const int VSalesByCategory_Create = 274;
-             public const int VSalesByCategory_Update = 275;
-             public const int VSalesByCategory_Delete = 276;
-             public const int Shipper_Create = 282;
-             public const int Shipper_Update = 283;
-             public const int Shipper_Delete = 284;
+             public const int Products_Create = 33;
+             public const int Products_Update = 34;
+             public const int Products_Delete = 35;
+             public const int CustomerCustomerDemo_Create = 49;
+             public const int CustomerCustomerDemo_Update = 50;
+             public const int CustomerCustomerDemo_Delete = 51;
+             public const int SysResetPasswordToken_Create = 57;
+             public const int SysResetPasswordToken_Update = 58;
+             public const int SysResetPasswordToken_Delete = 59;
+             public const int SysRole_Create = 73;
+             public const int SysRole_Update = 74;
+             public const int SysRole_Delete = 75;
+             public const int Territory_Create = 85;
+             public const int Territory_Update = 86;
+             public const int Territory_Delete = 87;
+             public const int EmployeeTerritory_Create = 93;
+             public const int EmployeeTerritory_Update = 94;
+             public const int EmployeeTerritory_Delete = 95;
+             public const int Customers_Create = 123;
+             public const int Customers_Update = 124;
+             public const int Customers_Delete = 125;
+             public const int Categories_Create = 138;
+             public const int Categories_Update = 139;
+             public const int Categories_Delete = 140;
+             public const int Region_Create = 146;
+             public const int Region_Update = 147;
+             public const int Region_Delete = 148;
+             public const int Suppliers_Create = 152;
+             public const int Suppliers_Update = 153;
+             public const int Suppliers_Delete = 154;
+             public const int SysOperationLock_Create = 168;
+             public const int SysOperationLock_Update = 169;
+             public const int SysOperationLock_Delete = 170;
+             public const int Orders_Create = 186;
+             public const int Orders_Update = 187;
+             public const int Orders_Delete = 188;
+             public const int OrderDetails_Create = 218;
+             public const int OrderDetails_Update = 219;
+             public const int OrderDetails_Delete = 220;
+             public const int SysSetting_Create = 229;
+             public const int SysSetting_Update = 230;
+             public const int SysSetting_Delete = 231;
+             public const int Employees_Create = 243;
+             public const int Employees_Update = 244;
+             public const int Employees_Delete = 245;
+             public const int CustomerDemographic_Create = 275;
+             public const int CustomerDemographic_Update = 276;
+             public const int CustomerDemographic_Delete = 277;
+             public const int SysSettingProperty_Create = 286;
+             public const int SysSettingProperty_Update = 287;
+             public const int SysSettingProperty_Delete = 288;
+             public const int Shippers_Create = 302;
+             public const int Shippers_Update = 303;
+             public const int Shippers_Delete = 304;
+             public const int ReportFormQuery_Create = 351;
         }
     }
 }

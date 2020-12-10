@@ -3,10 +3,10 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using BusinessFramework.Contracts.DataObjects;
-using Northwind.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
+using NorthWind.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
 using BusinessFramework.WebAPI.Common.Controllers;
 using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Contracts.Security;
@@ -14,7 +14,7 @@ using BusinessFramework.WebAPI.Contracts.Services;
 using BusinessFramework.WebAPI.Contracts.Validation;
 
 
-namespace Northwind.WebAPI.Controllers.Api
+namespace NorthWind.WebAPI.Controllers.Api
 {
     /// <summary>
     ///     Controls <see cref="SysOperationLock" /> objects

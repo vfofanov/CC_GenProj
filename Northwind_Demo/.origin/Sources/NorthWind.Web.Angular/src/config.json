@@ -1,0 +1,15 @@
+﻿{
+  "baseUrl": "http://localhost:9351/",
+  "appTitle": "NorthWind",
+  "appName": "NorthWind",
+  "clientLink" : "",
+  "allowRegistration": "False",
+  "allowPasswordRestore": "False",
+  "defaultCulture": "en-US",
+  "useCDN": "True",
+  "defaultSkinName": "Blue Opal",
+  "locale": {
+    "defaultCulture": "en-US",
+    "defaultDecimalSeparator": "."
+  }
+}

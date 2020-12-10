@@ -12,13 +12,13 @@ using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Common.Security;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.GuiSettingsControllers;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Controllers.Properties;
 
 // ReSharper disable UnusedParameter.Local
 
-namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
+namespace NorthWind.WebAPI.Controllers.GuiSettings.Screens
 {
     /// <summary>
     ///  Shippers screen settings controller
@@ -41,7 +41,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
         /// <returns></returns>		
         public IHttpActionResult Get()
         {            
-            if (!(Security.AuthorizeAll(DomainPermissions.QShippers_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.ShipperQuery_Read)))
             {
                 return GetInternalForbiddenResult();
             }
@@ -64,7 +64,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                 {
 				    Name = "blockRegion1",
                     Actions = GetBlockRegion1Actions(),
-				    Controller = "QShippers",
+				    Controller = "ShipperQuery",
 				    Content = GetBlockRegion1Content(context),
                 };
 				           
@@ -78,7 +78,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetBlockRegion1Content(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QShippers_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.ShipperQuery_Read)))
             {
 			    return null;
 			}
@@ -86,13 +86,13 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "CompanyName", Key = DomainObjectPropertyKeys.QShippers.CompanyName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "CompanyName", Key = DomainObjectPropertyKeys.ShipperQuery.CompanyName, DataType = FieldDataType.String},
 				Title = ScreenResources.Shippers_blockRegion1_CompanyName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Phone", Key = DomainObjectPropertyKeys.QShippers.Phone, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Phone", Key = DomainObjectPropertyKeys.ShipperQuery.Phone, DataType = FieldDataType.String},
 				Title = ScreenResources.Shippers_blockRegion1_Phone,                
 				Sortable = true,
 			});
@@ -111,7 +111,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private WorkActionItem[] GetBlockRegion1Actions()
         {
 		    var actions = new List<WorkActionItem>(5);
-            if (Security.AuthorizeAll(DomainPermissions.Shipper_Create))
+            if (Security.AuthorizeAll(DomainPermissions.Shippers_Create))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -123,7 +123,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "blockRegion1CreateNew1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Shipper_Read))
+            if (Security.AuthorizeAll(DomainPermissions.Shippers_Read))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -135,7 +135,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "blockRegion1ActionView1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Shipper_Update))
+            if (Security.AuthorizeAll(DomainPermissions.Shippers_Update))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -147,7 +147,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "blockRegion1Edit1",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Shipper_Delete))
+            if (Security.AuthorizeAll(DomainPermissions.Shippers_Delete))
 		    {
     		    actions.Add(new WorkAction
                 {

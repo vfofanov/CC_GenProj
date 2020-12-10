@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using Northwind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.DataObjects;
 
 
-namespace Northwind.WebAPI.DataAccess.Mapping.CodeBehind
+namespace NorthWind.WebAPI.DataAccess.Mapping.CodeBehind
 {
     /// <summary>
     /// Database mapping for <see cref="SysOperationResult"/> to table CCSystem.OperationResult

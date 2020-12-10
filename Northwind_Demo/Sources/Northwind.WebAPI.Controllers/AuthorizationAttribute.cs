@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using BusinessFramework.WebAPI.Common.Security;
-using Northwind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts;
 
-namespace Northwind.WebAPI.Controllers
+namespace NorthWind.WebAPI.Controllers
 {
     /// <summary>
     ///     Mark check authorization by rule

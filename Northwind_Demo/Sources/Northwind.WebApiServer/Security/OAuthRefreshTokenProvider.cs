@@ -3,12 +3,12 @@ using System.Linq;
 using System.Security.Principal;
 using System.Threading.Tasks;
 using System.Web.Http.Dependencies;
-using Northwind.WebAPI.Contracts.Security;
+using NorthWind.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.Security;
 using BusinessFramework.WebAPI.Utils.IoC;
 using Microsoft.Owin.Security.Infrastructure;
 
-namespace Northwind.WebApiServer.Security
+namespace NorthWind.WebApiServer.Security
 {
     /// <summary>
     /// Refresh token provider

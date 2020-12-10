@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using BusinessFramework.Client.Contracts;
 using BusinessFramework.Contracts;
 
-namespace Northwind.Client.Contracts.BusinessObjects
+namespace NorthWind.Client.Contracts.BusinessObjects
 {
     [Serializable]
     public sealed class SysSettingProperty : CodeBehind.CodeBehindSysSettingProperty

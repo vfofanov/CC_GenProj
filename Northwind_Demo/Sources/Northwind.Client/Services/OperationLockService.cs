@@ -15,10 +15,10 @@ using BusinessFramework.Contracts;
 using BusinessFramework.Contracts.Actions;
 using BusinessFramework.Contracts.DataObjects;
 using BusinessFramework.Contracts.Utils;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Contracts.DataObjects;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Contracts.DataObjects;
 
-namespace Northwind.Client.Services
+namespace NorthWind.Client.Services
 {
     public sealed class OperationLockService : IOperationLockService, IDisposable
     {

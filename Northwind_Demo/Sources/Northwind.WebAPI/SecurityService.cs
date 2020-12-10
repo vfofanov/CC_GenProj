@@ -1,10 +1,10 @@
 ﻿using BusinessFramework.Contracts.Security;
 using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Security;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
 
-namespace Northwind.WebAPI
+namespace NorthWind.WebAPI
 {
     /// <summary>
     ///     Security service

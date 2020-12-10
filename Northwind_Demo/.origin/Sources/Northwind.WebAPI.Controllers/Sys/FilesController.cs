@@ -9,7 +9,7 @@ using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Contracts.Files;
 using BusinessFramework.WebAPI.Contracts.Security;
 
-namespace Northwind.WebAPI.Controllers.Sys
+namespace NorthWind.WebAPI.Controllers.Sys
 {
     /// <summary>
     ///     Controller for working with files

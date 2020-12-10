@@ -15,7 +15,7 @@ cd Build
 if exist ClientWeb rmdir /s /q ClientWeb
 
 :: Build Client
-cd "%currentDir%\Sources\Northwind.Web.Angular"
+cd "%currentDir%\Sources\NorthWind.Web.Angular"
 CALL npm run prod
 
 if exist dist (

@@ -121,7 +121,7 @@
     <value>Authentication failed. User name and/or password are incorrect</value>
   </data>
   <data name="HelpPageTitle" xml:space="preserve">
-    <value>Northwind Web API Help Page</value>
+    <value>NorthWind Web API Help Page</value>
   </data>
   <data name="LengthValidationMessage" xml:space="preserve">
     <value>Length must be beetwen {0} and {1}</value>

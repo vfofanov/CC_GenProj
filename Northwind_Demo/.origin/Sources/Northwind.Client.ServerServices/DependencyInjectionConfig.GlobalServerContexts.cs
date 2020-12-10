@@ -1,7 +1,7 @@
 ﻿using FutureTechnologies.DI.Contracts;
 
 
-namespace Northwind.Client.ServerServices
+namespace NorthWind.Client.ServerServices
 {
     partial class DependencyInjectionConfig
     {

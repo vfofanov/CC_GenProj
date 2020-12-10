@@ -5,10 +5,10 @@ using BusinessFramework.Contracts.DataObjects;
 using BusinessFramework.WebAPI.Contracts.DataObjects;
 using BusinessFramework.WebAPI.Contracts.Metadata;
 using Newtonsoft.Json;
-using Northwind.Contracts.DataObjects;
-using Northwind.Contracts.Enums;
+using NorthWind.Contracts.DataObjects;
+using NorthWind.Contracts.Enums;
 
-namespace Northwind.WebAPI.Contracts.DataObjects
+namespace NorthWind.WebAPI.Contracts.DataObjects
 {    
     public partial class SysOperationResult : ClassicApiEntity<byte>
     {	

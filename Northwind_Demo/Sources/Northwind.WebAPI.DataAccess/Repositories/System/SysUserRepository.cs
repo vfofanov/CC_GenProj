@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.Contracts.Security.Hash;
 using BusinessFramework.WebAPI.Contracts.Services;
 using ColoredConsole;
 
-namespace Northwind.WebAPI.DataAccess.Repositories
+namespace NorthWind.WebAPI.DataAccess.Repositories
 {
     /// <summary>
     /// Repository for <see cref="SysUserRepository"/> objects

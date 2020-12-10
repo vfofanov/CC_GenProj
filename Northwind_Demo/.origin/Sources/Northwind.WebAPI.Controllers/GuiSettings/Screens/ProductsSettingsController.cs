@@ -12,13 +12,13 @@ using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Common.Security;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.GuiSettingsControllers;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Controllers.Properties;
 
 // ReSharper disable UnusedParameter.Local
 
-namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
+namespace NorthWind.WebAPI.Controllers.GuiSettings.Screens
 {
     /// <summary>
     ///  Products screen settings controller
@@ -41,7 +41,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
         /// <returns></returns>		
         public IHttpActionResult Get()
         {            
-            if (!(Security.AuthorizeAll(DomainPermissions.QProducts_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.ProductQuery_Read)))
             {
                 return GetInternalForbiddenResult();
             }
@@ -93,7 +93,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                 {
 				    Name = "qProducts",
                     Actions = GetQProductsActions(),
-				    Controller = "QProducts",
+				    Controller = "ProductQuery",
 				    Content = GetQProductsContent(context),
                 };
 				           
@@ -107,7 +107,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetQProductsContent(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QProducts_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.ProductQuery_Read)))
             {
 			    return null;
 			}
@@ -115,49 +115,50 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Categories_CategoryName", Key = DomainObjectPropertyKeys.QProducts.Categories_CategoryName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Categories_CategoryName", Key = DomainObjectPropertyKeys.ProductQuery.Categories_CategoryName, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qProducts_Categories_CategoryName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "ProductName", Key = DomainObjectPropertyKeys.QProducts.ProductName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "ProductName", Key = DomainObjectPropertyKeys.ProductQuery.ProductName, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qProducts_ProductName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "QuantityPerUnit", Key = DomainObjectPropertyKeys.QProducts.QuantityPerUnit, DataType = FieldDataType.String},
+			    Field = new Field {Name = "QuantityPerUnit", Key = DomainObjectPropertyKeys.ProductQuery.QuantityPerUnit, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qProducts_QuantityPerUnit,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "UnitPrice", Key = DomainObjectPropertyKeys.QProducts.UnitPrice, DataType = FieldDataType.Decimal},
+			    Field = new Field {Name = "UnitPrice", Key = DomainObjectPropertyKeys.ProductQuery.UnitPrice, DataType = FieldDataType.Decimal},
 				Title = ScreenResources.Products_qProducts_UnitPrice,                
+				Format = 1,
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "UnitsInStock", Key = DomainObjectPropertyKeys.QProducts.UnitsInStock, DataType = FieldDataType.Integer},
+			    Field = new Field {Name = "UnitsInStock", Key = DomainObjectPropertyKeys.ProductQuery.UnitsInStock, DataType = FieldDataType.Integer},
 				Title = ScreenResources.Products_qProducts_UnitsInStock,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "UnitsOnOrder", Key = DomainObjectPropertyKeys.QProducts.UnitsOnOrder, DataType = FieldDataType.Integer},
+			    Field = new Field {Name = "UnitsOnOrder", Key = DomainObjectPropertyKeys.ProductQuery.UnitsOnOrder, DataType = FieldDataType.Integer},
 				Title = ScreenResources.Products_qProducts_UnitsOnOrder,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "ReorderLevel", Key = DomainObjectPropertyKeys.QProducts.ReorderLevel, DataType = FieldDataType.Integer},
+			    Field = new Field {Name = "ReorderLevel", Key = DomainObjectPropertyKeys.ProductQuery.ReorderLevel, DataType = FieldDataType.Integer},
 				Title = ScreenResources.Products_qProducts_ReorderLevel,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Discontinued", Key = DomainObjectPropertyKeys.QProducts.Discontinued, DataType = FieldDataType.Bool},
+			    Field = new Field {Name = "Discontinued", Key = DomainObjectPropertyKeys.ProductQuery.Discontinued, DataType = FieldDataType.Bool},
 				Title = ScreenResources.Products_qProducts_Discontinued,                
 				Sortable = true,
 			});
@@ -233,7 +234,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		        var item = new DataBlock 
                 {
 				    Name = "qCategories",
-				    Controller = "QCategories",
+				    Controller = "CategoryQuery",
 				    Content = GetQCategoriesContent(context),
                     Depends = new[]
                     {
@@ -251,7 +252,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetQCategoriesContent(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QCategories_Read) && Security.AuthorizeAll(DomainPermissions.QProducts_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.CategoryQuery_Read) && Security.AuthorizeAll(DomainPermissions.ProductQuery_Read)))
             {
 			    return null;
 			}
@@ -259,14 +260,14 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "CategoryName", Key = DomainObjectPropertyKeys.QCategories.CategoryName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "CategoryName", Key = DomainObjectPropertyKeys.CategoryQuery.CategoryName, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qCategories_CategoryName,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Description", Key = DomainObjectPropertyKeys.QCategories.Description, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Description", Key = DomainObjectPropertyKeys.CategoryQuery.Description, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qCategories_Description,
 				LineCount = 1,    
 				IsEndLine = true,       
@@ -284,7 +285,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		        var item = new DataBlock 
                 {
 				    Name = "qSuppliers",
-				    Controller = "QSuppliers",
+				    Controller = "SupplierQuery",
 				    Content = GetQSuppliersContent(context),
                     Depends = new[]
                     {
@@ -302,7 +303,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetQSuppliersContent(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QSuppliers_Read) && Security.AuthorizeAll(DomainPermissions.QProducts_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.SupplierQuery_Read) && Security.AuthorizeAll(DomainPermissions.ProductQuery_Read)))
             {
 			    return null;
 			}
@@ -310,77 +311,77 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "CompanyName", Key = DomainObjectPropertyKeys.QSuppliers.CompanyName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "CompanyName", Key = DomainObjectPropertyKeys.SupplierQuery.CompanyName, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_CompanyName,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "ContactName", Key = DomainObjectPropertyKeys.QSuppliers.ContactName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "ContactName", Key = DomainObjectPropertyKeys.SupplierQuery.ContactName, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_ContactName,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "ContactTitle", Key = DomainObjectPropertyKeys.QSuppliers.ContactTitle, DataType = FieldDataType.String},
+			    Field = new Field {Name = "ContactTitle", Key = DomainObjectPropertyKeys.SupplierQuery.ContactTitle, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_ContactTitle,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Address", Key = DomainObjectPropertyKeys.QSuppliers.Address, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Address", Key = DomainObjectPropertyKeys.SupplierQuery.Address, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_Address,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "City", Key = DomainObjectPropertyKeys.QSuppliers.City, DataType = FieldDataType.String},
+			    Field = new Field {Name = "City", Key = DomainObjectPropertyKeys.SupplierQuery.City, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_City,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Region", Key = DomainObjectPropertyKeys.QSuppliers.Region, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Region", Key = DomainObjectPropertyKeys.SupplierQuery.Region, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_Region,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "PostalCode", Key = DomainObjectPropertyKeys.QSuppliers.PostalCode, DataType = FieldDataType.String},
+			    Field = new Field {Name = "PostalCode", Key = DomainObjectPropertyKeys.SupplierQuery.PostalCode, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_PostalCode,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Country", Key = DomainObjectPropertyKeys.QSuppliers.Country, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Country", Key = DomainObjectPropertyKeys.SupplierQuery.Country, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_Country,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Phone", Key = DomainObjectPropertyKeys.QSuppliers.Phone, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Phone", Key = DomainObjectPropertyKeys.SupplierQuery.Phone, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_Phone,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Fax", Key = DomainObjectPropertyKeys.QSuppliers.Fax, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Fax", Key = DomainObjectPropertyKeys.SupplierQuery.Fax, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_Fax,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "HomePage", Key = DomainObjectPropertyKeys.QSuppliers.HomePage, DataType = FieldDataType.String},
+			    Field = new Field {Name = "HomePage", Key = DomainObjectPropertyKeys.SupplierQuery.HomePage, DataType = FieldDataType.String},
 				Title = ScreenResources.Products_qSuppliers_HomePage,
 				LineCount = 1,    
 				IsEndLine = true,       
@@ -396,7 +397,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private WorkActionItem[] GetQProductsActions()
         {
 		    var actions = new List<WorkActionItem>(5);
-            if (Security.AuthorizeAll(DomainPermissions.Product_Create))
+            if (Security.AuthorizeAll(DomainPermissions.Products_Create))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -408,7 +409,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qProductsWizardCreateNew",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Product_Read))
+            if (Security.AuthorizeAll(DomainPermissions.Products_Read))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -420,7 +421,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qProductsWizardView",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Product_Update))
+            if (Security.AuthorizeAll(DomainPermissions.Products_Update))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -432,7 +433,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qProductsWizardEdit",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Product_Delete))
+            if (Security.AuthorizeAll(DomainPermissions.Products_Delete))
 		    {
     		    actions.Add(new WorkAction
                 {

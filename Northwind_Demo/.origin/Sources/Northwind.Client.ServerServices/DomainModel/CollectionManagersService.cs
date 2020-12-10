@@ -3,7 +3,7 @@ using BusinessFramework.Client.Contracts.Services;
 using BusinessFramework.Contracts;
 using FutureTechnologies.DI.Contracts;
 
-namespace Northwind.Client.ServerServices.DomainModel
+namespace NorthWind.Client.ServerServices.DomainModel
 {
     internal sealed class CollectionManagersService : ICollectionManagersService
     {

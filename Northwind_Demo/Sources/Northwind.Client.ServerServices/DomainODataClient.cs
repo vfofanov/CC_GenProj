@@ -1,11 +1,11 @@
 ﻿using Microsoft.OData.Edm;
 using System;
 using BusinessFramework.Client.Connection;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Contracts.OData;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Contracts.OData;
 
 
-namespace Northwind.Client.ServerServices
+namespace NorthWind.Client.ServerServices
 {
     public sealed class DomainODataClient : ODataClient
     {
@@ -24,52 +24,62 @@ namespace Northwind.Client.ServerServices
         {
             switch (typeName)
             {
-                case "Northwind.WebAPI.Contracts.DataObjects.OrderStatus":
-                    return typeof (OrderStatus);
-                case "Northwind.WebAPI.Contracts.DataObjects.Product":
-                    return typeof (Product);
-                case "Northwind.WebAPI.Contracts.DataObjects.SysResetPasswordToken":
+                case "NorthWind.WebAPI.Contracts.DataObjects.Products":
+                    return typeof (Products);
+                case "NorthWind.WebAPI.Contracts.DataObjects.CustomerCustomerDemo":
+                    return typeof (CustomerCustomerDemo);
+                case "NorthWind.WebAPI.Contracts.DataObjects.SysResetPasswordToken":
                     return typeof (SysResetPasswordToken);
-                case "Northwind.WebAPI.Contracts.DataObjects.SysRole":
+                case "NorthWind.WebAPI.Contracts.DataObjects.SysRole":
                     return typeof (SysRole);
-                case "Northwind.WebAPI.Contracts.DataObjects.Customer":
-                    return typeof (Customer);
-                case "Northwind.WebAPI.Contracts.DataObjects.Category":
-                    return typeof (Category);
-                case "Northwind.WebAPI.Contracts.DataObjects.Supplier":
-                    return typeof (Supplier);
-                case "Northwind.WebAPI.Contracts.DataObjects.SysOperationLock":
+                case "NorthWind.WebAPI.Contracts.DataObjects.Territory":
+                    return typeof (Territory);
+                case "NorthWind.WebAPI.Contracts.DataObjects.EmployeeTerritory":
+                    return typeof (EmployeeTerritory);
+                case "NorthWind.WebAPI.Contracts.DataObjects.Customers":
+                    return typeof (Customers);
+                case "NorthWind.WebAPI.Contracts.DataObjects.Categories":
+                    return typeof (Categories);
+                case "NorthWind.WebAPI.Contracts.DataObjects.Region":
+                    return typeof (Region);
+                case "NorthWind.WebAPI.Contracts.DataObjects.Suppliers":
+                    return typeof (Suppliers);
+                case "NorthWind.WebAPI.Contracts.DataObjects.SysOperationLock":
                     return typeof (SysOperationLock);
-                case "Northwind.WebAPI.Contracts.DataObjects.Order":
-                    return typeof (Order);
-                case "Northwind.WebAPI.Contracts.DataObjects.OrderDetail":
-                    return typeof (OrderDetail);
-                case "Northwind.WebAPI.Contracts.DataObjects.SysSetting":
+                case "NorthWind.WebAPI.Contracts.DataObjects.Orders":
+                    return typeof (Orders);
+                case "NorthWind.WebAPI.Contracts.DataObjects.OrderDetails":
+                    return typeof (OrderDetails);
+                case "NorthWind.WebAPI.Contracts.DataObjects.SysSetting":
                     return typeof (SysSetting);
-                case "Northwind.WebAPI.Contracts.DataObjects.Employee":
-                    return typeof (Employee);
-                case "Northwind.WebAPI.Contracts.DataObjects.SysSettingProperty":
+                case "NorthWind.WebAPI.Contracts.DataObjects.Employees":
+                    return typeof (Employees);
+                case "NorthWind.WebAPI.Contracts.DataObjects.CustomerDemographic":
+                    return typeof (CustomerDemographic);
+                case "NorthWind.WebAPI.Contracts.DataObjects.SysSettingProperty":
                     return typeof (SysSettingProperty);
-                case "Northwind.WebAPI.Contracts.DataObjects.VSalesByCategory":
-                    return typeof (VSalesByCategory);
-                case "Northwind.WebAPI.Contracts.DataObjects.Shipper":
-                    return typeof (Shipper);
-                case "Northwind.WebAPI.Contracts.DataObjects.QSuppliers":
-                    return typeof (QSuppliers);
-                case "Northwind.WebAPI.Contracts.DataObjects.QEmployees":
-                    return typeof (QEmployees);
-                case "Northwind.WebAPI.Contracts.DataObjects.QShippers":
-                    return typeof (QShippers);
-                case "Northwind.WebAPI.Contracts.DataObjects.QCategories":
-                    return typeof (QCategories);
-                case "Northwind.WebAPI.Contracts.DataObjects.QCustomers":
-                    return typeof (QCustomers);
-                case "Northwind.WebAPI.Contracts.DataObjects.QProducts":
-                    return typeof (QProducts);
-                case "Northwind.WebAPI.Contracts.DataObjects.QOrderProducts":
-                    return typeof (QOrderProducts);
-                case "Northwind.WebAPI.Contracts.DataObjects.QOrders":
-                    return typeof (QOrders);
+                case "NorthWind.WebAPI.Contracts.DataObjects.Shippers":
+                    return typeof (Shippers);
+                case "NorthWind.WebAPI.Contracts.DataObjects.SupplierQuery":
+                    return typeof (SupplierQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.EmployeeQuery":
+                    return typeof (EmployeeQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.ShipperQuery":
+                    return typeof (ShipperQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.CategoryQuery":
+                    return typeof (CategoryQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.ReportFormQuery":
+                    return typeof (ReportFormQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.CustomerQuery":
+                    return typeof (CustomerQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.ProductQuery":
+                    return typeof (ProductQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.OrderProductQuery":
+                    return typeof (OrderProductQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.OrdersQuery":
+                    return typeof (OrdersQuery);
+                case "NorthWind.WebAPI.Contracts.DataObjects.RegionQuery":
+                    return typeof (RegionQuery);
                 default:
                     return null;
             }
@@ -79,52 +89,62 @@ namespace Northwind.Client.ServerServices
         {
             switch (type.Name)
             {
-                case "OrderStatus":
-                    return "Northwind.WebAPI.Contracts.DataObjects.OrderStatus";
-                case "Product":
-                    return "Northwind.WebAPI.Contracts.DataObjects.Product";
+                case "Products":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Products";
+                case "CustomerCustomerDemo":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.CustomerCustomerDemo";
                 case "SysResetPasswordToken":
-                    return "Northwind.WebAPI.Contracts.DataObjects.SysResetPasswordToken";
+                    return "NorthWind.WebAPI.Contracts.DataObjects.SysResetPasswordToken";
                 case "SysRole":
-                    return "Northwind.WebAPI.Contracts.DataObjects.SysRole";
-                case "Customer":
-                    return "Northwind.WebAPI.Contracts.DataObjects.Customer";
-                case "Category":
-                    return "Northwind.WebAPI.Contracts.DataObjects.Category";
-                case "Supplier":
-                    return "Northwind.WebAPI.Contracts.DataObjects.Supplier";
+                    return "NorthWind.WebAPI.Contracts.DataObjects.SysRole";
+                case "Territory":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Territory";
+                case "EmployeeTerritory":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.EmployeeTerritory";
+                case "Customers":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Customers";
+                case "Categories":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Categories";
+                case "Region":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Region";
+                case "Suppliers":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Suppliers";
                 case "SysOperationLock":
-                    return "Northwind.WebAPI.Contracts.DataObjects.SysOperationLock";
-                case "Order":
-                    return "Northwind.WebAPI.Contracts.DataObjects.Order";
-                case "OrderDetail":
-                    return "Northwind.WebAPI.Contracts.DataObjects.OrderDetail";
+                    return "NorthWind.WebAPI.Contracts.DataObjects.SysOperationLock";
+                case "Orders":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Orders";
+                case "OrderDetails":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.OrderDetails";
                 case "SysSetting":
-                    return "Northwind.WebAPI.Contracts.DataObjects.SysSetting";
-                case "Employee":
-                    return "Northwind.WebAPI.Contracts.DataObjects.Employee";
+                    return "NorthWind.WebAPI.Contracts.DataObjects.SysSetting";
+                case "Employees":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Employees";
+                case "CustomerDemographic":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.CustomerDemographic";
                 case "SysSettingProperty":
-                    return "Northwind.WebAPI.Contracts.DataObjects.SysSettingProperty";
-                case "VSalesByCategory":
-                    return "Northwind.WebAPI.Contracts.DataObjects.VSalesByCategory";
-                case "Shipper":
-                    return "Northwind.WebAPI.Contracts.DataObjects.Shipper";
-                case "QSuppliers":
-                    return "Northwind.WebAPI.Contracts.DataObjects.QSuppliers";
-                case "QEmployees":
-                    return "Northwind.WebAPI.Contracts.DataObjects.QEmployees";
-                case "QShippers":
-                    return "Northwind.WebAPI.Contracts.DataObjects.QShippers";
-                case "QCategories":
-                    return "Northwind.WebAPI.Contracts.DataObjects.QCategories";
-                case "QCustomers":
-                    return "Northwind.WebAPI.Contracts.DataObjects.QCustomers";
-                case "QProducts":
-                    return "Northwind.WebAPI.Contracts.DataObjects.QProducts";
-                case "QOrderProducts":
-                    return "Northwind.WebAPI.Contracts.DataObjects.QOrderProducts";
-                case "QOrders":
-                    return "Northwind.WebAPI.Contracts.DataObjects.QOrders";
+                    return "NorthWind.WebAPI.Contracts.DataObjects.SysSettingProperty";
+                case "Shippers":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.Shippers";
+                case "SupplierQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.SupplierQuery";
+                case "EmployeeQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.EmployeeQuery";
+                case "ShipperQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.ShipperQuery";
+                case "CategoryQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.CategoryQuery";
+                case "ReportFormQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.ReportFormQuery";
+                case "CustomerQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.CustomerQuery";
+                case "ProductQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.ProductQuery";
+                case "OrderProductQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.OrderProductQuery";
+                case "OrdersQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.OrdersQuery";
+                case "RegionQuery":
+                    return "NorthWind.WebAPI.Contracts.DataObjects.RegionQuery";
                 default:
                     return null;
             }

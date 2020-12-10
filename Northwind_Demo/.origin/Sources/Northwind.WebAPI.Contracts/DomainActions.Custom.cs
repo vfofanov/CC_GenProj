@@ -1,7 +1,7 @@
 ﻿using BusinessFramework.Contracts.Metadata;
 
 
-namespace Northwind.WebAPI.Contracts
+namespace NorthWind.WebAPI.Contracts
 {
     /// <summary>
     ///     Domain actions' keys
@@ -10,9 +10,11 @@ namespace Northwind.WebAPI.Contracts
     {
         public static class Custom
         {
-            public static class TestDynamicColumnsActionService
+            public static class ReportService
             {
-                public static readonly CustomDomainAction GetTestData = new CustomDomainAction("GetTestData", DomainActionKeys.Custom.TestDynamicColumnsActionService_GetTestData, "GetTestData", false);
+                public static readonly CustomDomainAction ServerPrintSimple = new CustomDomainAction("ServerPrintSimple", DomainActionKeys.Custom.ReportService_ServerPrintSimple, "Print report", false);
+                public static readonly CustomDomainAction ServerPrintWithParameter = new CustomDomainAction("ServerPrintWithParameter", DomainActionKeys.Custom.ReportService_ServerPrintWithParameter, "Print report with parameter ", false);
+                public static readonly CustomDomainAction ServerPrintWithForm = new CustomDomainAction("ServerPrintWithForm", DomainActionKeys.Custom.ReportService_ServerPrintWithForm, "Print report with parameter ", false);
             }
 
         }

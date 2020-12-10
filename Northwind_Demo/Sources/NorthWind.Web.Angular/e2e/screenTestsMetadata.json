@@ -1,0 +1,32 @@
+{
+	"screens" : {
+		 "Customers" : { 
+			"displayName": "Customers"
+			}
+		,  "Shippers" : { 
+			"displayName": "Shippers"
+			}
+		,  "Orders" : { 
+			"displayName": "Orders"
+			}
+		,  "Categories" : { 
+			"displayName": "Categories"
+			}
+		,  "Products" : { 
+			"displayName": "Products"
+			}
+		,  "Suppliers" : { 
+			"displayName": "Suppliers"
+			}
+		,  "Employees" : { 
+			"displayName": "Employees"
+			}
+		,  "Region" : { 
+			"displayName": "Region (identity)"
+			}
+		,  "Charts" : { 
+			"displayName": "Charts"
+			}
+		
+	}
+}

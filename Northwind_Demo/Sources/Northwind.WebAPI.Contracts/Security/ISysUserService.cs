@@ -1,4 +1,4 @@
-﻿namespace Northwind.WebAPI.Contracts.Security
+﻿namespace NorthWind.WebAPI.Contracts.Security
 {
     public interface ISysUserService
     {

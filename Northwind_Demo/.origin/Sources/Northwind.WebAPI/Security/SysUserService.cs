@@ -1,11 +1,11 @@
 using BusinessFramework.WebAPI.Contracts.Services;
 using FutureTechnologies.DI.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.Repositories;
-using Northwind.WebAPI.Contracts.Security;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.Repositories;
+using NorthWind.WebAPI.Contracts.Security;
 
 
-namespace Northwind.WebAPI.Security
+namespace NorthWind.WebAPI.Security
 {
     /// <inheritdoc />
     public sealed class SysUserService : ISysUserService

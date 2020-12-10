@@ -1,7 +1,7 @@
 ﻿
 using BusinessFramework.WebAPI.Contracts.Security;
 
-namespace Northwind.WebAPI.Contracts.Security
+namespace NorthWind.WebAPI.Contracts.Security
 {
     /// <summary>
     /// Class to process registered user

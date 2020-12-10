@@ -7,10 +7,10 @@ using BusinessFramework.Client.Contracts;
 using BusinessFramework.Client.Contracts.Services.Settings;
 using BusinessFramework.Client.WinForms.IG.Controls.PropertyGridEx;
 using Infragistics.Shared;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.DomainModel;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.DomainModel;
 
-namespace Northwind.Client.CustomSettings
+namespace NorthWind.Client.CustomSettings
 {
     public partial class SettingsTreeControl : UserControl, ISettingsView
     {

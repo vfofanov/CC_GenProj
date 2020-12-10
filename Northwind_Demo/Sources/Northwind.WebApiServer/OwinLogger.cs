@@ -6,7 +6,7 @@ using BusinessFramework.Contracts.Utils;
 
 using IOwinLogger = Microsoft.Owin.Logging.ILogger;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     internal sealed class OwinLogger : ILogger
     {

@@ -1,6 +1,6 @@
 ﻿using BusinessFramework.WebAPI.Contracts.Data;
 
-namespace Northwind.WebAPI.Contracts
+namespace NorthWind.WebAPI.Contracts
 {
     public interface IApiDbContext : IDbContext, IApiEntityManager
     {

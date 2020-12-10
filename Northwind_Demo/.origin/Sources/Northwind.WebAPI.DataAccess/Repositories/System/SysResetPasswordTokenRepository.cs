@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Linq;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
 
 
-namespace Northwind.WebAPI.DataAccess.Repositories
+namespace NorthWind.WebAPI.DataAccess.Repositories
 {
     /// <summary>
     /// Repository for <see cref="SysResetPasswordTokenRepository"/> objects

@@ -5,10 +5,10 @@ using BusinessFramework.Client.Contracts;
 using BusinessFramework.Client.Contracts.Services.Security;
 using BusinessFramework.Client.Contracts.Services.Settings;
 using BusinessFramework.Contracts;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.DomainModel;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.DomainModel;
 
-namespace Northwind.Client.CustomSettings
+namespace NorthWind.Client.CustomSettings
 {
     internal class SettingsPresenter : IDisposable
     {

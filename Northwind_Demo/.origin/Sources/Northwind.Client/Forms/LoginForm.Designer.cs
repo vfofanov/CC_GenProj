@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using BusinessFramework.Client.WinForms.IG.Controls;
 
-namespace Northwind.Client.Forms.Security
+namespace NorthWind.Client.Forms.Security
 {
     partial class LoginForm
     {

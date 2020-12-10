@@ -1,7 +1,7 @@
 ﻿using System;
 using BusinessFramework.Client.Contracts.Connection;
 
-namespace Northwind.Client.ServerServices
+namespace NorthWind.Client.ServerServices
 {
     public sealed class DomainODataClientFactory : IODataClientFactory
     {

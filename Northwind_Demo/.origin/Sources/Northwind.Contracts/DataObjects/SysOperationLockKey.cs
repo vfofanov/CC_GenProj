@@ -4,7 +4,7 @@ using BusinessFramework.Contracts;
 using BusinessFramework.Contracts.Utils;
 
 
-namespace Northwind.Contracts.DataObjects
+namespace NorthWind.Contracts.DataObjects
 {
     [Serializable]
     [TypeConverter(typeof (JsonUriConverter<SysOperationLockKey, SysOperationLockKeyData>))]

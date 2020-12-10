@@ -5,7 +5,7 @@ using BusinessFramework.WebAPI.Common.Controllers;
 using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Contracts.Security;
 
-namespace Northwind.WebAPI.Controllers
+namespace NorthWind.WebAPI.Controllers
 {
     /// <summary>
     ///     Get value formats controller

@@ -8,12 +8,12 @@ using BusinessFramework.Contracts.GuiSettings.Screens;
 using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.GuiSettingsControllers;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Controllers.Properties;
 
 
-namespace Northwind.WebAPI.Controllers.GuiSettings
+namespace NorthWind.WebAPI.Controllers.GuiSettings
 {
     /// <summary>
     ///  Main menu gui settings controller
@@ -37,11 +37,11 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
         public JsonResult<MainMenuSettings> Get()
         {
             var result = new MainMenuSettings();
-            var groups = new List<MainMenuScreenGroupSettings>(3);
+            var groups = new List<MainMenuScreenGroupSettings>(4);
             var screens = new List<MainMenuScreenSettings>();
 			           
             #region Orders
-            if (Security.AuthorizeAll(DomainPermissions.QCustomers_Read))
+            if (Security.AuthorizeAll(DomainPermissions.CustomerQuery_Read))
             {
                 screens.Add(new MainMenuScreenSettings 
 				            { 
@@ -52,7 +52,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
 								Image = "Customers"
 							});
             }
-            if (Security.AuthorizeAll(DomainPermissions.QShippers_Read))
+            if (Security.AuthorizeAll(DomainPermissions.ShipperQuery_Read))
             {
                 screens.Add(new MainMenuScreenSettings 
 				            { 
@@ -63,7 +63,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
 								Image = "Shippers"
 							});
             }
-            if (Security.AuthorizeAll(DomainPermissions.QOrders_Read))
+            if (Security.AuthorizeAll(DomainPermissions.OrdersQuery_Read))
             {
                 screens.Add(new MainMenuScreenSettings 
 				            { 
@@ -72,17 +72,6 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
 								Controller = "OrdersSettings",
                                 Hidden = false,
 								Image = "Orders"
-							});
-            }
-            if (true)
-            {
-                screens.Add(new MainMenuScreenSettings 
-				            { 
-							    Name = "TestDynamicColumns",
-								Title = ScreenResources.TestDynamicColumns_DisplayName,
-								Controller = "TestDynamicColumnsSettings",
-                                Hidden = false,
-								Image = ""
 							});
             }
             if (screens.Count != 0)
@@ -98,7 +87,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
             screens.Clear();
             #endregion
             #region Products
-            if (Security.AuthorizeAll(DomainPermissions.QCategories_Read))
+            if (Security.AuthorizeAll(DomainPermissions.CategoryQuery_Read))
             {
                 screens.Add(new MainMenuScreenSettings 
 				            { 
@@ -109,7 +98,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
 								Image = "Categories"
 							});
             }
-            if (Security.AuthorizeAll(DomainPermissions.QProducts_Read))
+            if (Security.AuthorizeAll(DomainPermissions.ProductQuery_Read))
             {
                 screens.Add(new MainMenuScreenSettings 
 				            { 
@@ -120,7 +109,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
 								Image = "Products"
 							});
             }
-            if (Security.AuthorizeAll(DomainPermissions.QSuppliers_Read))
+            if (Security.AuthorizeAll(DomainPermissions.SupplierQuery_Read))
             {
                 screens.Add(new MainMenuScreenSettings 
 				            { 
@@ -144,7 +133,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
             screens.Clear();
             #endregion
             #region Employees
-            if (Security.AuthorizeAll(DomainPermissions.QEmployees_Read))
+            if (Security.AuthorizeAll(DomainPermissions.EmployeeQuery_Read))
             {
                 screens.Add(new MainMenuScreenSettings 
 				            { 
@@ -162,6 +151,41 @@ namespace Northwind.WebAPI.Controllers.GuiSettings
 				    Name = "Employees",
                     Title = ScreenGroupResources.Employees_DisplayName,
                     Color = new byte[] {247, 150, 70},
+                    Screens = screens.ToArray()
+                });
+            }
+            screens.Clear();
+            #endregion
+            #region Experimental
+            if (Security.AuthorizeAll(DomainPermissions.Region_Read))
+            {
+                screens.Add(new MainMenuScreenSettings 
+				            { 
+							    Name = "Region",
+								Title = ScreenResources.Region_DisplayName,
+								Controller = "RegionSettings",
+                                Hidden = false,
+								Image = "Region"
+							});
+            }
+            if (Security.AuthorizeAll(DomainPermissions.Customers_Read))
+            {
+                screens.Add(new MainMenuScreenSettings 
+				            { 
+							    Name = "Charts",
+								Title = ScreenResources.Charts_DisplayName,
+								Controller = "ChartsSettings",
+                                Hidden = false,
+								Image = "Customers"
+							});
+            }
+            if (screens.Count != 0)
+            {
+                groups.Add(new MainMenuScreenGroupSettings
+                {
+				    Name = "Experimental",
+                    Title = ScreenGroupResources.Experimental_DisplayName,
+                    Color = new byte[] {100, 149, 237},
                     Screens = screens.ToArray()
                 });
             }

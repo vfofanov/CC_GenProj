@@ -1,18 +1,18 @@
 ﻿using BusinessFramework.Client.Common.Screens;
 using BusinessFramework.Client.Contracts.Services;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.DomainModel;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.DomainModel;
 
 
-namespace Northwind.Common.Screens
+namespace NorthWind.Common.Screens
 {
     public sealed class ShippersScreenViewModel : CodeBehind.CodeBehindShippersScreenViewModel
     {
         public ShippersScreenViewModel(
 		//--  custom dependencies
 		//-- /custom dependencies
-		IEntityManagementService entityManagementService, IQShippersCollectionManager qShippersCollectionManager, IScreenCommandFactory screenCommandFactory)
-		    :base(entityManagementService, qShippersCollectionManager, screenCommandFactory)
+		IEntityManagementService entityManagementService, IScreenCommandFactory screenCommandFactory, IShipperQueryCollectionManager shipperQueryCollectionManager)
+		    :base(entityManagementService, screenCommandFactory, shipperQueryCollectionManager)
         {
         }
     }

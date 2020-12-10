@@ -1,7 +1,7 @@
 ﻿using BusinessFramework;
 
 
-namespace Northwind.Contracts
+namespace NorthWind.Contracts
 {
     /// <summary>
     /// Domain permissions

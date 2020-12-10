@@ -6,10 +6,10 @@ using BusinessFramework.Client.Contracts.Properties;
 using BusinessFramework.Client.Contracts.Services.Security;
 using BusinessFramework.Client.WinForms.IG.Explorer;
 using BusinessFramework.Client.WinForms.Utils;
-using Northwind.Common;
-using Northwind.Contracts;
+using NorthWind.Common;
+using NorthWind.Contracts;
 
-namespace Northwind.Console.Services
+namespace NorthWind.Console.Services
 {
     internal sealed class MainMenuService : IMainMenuService
     {

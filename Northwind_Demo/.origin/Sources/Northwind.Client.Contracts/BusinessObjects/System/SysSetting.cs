@@ -4,7 +4,7 @@ using BusinessFramework.Client.Contracts;
 using BusinessFramework.Client.Contracts.DataObjects;
 using Newtonsoft.Json;
 
-namespace Northwind.Client.Contracts.BusinessObjects
+namespace NorthWind.Client.Contracts.BusinessObjects
 {
 
     [Serializable]

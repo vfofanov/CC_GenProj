@@ -5,10 +5,10 @@ using BusinessFramework.Client.Contracts.Services.Dialogs;
 using BusinessFramework.Client.Contracts.Services.Security;
 using BusinessFramework.Client.Contracts.Services.Settings;
 using BusinessFramework.Contracts;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.DomainModel;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.DomainModel;
 
-namespace Northwind.Common.Settings
+namespace NorthWind.Common.Settings
 {
     public sealed class SessionSettingsService : ISessionSettingsService
     {

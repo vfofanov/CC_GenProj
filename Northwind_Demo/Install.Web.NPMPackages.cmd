@@ -2,7 +2,7 @@
 :: Prior to run this file install node.js.
 
 cd Sources
-cd Northwind.Web.Angular
+cd NorthWind.Web.Angular
 rmdir /s /q node_modules
 CALL npm install webpack@5.3.2 -g
 CALL npm install webpack-cli -g

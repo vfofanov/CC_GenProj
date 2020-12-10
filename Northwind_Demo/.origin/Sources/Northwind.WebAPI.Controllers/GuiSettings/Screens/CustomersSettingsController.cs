@@ -12,13 +12,13 @@ using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Common.Security;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.GuiSettingsControllers;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Controllers.Properties;
 
 // ReSharper disable UnusedParameter.Local
 
-namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
+namespace NorthWind.WebAPI.Controllers.GuiSettings.Screens
 {
     /// <summary>
     ///  Customers screen settings controller
@@ -41,7 +41,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
         /// <returns></returns>		
         public IHttpActionResult Get()
         {            
-            if (!(Security.AuthorizeAll(DomainPermissions.QCustomers_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.CustomerQuery_Read)))
             {
                 return GetInternalForbiddenResult();
             }
@@ -64,7 +64,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                 {
 				    Name = "qCustomers",
                     Actions = GetQCustomersActions(),
-				    Controller = "QCustomers",
+				    Controller = "CustomerQuery",
 				    Content = GetQCustomersContent(context),
                 };
 				           
@@ -78,7 +78,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetQCustomersContent(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QCustomers_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.CustomerQuery_Read)))
             {
 			    return null;
 			}
@@ -86,61 +86,61 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "CompanyName", Key = DomainObjectPropertyKeys.QCustomers.CompanyName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "CompanyName", Key = DomainObjectPropertyKeys.CustomerQuery.CompanyName, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_CompanyName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "ContactName", Key = DomainObjectPropertyKeys.QCustomers.ContactName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "ContactName", Key = DomainObjectPropertyKeys.CustomerQuery.ContactName, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_ContactName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "ContactTitle", Key = DomainObjectPropertyKeys.QCustomers.ContactTitle, DataType = FieldDataType.String},
+			    Field = new Field {Name = "ContactTitle", Key = DomainObjectPropertyKeys.CustomerQuery.ContactTitle, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_ContactTitle,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Address", Key = DomainObjectPropertyKeys.QCustomers.Address, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Address", Key = DomainObjectPropertyKeys.CustomerQuery.Address, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_Address,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "City", Key = DomainObjectPropertyKeys.QCustomers.City, DataType = FieldDataType.String},
+			    Field = new Field {Name = "City", Key = DomainObjectPropertyKeys.CustomerQuery.City, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_City,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Region", Key = DomainObjectPropertyKeys.QCustomers.Region, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Region", Key = DomainObjectPropertyKeys.CustomerQuery.Region, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_Region,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "PostalCode", Key = DomainObjectPropertyKeys.QCustomers.PostalCode, DataType = FieldDataType.String},
+			    Field = new Field {Name = "PostalCode", Key = DomainObjectPropertyKeys.CustomerQuery.PostalCode, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_PostalCode,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Country", Key = DomainObjectPropertyKeys.QCustomers.Country, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Country", Key = DomainObjectPropertyKeys.CustomerQuery.Country, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_Country,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Phone", Key = DomainObjectPropertyKeys.QCustomers.Phone, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Phone", Key = DomainObjectPropertyKeys.CustomerQuery.Phone, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_Phone,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Fax", Key = DomainObjectPropertyKeys.QCustomers.Fax, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Fax", Key = DomainObjectPropertyKeys.CustomerQuery.Fax, DataType = FieldDataType.String},
 				Title = ScreenResources.Customers_qCustomers_Fax,                
 				Sortable = true,
 			});
@@ -160,7 +160,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private WorkActionItem[] GetQCustomersActions()
         {
 		    var actions = new List<WorkActionItem>(5);
-            if (Security.AuthorizeAll(DomainPermissions.Customer_Create))
+            if (Security.AuthorizeAll(DomainPermissions.Customers_Create))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -172,7 +172,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qCustomersWizardCreateNew",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Customer_Read))
+            if (Security.AuthorizeAll(DomainPermissions.Customers_Read))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -184,7 +184,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qCustomersWizardView",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Customer_Update))
+            if (Security.AuthorizeAll(DomainPermissions.Customers_Update))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -196,7 +196,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qCustomersWizardEdit",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Customer_Delete))
+            if (Security.AuthorizeAll(DomainPermissions.Customers_Delete))
 		    {
     		    actions.Add(new WorkAction
                 {

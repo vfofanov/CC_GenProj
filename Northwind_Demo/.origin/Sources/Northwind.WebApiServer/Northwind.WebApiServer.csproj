@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.WebApiServer</RootNamespace>
-    <AssemblyName>Northwind.WebApiServer</AssemblyName>
+    <RootNamespace>NorthWind.WebApiServer</RootNamespace>
+    <AssemblyName>NorthWind.WebApiServer</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -36,7 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Northwind.WebApiServer.xml</DocumentationFile>
+    <DocumentationFile>bin\NorthWind.WebApiServer.xml</DocumentationFile>
     <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -46,7 +46,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Northwind.WebApiServer.xml</DocumentationFile>
+    <DocumentationFile>bin\NorthWind.WebApiServer.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aspose.Cells, Version=7.4.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
@@ -378,25 +378,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.WebAPI.Contracts\Northwind.WebAPI.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.WebAPI.Contracts\NorthWind.WebAPI.Contracts.csproj">
       <Project>{d3460f1a-d56e-4d69-ae87-050f54ebc01f}</Project>
-      <Name>Northwind.WebAPI.Contracts</Name>
+      <Name>NorthWind.WebAPI.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.WebAPI.Controllers\Northwind.WebAPI.Controllers.csproj">
+    <ProjectReference Include="..\NorthWind.WebAPI.Controllers\NorthWind.WebAPI.Controllers.csproj">
       <Project>{52e151ed-7a80-45eb-8163-a36d5890361e}</Project>
-      <Name>Northwind.WebAPI.Controllers</Name>
+      <Name>NorthWind.WebAPI.Controllers</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.WebAPI.DataAccess\Northwind.WebAPI.DataAccess.csproj">
+    <ProjectReference Include="..\NorthWind.WebAPI.DataAccess\NorthWind.WebAPI.DataAccess.csproj">
       <Project>{0afa703c-b408-42dc-8490-5726a12506f3}</Project>
-      <Name>Northwind.WebAPI.DataAccess</Name>
+      <Name>NorthWind.WebAPI.DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.WebAPI\Northwind.WebAPI.csproj">
+    <ProjectReference Include="..\NorthWind.WebAPI\NorthWind.WebAPI.csproj">
       <Project>{6fb82326-d6fa-4a4e-a4ca-82b5c6b9bd4e}</Project>
-      <Name>Northwind.WebAPI</Name>
+      <Name>NorthWind.WebAPI</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
        <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>

@@ -5,40 +5,20 @@
 
 :: DEFAULT CONFIGURATION
 :: FTP Settings
-SET ServerHostName=
-SET ServerPortNumber=
+SET ServerHostName=31.31.196.89
+SET ServerPortNumber=21
 SET ServerProtocol=2
-SET ServerUserName=
-SET ServerPassword=
-SET ServerRemoteFolder=
-SET ClientHostName=
-SET ClientPortNumber=
+SET ServerUserName=u1015027
+SET ServerPassword=S!6g9x!P
+SET ServerRemoteFolder=api.northwind.code-cruiser.com
+SET ClientHostName=31.31.196.89
+SET ClientPortNumber=21
 SET ClientProtocol=2
-SET ClientUserName=
-SET ClientPassword=
-SET ClientRemoteFolder=
+SET ClientUserName=u1015027
+SET ClientPassword=S!6g9x!P
+SET ClientRemoteFolder=northwind.code-cruiser.com
 :: Database
-SET DBServer=
-SET DBName=Northwind
-SET DBUserName=sa
-SET DBPassword=
-
-:: SECOND CONFIGURATION EXAMPLE (_production)
-:: FTP Settings
-:: SET ServerHostName_production=
-:: SET ServerPortNumber_production=
-:: SET ServerProtocol_production=2
-:: SET ServerUserName_production=
-:: SET ServerPassword_production=
-:: SET ServerRemoteFolder_production=
-:: SET ClientHostName_production=
-:: SET ClientPortNumber_production=
-:: SET ClientProtocol_production=2
-:: SET ClientUserName_production=
-:: SET ClientPassword_production=
-:: SET ClientRemoteFolder_production=
-:: Database
-:: SET DBServer_production=
-:: SET DBName_production=Northwind
-:: SET DBUserName_production=sa
-:: SET DBPassword_production=
+SET DBServer=wpl26.hosting.reg.ru
+SET DBName=u1015027_northwind
+SET DBUserName=u1015027_northwind
+SET DBPassword=fa8m5$7U

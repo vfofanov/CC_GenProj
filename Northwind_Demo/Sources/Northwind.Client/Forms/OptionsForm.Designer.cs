@@ -1,7 +1,7 @@
 using BusinessFramework.Client.WinForms.IG.Controls;
-using Northwind.Client.CustomSettings;
+using NorthWind.Client.CustomSettings;
 
-namespace Northwind.Client.Forms
+namespace NorthWind.Client.Forms
 {
     partial class OptionsForm
     {

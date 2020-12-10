@@ -6,11 +6,11 @@ using BusinessFramework.WebAPI.Common.Controllers;
 using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.Contracts.Services;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
+using NorthWind.WebAPI.Controllers.Properties;
 
-namespace Northwind.WebAPI.Controllers.Registration
+namespace NorthWind.WebAPI.Controllers.Registration
 {
     /// <summary>
     /// Restore password

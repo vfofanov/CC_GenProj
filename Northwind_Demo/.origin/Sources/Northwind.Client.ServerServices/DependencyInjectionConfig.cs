@@ -5,9 +5,9 @@ using BusinessFramework.Client.Contracts.Connection;
 using BusinessFramework.Client.Contracts.Services;
 using BusinessFramework.Client.Contracts.Services.Dialogs;
 using FutureTechnologies.DI.Contracts;
-using Northwind.Client.ServerServices.DomainModel;
+using NorthWind.Client.ServerServices.DomainModel;
 
-namespace Northwind.Client.ServerServices
+namespace NorthWind.Client.ServerServices
 {
     public static partial class DependencyInjectionConfig
     {

@@ -8,8 +8,8 @@
     <ProjectGuid>{EC1BCD80-F9B3-4EE9-BE46-99792EE1997D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.Common</RootNamespace>
-    <AssemblyName>Northwind.Common</AssemblyName>
+    <RootNamespace>NorthWind.Common</RootNamespace>
+    <AssemblyName>NorthWind.Common</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -97,48 +97,59 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Screens\CategoriesScreenViewModel.cs" />
+    <Compile Include="Screens\ChartsScreenViewModel.cs" />
     <Compile Include="Screens\CodeBehind\CodeBehindCategoriesScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindChartsScreenViewModel.cs" />
     <Compile Include="Screens\CodeBehind\CodeBehindCustomersScreenViewModel.cs" />
     <Compile Include="Screens\CodeBehind\CodeBehindEmployeesScreenViewModel.cs" />
     <Compile Include="Screens\CodeBehind\CodeBehindOrdersScreenViewModel.cs" />
     <Compile Include="Screens\CodeBehind\CodeBehindProductsScreenViewModel.cs" />
+    <Compile Include="Screens\CodeBehind\CodeBehindRegionScreenViewModel.cs" />
     <Compile Include="Screens\CodeBehind\CodeBehindShippersScreenViewModel.cs" />
     <Compile Include="Screens\CodeBehind\CodeBehindSuppliersScreenViewModel.cs" />
-    <Compile Include="Screens\CodeBehind\CodeBehindTestDynamicColumnsScreenViewModel.cs" />
     <Compile Include="Screens\CustomersScreenViewModel.cs" />
     <Compile Include="Screens\EmployeesScreenViewModel.cs" />
     <Compile Include="Screens\OrdersScreenViewModel.cs" />
     <Compile Include="Screens\ProductsScreenViewModel.cs" />
+    <Compile Include="Screens\RegionScreenViewModel.cs" />
     <Compile Include="Screens\ShippersScreenViewModel.cs" />
     <Compile Include="Screens\SuppliersScreenViewModel.cs" />
-    <Compile Include="Screens\TestDynamicColumnsScreenViewModel.cs" />
     <Compile Include="Settings\SessionSettingsProvider.cs" />
     <Compile Include="Settings\SessionSettingsService.cs" />
-    <Compile Include="Wizards\CategoriesWizardParameters.cs" />
-    <Compile Include="Wizards\CustomersWizardParameters.cs" />
+    <Compile Include="Wizards\CategoryWizardParameters.cs" />
+    <Compile Include="Wizards\CustomerCompactWizardParameters.cs" />
+    <Compile Include="Wizards\CustomerWizardParameters.cs" />
     <Compile Include="Wizards\DomainWizards.cs" />
-    <Compile Include="Wizards\EmployeesWizardParameters.cs" />
-    <Compile Include="Wizards\Initialization\CategoriesWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindCategoriesWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindCustomersWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindEmployeesWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindOrderDetailsWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindOrdersWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindProductsWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindShippersWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindSuppliersWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\CustomersWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\EmployeesWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\OrderDetailsWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\OrdersWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\ProductsWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\ShippersWizardInitialization.cs" />
-    <Compile Include="Wizards\Initialization\SuppliersWizardInitialization.cs" />
-    <Compile Include="Wizards\OrderDetailsWizardParameters.cs" />
-    <Compile Include="Wizards\OrdersWizardParameters.cs" />
-    <Compile Include="Wizards\ProductsWizardParameters.cs" />
-    <Compile Include="Wizards\ShippersWizardParameters.cs" />
-    <Compile Include="Wizards\SuppliersWizardParameters.cs" />
+    <Compile Include="Wizards\EmployeeWizardParameters.cs" />
+    <Compile Include="Wizards\Initialization\CategoryWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindCategoryWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindCustomerCompactWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindCustomerWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindEmployeeWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindOrderDetailWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindOrderWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindProductWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindRegionWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindReportFormQueryWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindShipperWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CodeBehind\CodeBehindSupplierWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CustomerCompactWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\CustomerWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\EmployeeWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\OrderDetailWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\OrderWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\ProductWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\RegionWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\ReportFormQueryWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\ShipperWizardInitialization.cs" />
+    <Compile Include="Wizards\Initialization\SupplierWizardInitialization.cs" />
+    <Compile Include="Wizards\OrderDetailWizardParameters.cs" />
+    <Compile Include="Wizards\OrderWizardParameters.cs" />
+    <Compile Include="Wizards\ProductWizardParameters.cs" />
+    <Compile Include="Wizards\RegionWizardParameters.cs" />
+    <Compile Include="Wizards\ReportFormQueryWizardParameters.cs" />
+    <Compile Include="Wizards\ShipperWizardParameters.cs" />
+    <Compile Include="Wizards\SupplierWizardParameters.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -147,17 +158,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Client.Contracts\Northwind.Client.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Contracts\NorthWind.Client.Contracts.csproj">
       <Project>{8d648785-a742-4354-a01b-012e70020819}</Project>
-      <Name>Northwind.Client.Contracts</Name>
+      <Name>NorthWind.Client.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Client.Services.Contracts\Northwind.Client.Services.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Services.Contracts\NorthWind.Client.Services.Contracts.csproj">
       <Project>{eafeb21c-959c-4025-9848-856f5f5671c6}</Project>
-      <Name>Northwind.Client.Services.Contracts</Name>
+      <Name>NorthWind.Client.Services.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Common\BusinessFramework.Client.Common.csproj">
        <Project>{EA9EB61E-B762-4401-86F2-0ACBF16944D8}</Project>

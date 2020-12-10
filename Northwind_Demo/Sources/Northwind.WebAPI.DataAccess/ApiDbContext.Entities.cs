@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using BusinessFramework.WebAPI.Contracts.Files;
-using Northwind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.DataObjects;
 
 
 
-namespace Northwind.WebAPI.DataAccess
+namespace NorthWind.WebAPI.DataAccess
 {
     partial class ApiDbContext
     {
@@ -15,13 +15,6 @@ namespace Northwind.WebAPI.DataAccess
         public IQueryable<FileLink> FileLinks
         {
             get { return GetSet<FileLink>(); }
-        }
-        /// <summary>
-        /// Set of <see cref="OrderStatus"/> objects
-        /// </summary>
-        public IQueryable<OrderStatus> OrderStatuses
-        {
-            get { return GetSet<OrderStatus>(); }
         }
         /// <summary>
         /// Set of <see cref="SysUserPermissionsDisplayView"/> objects
@@ -52,11 +45,18 @@ namespace Northwind.WebAPI.DataAccess
             get { return GetSet<SysOperationResult>(); }
         }
         /// <summary>
-        /// Set of <see cref="Product"/> objects
+        /// Set of <see cref="Products"/> objects
         /// </summary>
-        public IQueryable<Product> Products
+        public IQueryable<Products> Products
         {
-            get { return GetSet<Product>(); }
+            get { return GetSet<Products>(); }
+        }
+        /// <summary>
+        /// Set of <see cref="CustomerCustomerDemo"/> objects
+        /// </summary>
+        public IQueryable<CustomerCustomerDemo> CustomerCustomerDemos
+        {
+            get { return GetSet<CustomerCustomerDemo>(); }
         }
         /// <summary>
         /// Set of <see cref="SysResetPasswordToken"/> objects
@@ -80,6 +80,20 @@ namespace Northwind.WebAPI.DataAccess
             get { return GetSet<SysRole>(); }
         }
         /// <summary>
+        /// Set of <see cref="Territory"/> objects
+        /// </summary>
+        public IQueryable<Territory> Territories
+        {
+            get { return GetSet<Territory>(); }
+        }
+        /// <summary>
+        /// Set of <see cref="EmployeeTerritory"/> objects
+        /// </summary>
+        public IQueryable<EmployeeTerritory> EmployeeTerritories
+        {
+            get { return GetSet<EmployeeTerritory>(); }
+        }
+        /// <summary>
         /// Set of <see cref="SysUser"/> objects
         /// </summary>
         public IQueryable<SysUser> SysUsers
@@ -94,25 +108,32 @@ namespace Northwind.WebAPI.DataAccess
             get { return GetSet<SysRolePermission>(); }
         }
         /// <summary>
-        /// Set of <see cref="Customer"/> objects
+        /// Set of <see cref="Customers"/> objects
         /// </summary>
-        public IQueryable<Customer> Customers
+        public IQueryable<Customers> Customers
         {
-            get { return GetSet<Customer>(); }
+            get { return GetSet<Customers>(); }
         }
         /// <summary>
-        /// Set of <see cref="Category"/> objects
+        /// Set of <see cref="Categories"/> objects
         /// </summary>
-        public IQueryable<Category> Categories
+        public IQueryable<Categories> Categories
         {
-            get { return GetSet<Category>(); }
+            get { return GetSet<Categories>(); }
         }
         /// <summary>
-        /// Set of <see cref="Supplier"/> objects
+        /// Set of <see cref="Region"/> objects
         /// </summary>
-        public IQueryable<Supplier> Suppliers
+        public IQueryable<Region> Regions
         {
-            get { return GetSet<Supplier>(); }
+            get { return GetSet<Region>(); }
+        }
+        /// <summary>
+        /// Set of <see cref="Suppliers"/> objects
+        /// </summary>
+        public IQueryable<Suppliers> Suppliers
+        {
+            get { return GetSet<Suppliers>(); }
         }
         /// <summary>
         /// Set of <see cref="SysOperationLock"/> objects
@@ -129,11 +150,11 @@ namespace Northwind.WebAPI.DataAccess
             get { return GetSet<SysUserRole>(); }
         }
         /// <summary>
-        /// Set of <see cref="Order"/> objects
+        /// Set of <see cref="Orders"/> objects
         /// </summary>
-        public IQueryable<Order> Orders
+        public IQueryable<Orders> Orders
         {
-            get { return GetSet<Order>(); }
+            get { return GetSet<Orders>(); }
         }
         /// <summary>
         /// Set of <see cref="SysPermission"/> objects
@@ -143,11 +164,11 @@ namespace Northwind.WebAPI.DataAccess
             get { return GetSet<SysPermission>(); }
         }
         /// <summary>
-        /// Set of <see cref="OrderDetail"/> objects
+        /// Set of <see cref="OrderDetails"/> objects
         /// </summary>
-        public IQueryable<OrderDetail> OrderDetails
+        public IQueryable<OrderDetails> OrderDetails
         {
-            get { return GetSet<OrderDetail>(); }
+            get { return GetSet<OrderDetails>(); }
         }
         /// <summary>
         /// Set of <see cref="SysSetting"/> objects
@@ -164,11 +185,11 @@ namespace Northwind.WebAPI.DataAccess
             get { return GetSet<SysInfo>(); }
         }
         /// <summary>
-        /// Set of <see cref="Employee"/> objects
+        /// Set of <see cref="Employees"/> objects
         /// </summary>
-        public IQueryable<Employee> Employees
+        public IQueryable<Employees> Employees
         {
-            get { return GetSet<Employee>(); }
+            get { return GetSet<Employees>(); }
         }
         /// <summary>
         /// Set of <see cref="SysObjectType"/> objects
@@ -183,6 +204,13 @@ namespace Northwind.WebAPI.DataAccess
         public IQueryable<SysObjectClass> SysObjectClasses
         {
             get { return GetSet<SysObjectClass>(); }
+        }
+        /// <summary>
+        /// Set of <see cref="CustomerDemographic"/> objects
+        /// </summary>
+        public IQueryable<CustomerDemographic> CustomerDemographics
+        {
+            get { return GetSet<CustomerDemographic>(); }
         }
         /// <summary>
         /// Set of <see cref="SysPermissionType"/> objects
@@ -206,18 +234,11 @@ namespace Northwind.WebAPI.DataAccess
             get { return GetSet<SysUsersDisplayView>(); }
         }
         /// <summary>
-        /// Set of <see cref="VSalesByCategory"/> objects
+        /// Set of <see cref="Shippers"/> objects
         /// </summary>
-        public IQueryable<VSalesByCategory> VSalesByCategories
+        public IQueryable<Shippers> Shippers
         {
-            get { return GetSet<VSalesByCategory>(); }
-        }
-        /// <summary>
-        /// Set of <see cref="Shipper"/> objects
-        /// </summary>
-        public IQueryable<Shipper> Shippers
-        {
-            get { return GetSet<Shipper>(); }
+            get { return GetSet<Shippers>(); }
         }
     }
 }

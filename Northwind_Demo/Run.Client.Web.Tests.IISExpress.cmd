@@ -6,7 +6,7 @@ START Run.Client.Web.IISExpress.cmd
 
 SET currentDir=%CD%
 cd Sources
-cd Northwind.Web.Angular
+cd NorthWind.Web.Angular
 
 SET URL=http://localhost:9350
 

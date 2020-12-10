@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Northwind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.DataObjects;
 using BusinessFramework.WebAPI.Contracts.Data;
 
-namespace Northwind.WebAPI.Contracts.Repositories
+namespace NorthWind.WebAPI.Contracts.Repositories
 {
     public interface ISysUserRepository : IClassicEntityRepository<SysUser, int>
     {

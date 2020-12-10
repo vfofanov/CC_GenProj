@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
 
 
-namespace Northwind.WebAPI
+namespace NorthWind.WebAPI
 {
     partial class SecurityService
     {

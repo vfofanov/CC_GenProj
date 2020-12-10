@@ -17,10 +17,10 @@ using BusinessFramework.Client.WinForms.IG.Forms;
 using BusinessFramework.Client.WinForms.IG.Screens;
 using BusinessFramework.Contracts.Formatting;
 using FutureTechnologies.DI.Contracts;
-using Northwind.Client;
-using Northwind.Console.Services;
+using NorthWind.Client;
+using NorthWind.Console.Services;
 
-namespace Northwind.Console
+namespace NorthWind.Console
 {
     partial class DependencyInjectionConfig
     {
@@ -65,11 +65,11 @@ namespace Northwind.Console
         private static Func<Image> GetSplashImage(IScope resolver)
         {
             return () => Image.FromStream(Assembly.GetEntryAssembly()
-                .GetManifestResourceStream("Northwind.Console.Resources.Images.SplashBackground.png"));
+                .GetManifestResourceStream("NorthWind.Console.Resources.Images.SplashBackground.png"));
         }
         private static Icon GetFormIcon()
         {
-            return new Icon(Assembly.GetEntryAssembly().GetManifestResourceStream("Northwind.Console.app.ico"));
+            return new Icon(Assembly.GetEntryAssembly().GetManifestResourceStream("NorthWind.Console.app.ico"));
         }
     }
 }

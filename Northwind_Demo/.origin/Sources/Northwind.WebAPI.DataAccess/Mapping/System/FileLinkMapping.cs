@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration;
 using BusinessFramework.WebAPI.Contracts.Files;
 
 
-namespace Northwind.WebAPI.DataAccess.Mapping
+namespace NorthWind.WebAPI.DataAccess.Mapping
 {
     /// <summary>
     ///     Database mapping for <see cref="FileLink" /> to table dbo.vCustomerList

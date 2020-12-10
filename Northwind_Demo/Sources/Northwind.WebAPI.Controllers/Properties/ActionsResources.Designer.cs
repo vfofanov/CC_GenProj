@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Northwind.WebAPI.Controllers.Properties {
+namespace NorthWind.WebAPI.Controllers.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Northwind.WebAPI.Controllers.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.WebAPI.Controllers.Properties.ActionsResources", typeof(ActionsResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.WebAPI.Controllers.Properties.ActionsResources", typeof(ActionsResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -171,9 +171,9 @@ namespace Northwind.WebAPI.Controllers.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Edit.
         /// </summary>
-        public static string Orders_qOrders_Edit1 {
+        public static string Orders_qOrders_Edit1MyButton {
             get {
-                return ResourceManager.GetString("Orders_qOrders_Edit1", resourceCulture);
+                return ResourceManager.GetString("Orders_qOrders_Edit1MyButton", resourceCulture);
             }
 		}
         
@@ -187,29 +187,29 @@ namespace Northwind.WebAPI.Controllers.Properties {
 		}
         
         /// <summary>
+        ///   Looks up a localized string similar to Print Invoice.
+        /// </summary>
+        public static string Orders_qOrders_PrintOrderInvoice {
+            get {
+                return ResourceManager.GetString("Orders_qOrders_PrintOrderInvoice", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orders Report.
+        /// </summary>
+        public static string Orders_qOrders_ClientPrintWithWizardAction {
+            get {
+                return ResourceManager.GetString("Orders_qOrders_ClientPrintWithWizardAction", resourceCulture);
+            }
+		}
+        
+        /// <summary>
         ///   Looks up a localized string similar to Refresh.
         /// </summary>
         public static string Orders_qOrders_Refresh1 {
             get {
                 return ResourceManager.GetString("Orders_qOrders_Refresh1", resourceCulture);
-            }
-		}
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Open report.
-        /// </summary>
-        public static string Orders_qOrders_OpenReports1 {
-            get {
-                return ResourceManager.GetString("Orders_qOrders_OpenReports1", resourceCulture);
-            }
-		}
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Print Order Invoice.
-        /// </summary>
-        public static string Orders_qOrders_PrintOrderInvoice {
-            get {
-                return ResourceManager.GetString("Orders_qOrders_PrintOrderInvoice", resourceCulture);
             }
 		}
         
@@ -489,6 +489,33 @@ namespace Northwind.WebAPI.Controllers.Properties {
         public static string Employees_qEmployees_Refresh {
             get {
                 return ResourceManager.GetString("Employees_qEmployees_Refresh", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View.
+        /// </summary>
+        public static string Region_blockRegion1_ActionView1 {
+            get {
+                return ResourceManager.GetString("Region_blockRegion1_ActionView1", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add New.
+        /// </summary>
+        public static string Region_blockRegion1_CreateNew1 {
+            get {
+                return ResourceManager.GetString("Region_blockRegion1_CreateNew1", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        public static string Region_blockRegion1_Edit1 {
+            get {
+                return ResourceManager.GetString("Region_blockRegion1_Edit1", resourceCulture);
             }
 		}
         

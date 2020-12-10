@@ -4,7 +4,7 @@ using BusinessFramework.Contracts.Culture;
 using BusinessFramework.Contracts.GuiSettings.Json;
 
 
-namespace Northwind.WebApiServer.Controllers
+namespace NorthWind.WebApiServer.Controllers
 {
     /// <summary>
     ///     Get supported languages

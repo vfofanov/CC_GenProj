@@ -23,7 +23,7 @@ set config="Release"
 :Start
 
 :: Restore NuGet packages
-.\BuildTools\nuget.exe restore .\Sources\Northwind.sln 
+.\BuildTools\nuget.exe restore .\Sources\NorthWind.sln 
 
 :: Define Microsoft (R) Build Engine environtment
 
@@ -52,7 +52,7 @@ for /f "usebackq tokens=*" %%i in (`%VS_WHERE% -latest -products * -requires Mic
 :: Definition of Microsoft (R) Build Engine environtment done
 
 cd "%currentDir%\Sources"
-call "%MS_BUILD%" Northwind.sln /ds /verbosity:m /p:Configuration=%config% /p:Platform="Any CPU" "/t:Clean,Build" "/p:CustomAfterMicrosoftCSharpTargets=%MS_BUILD_EXTENSIONS%"
+call "%MS_BUILD%" NorthWind.sln /ds /verbosity:m /p:Configuration=%config% /p:Platform="Any CPU" "/t:Clean,Build" "/p:CustomAfterMicrosoftCSharpTargets=%MS_BUILD_EXTENSIONS%"
 
 ::Cleanup old files
 cd %currentDir%
@@ -63,7 +63,7 @@ if exist ClientWin rmdir /s /q ClientWin
 
 :: Copy Server
 ECHO Copy Server Files ...
-cd "%currentDir%\Sources\Northwind.WebApiServer"
+cd "%currentDir%\Sources\NorthWind.WebApiServer"
 if not exist "%currentDir%\Build\Server\bin" mkdir "%currentDir%\Build\Server\bin"
 xcopy /i bin\*.* "%currentDir%\Build\Server\bin" >NUL
 xcopy /i bin\ru\*.* "%currentDir%\Build\Server\bin\ru" >NUL
@@ -77,9 +77,9 @@ xcopy /i web.diagnostics.config "%currentDir%\Build\Server" >NUL
 xcopy /i Status\*.* "%currentDir%\Build\Server" >NUL
 
 :: Copy Client
-if exist "%currentDir%\Sources\Northwind.Console\bin\%config%" (
+if exist "%currentDir%\Sources\NorthWind.Console\bin\%config%" (
   ECHO Copy Win Client Files ...
-  cd "%currentDir%\Sources\Northwind.Console\bin\%config%"
+  cd "%currentDir%\Sources\NorthWind.Console\bin\%config%"
   if not exist "%currentDir%\Build\ClientWin" mkdir "%currentDir%\Build\ClientWin"
   xcopy /i *.* "%currentDir%\Build\ClientWin" >NUL
   xcopy /i ru\*.* "%currentDir%\Build\ClientWin\ru" >NUL

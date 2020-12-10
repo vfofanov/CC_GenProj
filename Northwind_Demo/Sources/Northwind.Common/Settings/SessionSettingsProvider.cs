@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using BusinessFramework.Client.Contracts.DataObjects;
 using BusinessFramework.Client.Contracts.Services.Settings;
-using Northwind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Contracts.BusinessObjects;
 
-namespace Northwind.Common.Settings
+namespace NorthWind.Common.Settings
 {
     internal sealed class SessionSettingsProvider : ISessionSettingsProvider
     {

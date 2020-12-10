@@ -1,124 +1,128 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30717.126
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Console", "Northwind.Console\Northwind.Console.csproj", "{E6D0E345-B891-482D-84EF-72434418B8F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Console", "NorthWind.Console\NorthWind.Console.csproj", "{E6D0E345-B891-482D-84EF-72434418B8F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebAPI", "Northwind.WebAPI\Northwind.WebAPI.csproj", "{6FB82326-D6FA-4A4E-A4CA-82B5C6B9BD4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebAPI", "NorthWind.WebAPI\NorthWind.WebAPI.csproj", "{6FB82326-D6FA-4A4E-A4CA-82B5C6B9BD4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common", "Northwind.Common\Northwind.Common.csproj", "{EC1BCD80-F9B3-4EE9-BE46-99792EE1997D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Common", "NorthWind.Common\NorthWind.Common.csproj", "{EC1BCD80-F9B3-4EE9-BE46-99792EE1997D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Client", "Northwind.Client\Northwind.Client.csproj", "{7DF16B04-8D03-4D28-A137-3B1D12BB1D71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Client", "NorthWind.Client\NorthWind.Client.csproj", "{7DF16B04-8D03-4D28-A137-3B1D12BB1D71}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseScripts", "DatabaseScripts", "{2CBB7DDB-C915-48BC-8F5C-CBF511013C12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebAPI.Contracts", "Northwind.WebAPI.Contracts\Northwind.WebAPI.Contracts.csproj", "{D3460F1A-D56E-4D69-AE87-050F54EBC01F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebAPI.Contracts", "NorthWind.WebAPI.Contracts\NorthWind.WebAPI.Contracts.csproj", "{D3460F1A-D56E-4D69-AE87-050F54EBC01F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebApiServer", "Northwind.WebApiServer\Northwind.WebApiServer.csproj", "{6FB4DD58-ABC5-404A-9EFB-2D35DA69D7FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebApiServer", "NorthWind.WebApiServer\NorthWind.WebApiServer.csproj", "{6FB4DD58-ABC5-404A-9EFB-2D35DA69D7FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Contracts", "Northwind.Contracts\Northwind.Contracts.csproj", "{91020DDA-9841-44CD-A2C6-5C5265B71F6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Contracts", "NorthWind.Contracts\NorthWind.Contracts.csproj", "{91020DDA-9841-44CD-A2C6-5C5265B71F6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebAPI.Controllers", "Northwind.WebAPI.Controllers\Northwind.WebAPI.Controllers.csproj", "{52E151ED-7A80-45EB-8163-A36D5890361E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebAPI.Controllers", "NorthWind.WebAPI.Controllers\NorthWind.WebAPI.Controllers.csproj", "{52E151ED-7A80-45EB-8163-A36D5890361E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebAPI.DataAccess", "Northwind.WebAPI.DataAccess\Northwind.WebAPI.DataAccess.csproj", "{0AFA703C-B408-42DC-8490-5726A12506F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebAPI.DataAccess", "NorthWind.WebAPI.DataAccess\NorthWind.WebAPI.DataAccess.csproj", "{0AFA703C-B408-42DC-8490-5726A12506F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Client.ServerServices", "Northwind.Client.ServerServices\Northwind.Client.ServerServices.csproj", "{3E976800-D63B-4011-AB41-001A2E67624E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Client.ServerServices", "NorthWind.Client.ServerServices\NorthWind.Client.ServerServices.csproj", "{3E976800-D63B-4011-AB41-001A2E67624E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Client.Contracts", "Northwind.Client.Contracts\Northwind.Client.Contracts.csproj", "{8D648785-A742-4354-A01B-012E70020819}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Client.Contracts", "NorthWind.Client.Contracts\NorthWind.Client.Contracts.csproj", "{8D648785-A742-4354-A01B-012E70020819}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Client.Services.Contracts", "Northwind.Client.Services.Contracts\Northwind.Client.Services.Contracts.csproj", "{EAFEB21C-959C-4025-9848-856F5F5671C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Client.Services.Contracts", "NorthWind.Client.Services.Contracts\NorthWind.Client.Services.Contracts.csproj", "{EAFEB21C-959C-4025-9848-856F5F5671C6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Framework", "_Framework", "{1D1AEAB5-F6EF-4385-9C44-D2607F739A4C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Framework", "_Framework", "{79F677DD-31E1-4EE2-BB3C-B1AF6A6B6230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Excel", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Excel\BusinessFramework.Excel.csproj", "{E63B4895-C203-494F-97CC-10FD22646780}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Excel", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Excel\BusinessFramework.Excel.csproj", "{E63B4895-C203-494F-97CC-10FD22646780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central\ReportingFramework.Central.csproj", "{1CA29023-8602-4BB6-8782-A32565FA7B46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Central\ReportingFramework.Central.csproj", "{1CA29023-8602-4BB6-8782-A32565FA7B46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Client", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Client\ReportingFramework.Client.csproj", "{57CA5C28-09C7-4EBC-9D9B-D3A86712D4E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Client", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Client\ReportingFramework.Client.csproj", "{57CA5C28-09C7-4EBC-9D9B-D3A86712D4E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Manager", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Manager\ReportingFramework.Manager.csproj", "{DB240A9A-F63D-4C09-9CB7-D977CFB25CBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Manager", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Manager\ReportingFramework.Manager.csproj", "{DB240A9A-F63D-4C09-9CB7-D977CFB25CBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.WebAPI", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI\BusinessFramework.WebAPI.csproj", "{741C0D65-29B5-447C-8515-87A769FCAD8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.WebAPI", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.WebAPI\BusinessFramework.WebAPI.csproj", "{741C0D65-29B5-447C-8515-87A769FCAD8A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reporting", "Reporting", "{2B24639C-09B9-4AFE-8F61-E0E47D694A6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.WebAPI", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.WebAPI\ReportingFramework.WebAPI.csproj", "{8EC2C2A4-EE97-41E3-AF1D-DA1B11D40D43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.WebAPI", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.WebAPI\ReportingFramework.WebAPI.csproj", "{8EC2C2A4-EE97-41E3-AF1D-DA1B11D40D43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Updater", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Updater\ReportingFramework.Updater.csproj", "{4B72E55B-825E-4CC1-AD3E-E822419696A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Updater", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Updater\ReportingFramework.Updater.csproj", "{4B72E55B-825E-4CC1-AD3E-E822419696A5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportSystem", "ReportSystem", "{A3F48BB3-0904-4871-ABF0-113B720D603C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportSystem.Contracts", "..\..\..\Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Contracts\ReportSystem.Contracts.csproj", "{01E31E29-726D-4A73-8237-EB3EB0FCB3D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportSystem.Contracts", "..\..\..\CC_Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Contracts\ReportSystem.Contracts.csproj", "{01E31E29-726D-4A73-8237-EB3EB0FCB3D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportSystem.Core", "..\..\..\Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Core\ReportSystem.Core.csproj", "{EE34A43C-AC18-4EF1-B8D2-7A037DDBA9C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportSystem.Core", "..\..\..\CC_Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Core\ReportSystem.Core.csproj", "{EE34A43C-AC18-4EF1-B8D2-7A037DDBA9C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportSystem.Console", "..\..\..\Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Console\ReportSystem.Console.csproj", "{A17E7727-1962-4A93-BA46-4AEC4D53AD87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportSystem.Console", "..\..\..\CC_Source\CodeCruiser\Framework\ReportSystem\ReportSystem.Console\ReportSystem.Console.csproj", "{A17E7727-1962-4A93-BA46-4AEC4D53AD87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportSystem.UI", "..\..\..\Source\CodeCruiser\Framework\ReportSystem\ReportSystem.UI\ReportSystem.UI.csproj", "{8A930223-B9FD-4DCE-8E4C-66517EB89638}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportSystem.UI", "..\..\..\CC_Source\CodeCruiser\Framework\ReportSystem\ReportSystem.UI\ReportSystem.UI.csproj", "{8A930223-B9FD-4DCE-8E4C-66517EB89638}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2C09BAAE-88F9-438A-BAA5-3C8A3A432FDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSQL.ReportModule", "..\..\..\Source\CodeCruiser\Framework\ReportSystem\Modules\MSSQL.ReportModule\MSSQL.ReportModule.csproj", "{972E657A-9CB2-474A-AD0E-C4DF1739699F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSQL.ReportModule", "..\..\..\CC_Source\CodeCruiser\Framework\ReportSystem\Modules\MSSQL.ReportModule\MSSQL.ReportModule.csproj", "{972E657A-9CB2-474A-AD0E-C4DF1739699F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonControllers.ReportModule", "..\..\..\Source\CodeCruiser\Framework\ReportSystem\Modules\CommonControllers.ReportModule\CommonControllers.ReportModule.csproj", "{F2ED4092-80D4-4B8D-91A0-6EAE91F17C30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonControllers.ReportModule", "..\..\..\CC_Source\CodeCruiser\Framework\ReportSystem\Modules\CommonControllers.ReportModule\CommonControllers.ReportModule.csproj", "{F2ED4092-80D4-4B8D-91A0-6EAE91F17C30}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5EAF8F1-9B35-4ED9-9DE3-13CEB1686D05}"
 	ProjectSection(SolutionItems) = preProject
 		ProductInfo.cs = ProductInfo.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Contracts", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj", "{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Contracts", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj", "{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.WebAPI.Common", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Common\BusinessFramework.WebAPI.Common.csproj", "{F11DCACF-B95A-441F-AE34-870EDDA7D5A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.WebAPI.Common", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Common\BusinessFramework.WebAPI.Common.csproj", "{F11DCACF-B95A-441F-AE34-870EDDA7D5A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.WebAPI.Contracts", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Contracts\BusinessFramework.WebAPI.Contracts.csproj", "{F5AB7E34-8A40-49EF-816D-335B4C6A1A98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.WebAPI.Contracts", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Contracts\BusinessFramework.WebAPI.Contracts.csproj", "{F5AB7E34-8A40-49EF-816D-335B4C6A1A98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.Common", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Common\BusinessFramework.Client.Common.csproj", "{EA9EB61E-B762-4401-86F2-0ACBF16944D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.Common", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Client.Common\BusinessFramework.Client.Common.csproj", "{EA9EB61E-B762-4401-86F2-0ACBF16944D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.Contracts", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Contracts\BusinessFramework.Client.Contracts.csproj", "{9C997456-B515-4678-9F1C-A4131F85E6A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.Contracts", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Client.Contracts\BusinessFramework.Client.Contracts.csproj", "{9C997456-B515-4678-9F1C-A4131F85E6A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.WinForms.Infragistics", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms.Infragistics\BusinessFramework.Client.WinForms.Infragistics.csproj", "{93E5B3E2-458B-44EC-BBD5-3BD0C07A9475}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.WinForms.Infragistics", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms.Infragistics\BusinessFramework.Client.WinForms.Infragistics.csproj", "{93E5B3E2-458B-44EC-BBD5-3BD0C07A9475}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.Connection", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Connection\BusinessFramework.Client.Connection.csproj", "{240FD6AD-45D4-4643-827F-A3CE580E136B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.Connection", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Client.Connection\BusinessFramework.Client.Connection.csproj", "{240FD6AD-45D4-4643-827F-A3CE580E136B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.Startup", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Startup\BusinessFramework.Client.Startup.csproj", "{4F6D0D4C-B747-4121-967F-B91C1BC53D4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.Startup", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Client.Startup\BusinessFramework.Client.Startup.csproj", "{4F6D0D4C-B747-4121-967F-B91C1BC53D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.EnterpriseLibrary.Logging", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.EnterpriseLibrary.Logging\BusinessFramework.EnterpriseLibrary.Logging.csproj", "{B33236D6-CABB-447E-876B-FC0412AE9A7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.EnterpriseLibrary.Logging", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.EnterpriseLibrary.Logging\BusinessFramework.EnterpriseLibrary.Logging.csproj", "{B33236D6-CABB-447E-876B-FC0412AE9A7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.WinForms", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms\BusinessFramework.Client.WinForms.csproj", "{81C29E87-3010-4F04-8C1E-DC02BE451DC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.WinForms", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms\BusinessFramework.Client.WinForms.csproj", "{81C29E87-3010-4F04-8C1E-DC02BE451DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Utils", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Utils\BusinessFramework.Utils.csproj", "{357D61AA-BDB3-4B93-8B70-9A04D016BE64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Utils", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Utils\BusinessFramework.Utils.csproj", "{357D61AA-BDB3-4B93-8B70-9A04D016BE64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.WinForms.Infragistics.Controls", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms.Infragistics.Controls\BusinessFramework.Client.WinForms.Infragistics.Controls.csproj", "{E7F9E630-2A4C-45A4-881D-B4AC741825CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Client.WinForms.Infragistics.Controls", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Client.WinForms.Infragistics.Controls\BusinessFramework.Client.WinForms.Infragistics.Controls.csproj", "{E7F9E630-2A4C-45A4-881D-B4AC741825CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Contracts", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Contracts\ReportingFramework.Central.Contracts.csproj", "{D5AEFA5B-5336-4D00-A59C-D51381216270}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Contracts", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Central.Contracts\ReportingFramework.Central.Contracts.csproj", "{D5AEFA5B-5336-4D00-A59C-D51381216270}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Aspose.Cells", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Aspose.Cells\ReportingFramework.Central.Aspose.Cells.csproj", "{45DC9296-A097-4C0A-9DF0-2E95CE9976C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Aspose.Cells", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Central.Aspose.Cells\ReportingFramework.Central.Aspose.Cells.csproj", "{45DC9296-A097-4C0A-9DF0-2E95CE9976C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Interop.Excel", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Interop.Excel\ReportingFramework.Central.Interop.Excel.csproj", "{A44A869C-E64C-4F02-94B9-83B6DD124B1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Interop.Excel", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Central.Interop.Excel\ReportingFramework.Central.Interop.Excel.csproj", "{A44A869C-E64C-4F02-94B9-83B6DD124B1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Interop.Word", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Interop.Word\ReportingFramework.Central.Interop.Word.csproj", "{DE4B7BC6-674F-4465-9860-96DDF5246077}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Interop.Word", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Central.Interop.Word\ReportingFramework.Central.Interop.Word.csproj", "{DE4B7BC6-674F-4465-9860-96DDF5246077}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Measuring", "..\..\..\Source\CodeCruiser\Framework\ReportingFramework.Central.Measuring\ReportingFramework.Central.Measuring.csproj", "{75276ABD-0DAE-4791-AD38-164445946D6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingFramework.Central.Measuring", "..\..\..\CC_Source\CodeCruiser\Framework\ReportingFramework.Central.Measuring\ReportingFramework.Central.Measuring.csproj", "{75276ABD-0DAE-4791-AD38-164445946D6A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{47F58D19-5858-4D41-BD4A-C93BA3D2C9F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureTechnologies.DI.Contracts", "..\..\..\Source\CodeCruiser\CommonFramework\FutureTechnologies.DI.Contracts\FutureTechnologies.DI.Contracts.csproj", "{677E39DA-B58F-4C38-BCD2-6A26FF0AE49F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureTechnologies.DI.Contracts", "..\..\..\CC_Source\CodeCruiser\CommonFramework\FutureTechnologies.DI.Contracts\FutureTechnologies.DI.Contracts.csproj", "{677E39DA-B58F-4C38-BCD2-6A26FF0AE49F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureTechnologies.DI", "..\..\..\Source\CodeCruiser\CommonFramework\FutureTechnologies.DI\FutureTechnologies.DI.csproj", "{4496FB78-A8D3-4CB8-97BA-D30E80AD2A5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureTechnologies.DI", "..\..\..\CC_Source\CodeCruiser\CommonFramework\FutureTechnologies.DI\FutureTechnologies.DI.csproj", "{4496FB78-A8D3-4CB8-97BA-D30E80AD2A5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureTechnologies.DI.UnityContainer", "..\..\..\Source\CodeCruiser\CommonFramework\FutureTechnologies.DI.UnityContainer\FutureTechnologies.DI.UnityContainer.csproj", "{B37DBB11-13C7-4900-BF6A-2C167E46ACF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureTechnologies.DI.UnityContainer", "..\..\..\CC_Source\CodeCruiser\CommonFramework\FutureTechnologies.DI.UnityContainer\FutureTechnologies.DI.UnityContainer.csproj", "{B37DBB11-13C7-4900-BF6A-2C167E46ACF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.WebAPI.Common.Azure", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Common.Azure\BusinessFramework.WebAPI.Common.Azure.csproj", "{FECC454C-7D02-4380-B5B0-983B58044EBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.WebAPI.Common.Azure", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.WebAPI.Common.Azure\BusinessFramework.WebAPI.Common.Azure.csproj", "{FECC454C-7D02-4380-B5B0-983B58044EBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Import.Contracts", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Import.Contracts\BusinessFramework.Import.Contracts.csproj", "{8644B7C3-DE3D-406F-8407-4928E576EFFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Import.Contracts", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Import.Contracts\BusinessFramework.Import.Contracts.csproj", "{8644B7C3-DE3D-406F-8407-4928E576EFFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Import", "..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Import\BusinessFramework.Import.csproj", "{C68BFB68-D419-4B6C-AACB-73FE104FC030}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessFramework.Import", "..\..\..\CC_Source\CodeCruiser\Framework\BusinessFramework.Import\BusinessFramework.Import.csproj", "{C68BFB68-D419-4B6C-AACB-73FE104FC030}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTest.Wasm", "BlazorTest\BlazorTest.Wasm.csproj", "{4173770D-622F-473D-AF73-6B1906A0BC51}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{4AFFC648-6990-465F-9BB3-9CCA94DDC651}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Dev.ConsoleApp", "Blazor.Dev.ConsoleApp\Blazor.Dev.ConsoleApp.csproj", "{8203F629-2EF4-40A8-8B66-2F8255E18A24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DXBlazorNorthWind", "..\BlazorTest\DXBlazorNorthWind.csproj", "{5E702A51-65F5-4A7B-842A-C1C824DCF40D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -318,10 +322,14 @@ Global
 		{C68BFB68-D419-4B6C-AACB-73FE104FC030}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C68BFB68-D419-4B6C-AACB-73FE104FC030}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C68BFB68-D419-4B6C-AACB-73FE104FC030}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4173770D-622F-473D-AF73-6B1906A0BC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4173770D-622F-473D-AF73-6B1906A0BC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4173770D-622F-473D-AF73-6B1906A0BC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4173770D-622F-473D-AF73-6B1906A0BC51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8203F629-2EF4-40A8-8B66-2F8255E18A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8203F629-2EF4-40A8-8B66-2F8255E18A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8203F629-2EF4-40A8-8B66-2F8255E18A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8203F629-2EF4-40A8-8B66-2F8255E18A24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E702A51-65F5-4A7B-842A-C1C824DCF40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E702A51-65F5-4A7B-842A-C1C824DCF40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E702A51-65F5-4A7B-842A-C1C824DCF40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E702A51-65F5-4A7B-842A-C1C824DCF40D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -332,8 +340,8 @@ Global
 		{57CA5C28-09C7-4EBC-9D9B-D3A86712D4E8} = {2B24639C-09B9-4AFE-8F61-E0E47D694A6B}
 		{DB240A9A-F63D-4C09-9CB7-D977CFB25CBB} = {2B24639C-09B9-4AFE-8F61-E0E47D694A6B}
 		{741C0D65-29B5-447C-8515-87A769FCAD8A} = {91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0}
-		{2B24639C-09B9-4AFE-8F61-E0E47D694A6B} = {1D1AEAB5-F6EF-4385-9C44-D2607F739A4C}
-		{91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0} = {1D1AEAB5-F6EF-4385-9C44-D2607F739A4C}
+		{2B24639C-09B9-4AFE-8F61-E0E47D694A6B} = {79F677DD-31E1-4EE2-BB3C-B1AF6A6B6230}
+		{91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0} = {79F677DD-31E1-4EE2-BB3C-B1AF6A6B6230}
 		{8EC2C2A4-EE97-41E3-AF1D-DA1B11D40D43} = {2B24639C-09B9-4AFE-8F61-E0E47D694A6B}
 		{4B72E55B-825E-4CC1-AD3E-E822419696A5} = {2B24639C-09B9-4AFE-8F61-E0E47D694A6B}
 		{A3F48BB3-0904-4871-ABF0-113B720D603C} = {2B24639C-09B9-4AFE-8F61-E0E47D694A6B}
@@ -344,7 +352,7 @@ Global
 		{2C09BAAE-88F9-438A-BAA5-3C8A3A432FDD} = {A3F48BB3-0904-4871-ABF0-113B720D603C}
 		{972E657A-9CB2-474A-AD0E-C4DF1739699F} = {2C09BAAE-88F9-438A-BAA5-3C8A3A432FDD}
 		{F2ED4092-80D4-4B8D-91A0-6EAE91F17C30} = {2C09BAAE-88F9-438A-BAA5-3C8A3A432FDD}
-		{C5EAF8F1-9B35-4ED9-9DE3-13CEB1686D05} = {1D1AEAB5-F6EF-4385-9C44-D2607F739A4C}
+		{C5EAF8F1-9B35-4ED9-9DE3-13CEB1686D05} = {79F677DD-31E1-4EE2-BB3C-B1AF6A6B6230}
 		{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068} = {91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0}
 		{F11DCACF-B95A-441F-AE34-870EDDA7D5A8} = {91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0}
 		{F5AB7E34-8A40-49EF-816D-335B4C6A1A98} = {91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0}
@@ -362,13 +370,15 @@ Global
 		{A44A869C-E64C-4F02-94B9-83B6DD124B1C} = {2B24639C-09B9-4AFE-8F61-E0E47D694A6B}
 		{DE4B7BC6-674F-4465-9860-96DDF5246077} = {2B24639C-09B9-4AFE-8F61-E0E47D694A6B}
 		{75276ABD-0DAE-4791-AD38-164445946D6A} = {2B24639C-09B9-4AFE-8F61-E0E47D694A6B}
-		{47F58D19-5858-4D41-BD4A-C93BA3D2C9F5} = {1D1AEAB5-F6EF-4385-9C44-D2607F739A4C}
+		{47F58D19-5858-4D41-BD4A-C93BA3D2C9F5} = {79F677DD-31E1-4EE2-BB3C-B1AF6A6B6230}
 		{677E39DA-B58F-4C38-BCD2-6A26FF0AE49F} = {47F58D19-5858-4D41-BD4A-C93BA3D2C9F5}
 		{4496FB78-A8D3-4CB8-97BA-D30E80AD2A5C} = {47F58D19-5858-4D41-BD4A-C93BA3D2C9F5}
 		{B37DBB11-13C7-4900-BF6A-2C167E46ACF9} = {47F58D19-5858-4D41-BD4A-C93BA3D2C9F5}
 		{FECC454C-7D02-4380-B5B0-983B58044EBB} = {91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0}
 		{8644B7C3-DE3D-406F-8407-4928E576EFFF} = {91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0}
 		{C68BFB68-D419-4B6C-AACB-73FE104FC030} = {91BA6670-1CB0-4F9B-8F88-C2DA2E37CAE0}
+		{8203F629-2EF4-40A8-8B66-2F8255E18A24} = {4AFFC648-6990-465F-9BB3-9CCA94DDC651}
+		{5E702A51-65F5-4A7B-842A-C1C824DCF40D} = {4AFFC648-6990-465F-9BB3-9CCA94DDC651}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3AADD745-22CF-4958-83E1-EA94F1B129B2}

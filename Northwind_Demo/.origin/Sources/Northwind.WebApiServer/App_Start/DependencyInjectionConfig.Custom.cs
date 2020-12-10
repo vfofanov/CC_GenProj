@@ -2,7 +2,7 @@ using BusinessFramework.WebAPI.Contracts.Validation;
 using BusinessFramework.WebAPI.Validation;
 using FutureTechnologies.DI.Contracts;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     internal static partial class DependencyInjectionConfig
     {

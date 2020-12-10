@@ -1,9 +1,9 @@
 ﻿using BusinessFramework.WebAPI.Data;
 using BusinessFramework.WebAPI.Data.ChangeTracking;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.DataAccess.Mapping;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.DataAccess.Mapping;
 
-namespace Northwind.WebAPI.DataAccess
+namespace NorthWind.WebAPI.DataAccess
 {
     /// <summary>
     /// Api db context

@@ -4,12 +4,12 @@ using BusinessFramework.WebAPI.Data.ChangeTracking;
 using BusinessFramework.WebAPI.Data.EntityFramework;
 using FutureTechnologies.DI.Contracts;
 using MySql.Data.Entity;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.DataAccess;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.DataAccess;
 using Oracle.ManagedDataAccess.EntityFramework;
 
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     internal static partial class DependencyInjectionConfig
     {

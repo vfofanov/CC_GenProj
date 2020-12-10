@@ -7,8 +7,8 @@
     <ProjectGuid>{52E151ED-7A80-45EB-8163-A36D5890361E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.WebAPI.Controllers</RootNamespace>
-    <AssemblyName>Northwind.WebAPI.Controllers</AssemblyName>
+    <RootNamespace>NorthWind.WebAPI.Controllers</RootNamespace>
+    <AssemblyName>NorthWind.WebAPI.Controllers</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -23,7 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
-    <DocumentationFile>bin\Debug\Northwind.WebAPI.Controllers.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\NorthWind.WebAPI.Controllers.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Build\Server\Northwind.WebAPI.Controllers.xml</DocumentationFile>
+    <DocumentationFile>..\..\Build\Server\NorthWind.WebAPI.Controllers.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -143,73 +143,87 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\TestDynamicColumnsActionServiceController.cs" />
-    <Compile Include="Api\CategoryApiController.cs" />
-    <Compile Include="Api\CustomerApiController.cs" />
-    <Compile Include="Api\EmployeeApiController.cs" />
-    <Compile Include="Api\OrderApiController.cs" />
-    <Compile Include="Api\OrderDetailApiController.cs" />
-    <Compile Include="Api\OrderStatusApiController.cs" />
-    <Compile Include="Api\ProductApiController.cs" />
-    <Compile Include="Api\QCategoriesApiController.cs" />
-    <Compile Include="Api\QCustomersApiController.cs" />
-    <Compile Include="Api\QEmployeesApiController.cs" />
-    <Compile Include="Api\QOrderProductsApiController.cs" />
-    <Compile Include="Api\QOrdersApiController.cs" />
-    <Compile Include="Api\QProductsApiController.cs" />
-    <Compile Include="Api\QShippersApiController.cs" />
-    <Compile Include="Api\QSuppliersApiController.cs" />
-    <Compile Include="Api\ShipperApiController.cs" />
-    <Compile Include="Api\SupplierApiController.cs" />
+    <Compile Include="Actions\ReportServiceController.cs" />
+    <Compile Include="Api\CategoriesApiController.cs" />
+    <Compile Include="Api\CategoryQueryApiController.cs" />
+    <Compile Include="Api\CustomerCustomerDemoApiController.cs" />
+    <Compile Include="Api\CustomerDemographicApiController.cs" />
+    <Compile Include="Api\CustomerQueryApiController.cs" />
+    <Compile Include="Api\CustomersApiController.cs" />
+    <Compile Include="Api\EmployeeQueryApiController.cs" />
+    <Compile Include="Api\EmployeesApiController.cs" />
+    <Compile Include="Api\EmployeeTerritoryApiController.cs" />
+    <Compile Include="Api\OrderDetailsApiController.cs" />
+    <Compile Include="Api\OrderProductQueryApiController.cs" />
+    <Compile Include="Api\OrdersApiController.cs" />
+    <Compile Include="Api\OrdersQueryApiController.cs" />
+    <Compile Include="Api\ProductQueryApiController.cs" />
+    <Compile Include="Api\ProductsApiController.cs" />
+    <Compile Include="Api\RegionApiController.cs" />
+    <Compile Include="Api\RegionQueryApiController.cs" />
+    <Compile Include="Api\ReportFormQueryApiController.cs" />
+    <Compile Include="Api\ShipperQueryApiController.cs" />
+    <Compile Include="Api\ShippersApiController.cs" />
+    <Compile Include="Api\SupplierQueryApiController.cs" />
+    <Compile Include="Api\SuppliersApiController.cs" />
     <Compile Include="Api\System\SysOperationLockApiController.cs" />
     <Compile Include="Api\System\SysResetPasswordTokenApiController.cs" />
     <Compile Include="Api\System\SysRoleApiController.cs" />
     <Compile Include="Api\System\SysSettingApiController.cs" />
     <Compile Include="Api\System\SysSettingPropertyApiController.cs" />
-    <Compile Include="Api\VSalesByCategoryApiController.cs" />
+    <Compile Include="Api\TerritoryApiController.cs" />
     <Compile Include="AuthorizationAttribute.cs" />
     <Compile Include="CheckController.cs" />
     <Compile Include="DefaultOdataSettings.cs" />
     <Compile Include="GuiSettings\MainMenuSettingsController.cs" />
     <Compile Include="GuiSettings\Screens\CategoriesSettingsController.cs" />
+    <Compile Include="GuiSettings\Screens\ChartsSettingsController.cs" />
     <Compile Include="GuiSettings\Screens\CustomersSettingsController.cs" />
     <Compile Include="GuiSettings\Screens\EmployeesSettingsController.cs" />
     <Compile Include="GuiSettings\Screens\OrdersSettingsController.cs" />
     <Compile Include="GuiSettings\Screens\ProductsSettingsController.cs" />
+    <Compile Include="GuiSettings\Screens\RegionSettingsController.cs" />
     <Compile Include="GuiSettings\Screens\ShippersSettingsController.cs" />
     <Compile Include="GuiSettings\Screens\SuppliersSettingsController.cs" />
-    <Compile Include="GuiSettings\Screens\TestDynamicColumnsSettingsController.cs" />
-    <Compile Include="GuiSettings\Wizards\CategoriesWizardWizardSettingsController.cs" />
-    <Compile Include="GuiSettings\Wizards\CustomersWizardWizardSettingsController.cs" />
-    <Compile Include="GuiSettings\Wizards\EmployeesWizardWizardSettingsController.cs" />
-    <Compile Include="GuiSettings\Wizards\OrderDetailsWizardWizardSettingsController.cs" />
-    <Compile Include="GuiSettings\Wizards\OrdersWizardWizardSettingsController.cs" />
-    <Compile Include="GuiSettings\Wizards\ProductsWizardWizardSettingsController.cs" />
-    <Compile Include="GuiSettings\Wizards\ShippersWizardWizardSettingsController.cs" />
-    <Compile Include="GuiSettings\Wizards\SuppliersWizardWizardSettingsController.cs" />
-    <Compile Include="OData\CategoryController.cs" />
-    <Compile Include="OData\CustomerController.cs" />
-    <Compile Include="OData\EmployeeController.cs" />
-    <Compile Include="OData\OrderController.cs" />
-    <Compile Include="OData\OrderDetailController.cs" />
-    <Compile Include="OData\OrderStatusController.cs" />
-    <Compile Include="OData\ProductController.cs" />
-    <Compile Include="OData\QCategoriesController.cs" />
-    <Compile Include="OData\QCustomersController.cs" />
-    <Compile Include="OData\QEmployeesController.cs" />
-    <Compile Include="OData\QOrderProductsController.cs" />
-    <Compile Include="OData\QOrdersController.cs" />
-    <Compile Include="OData\QProductsController.cs" />
-    <Compile Include="OData\QShippersController.cs" />
-    <Compile Include="OData\QSuppliersController.cs" />
-    <Compile Include="OData\ShipperController.cs" />
-    <Compile Include="OData\SupplierController.cs" />
+    <Compile Include="GuiSettings\Wizards\CategoryWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\CustomerCompactWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\CustomerWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\EmployeeWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\OrderDetailWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\OrderWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\ProductWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\RegionWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\ReportFormQueryWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\ShipperWizardWizardSettingsController.cs" />
+    <Compile Include="GuiSettings\Wizards\SupplierWizardWizardSettingsController.cs" />
+    <Compile Include="OData\CategoriesController.cs" />
+    <Compile Include="OData\CategoryQueryController.cs" />
+    <Compile Include="OData\CustomerCustomerDemoController.cs" />
+    <Compile Include="OData\CustomerDemographicController.cs" />
+    <Compile Include="OData\CustomerQueryController.cs" />
+    <Compile Include="OData\CustomersController.cs" />
+    <Compile Include="OData\EmployeeQueryController.cs" />
+    <Compile Include="OData\EmployeesController.cs" />
+    <Compile Include="OData\EmployeeTerritoryController.cs" />
+    <Compile Include="OData\OrderDetailsController.cs" />
+    <Compile Include="OData\OrderProductQueryController.cs" />
+    <Compile Include="OData\OrdersController.cs" />
+    <Compile Include="OData\OrdersQueryController.cs" />
+    <Compile Include="OData\ProductQueryController.cs" />
+    <Compile Include="OData\ProductsController.cs" />
+    <Compile Include="OData\RegionController.cs" />
+    <Compile Include="OData\RegionQueryController.cs" />
+    <Compile Include="OData\ReportFormQueryController.cs" />
+    <Compile Include="OData\ShipperQueryController.cs" />
+    <Compile Include="OData\ShippersController.cs" />
+    <Compile Include="OData\SupplierQueryController.cs" />
+    <Compile Include="OData\SuppliersController.cs" />
     <Compile Include="OData\System\SysOperationLockController.cs" />
     <Compile Include="OData\System\SysResetPasswordTokenController.cs" />
     <Compile Include="OData\System\SysRoleController.cs" />
     <Compile Include="OData\System\SysSettingController.cs" />
     <Compile Include="OData\System\SysSettingPropertyController.cs" />
-    <Compile Include="OData\VSalesByCategoryController.cs" />
+    <Compile Include="OData\TerritoryController.cs" />
     <Compile Include="Properties\ActionsResources.Designer.cs">
       <DependentUpon>ActionsResources.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -251,13 +265,13 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.WebAPI.Contracts\Northwind.WebAPI.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.WebAPI.Contracts\NorthWind.WebAPI.Contracts.csproj">
       <Project>{d3460f1a-d56e-4d69-ae87-050f54ebc01f}</Project>
-      <Name>Northwind.WebAPI.Contracts</Name>
+      <Name>NorthWind.WebAPI.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
        <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>

@@ -2,7 +2,7 @@
 using ReportingFramework.Central.Contracts.Data;
 using ReportingFramework.Central.Contracts.Reports;
 
-namespace Northwind.WebAPI.Contracts.Reporting
+namespace NorthWind.WebAPI.Contracts.Reporting
 {
     /// <summary>
     /// Report generation service

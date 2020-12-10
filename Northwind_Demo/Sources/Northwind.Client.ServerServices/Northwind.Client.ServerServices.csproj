@@ -8,8 +8,8 @@
     <ProjectGuid>{3E976800-D63B-4011-AB41-001A2E67624E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.Client.ServerServices</RootNamespace>
-    <AssemblyName>Northwind.Client.ServerServices</AssemblyName>
+    <RootNamespace>NorthWind.Client.ServerServices</RootNamespace>
+    <AssemblyName>NorthWind.Client.ServerServices</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -69,59 +69,69 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionServices\Server\CodeBehind\CodeBehindTestDynamicColumnsActionService.cs" />
-    <Compile Include="ActionServices\Server\TestDynamicColumnsActionService.cs" />
+    <Compile Include="ActionServices\Server\CodeBehind\CodeBehindReportService.cs" />
+    <Compile Include="ActionServices\Server\ReportService.cs" />
     <Compile Include="DependencyInjectionConfig.CollectionManagers.cs" />
     <Compile Include="DependencyInjectionConfig.cs" />
     <Compile Include="DependencyInjectionConfig.GlobalServerContexts.cs" />
     <Compile Include="DependencyInjectionConfig.ServerServices.cs" />
-    <Compile Include="DomainModel\CategoryCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindCategoryCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindCustomerCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindEmployeeCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindOrderCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindOrderDetailCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindOrderStatusCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindProductCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindQCategoriesCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindQCustomersCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindQEmployeesCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindQOrderProductsCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindQOrdersCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindQProductsCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindQShippersCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindQSuppliersCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindShipperCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindSupplierCollectionManager.cs" />
-    <Compile Include="DomainModel\CodeBehind\CodeBehindVSalesByCategoryCollectionManager.cs" />
+    <Compile Include="DomainModel\CategoriesCollectionManager.cs" />
+    <Compile Include="DomainModel\CategoryQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindCategoriesCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindCategoryQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindCustomerCustomerDemoCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindCustomerDemographicCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindCustomerQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindCustomersCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindEmployeeQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindEmployeesCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindEmployeeTerritoryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindOrderDetailsCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindOrderProductQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindOrdersCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindOrdersQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindProductQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindProductsCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindRegionCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindRegionQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindReportFormQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindShipperQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindShippersCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindSupplierQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindSuppliersCollectionManager.cs" />
+    <Compile Include="DomainModel\CodeBehind\CodeBehindTerritoryCollectionManager.cs" />
     <Compile Include="DomainModel\CodeBehind\System\CodeBehindSysOperationLockCollectionManager.cs" />
     <Compile Include="DomainModel\CodeBehind\System\CodeBehindSysResetPasswordTokenCollectionManager.cs" />
     <Compile Include="DomainModel\CodeBehind\System\CodeBehindSysRoleCollectionManager.cs" />
     <Compile Include="DomainModel\CodeBehind\System\CodeBehindSysSettingCollectionManager.cs" />
     <Compile Include="DomainModel\CodeBehind\System\CodeBehindSysSettingPropertyCollectionManager.cs" />
     <Compile Include="DomainModel\CollectionManagersService.cs" />
-    <Compile Include="DomainModel\CustomerCollectionManager.cs" />
-    <Compile Include="DomainModel\EmployeeCollectionManager.cs" />
-    <Compile Include="DomainModel\OrderCollectionManager.cs" />
-    <Compile Include="DomainModel\OrderDetailCollectionManager.cs" />
-    <Compile Include="DomainModel\OrderStatusCollectionManager.cs" />
-    <Compile Include="DomainModel\ProductCollectionManager.cs" />
-    <Compile Include="DomainModel\QCategoriesCollectionManager.cs" />
-    <Compile Include="DomainModel\QCustomersCollectionManager.cs" />
-    <Compile Include="DomainModel\QEmployeesCollectionManager.cs" />
-    <Compile Include="DomainModel\QOrderProductsCollectionManager.cs" />
-    <Compile Include="DomainModel\QOrdersCollectionManager.cs" />
-    <Compile Include="DomainModel\QProductsCollectionManager.cs" />
-    <Compile Include="DomainModel\QShippersCollectionManager.cs" />
-    <Compile Include="DomainModel\QSuppliersCollectionManager.cs" />
-    <Compile Include="DomainModel\ShipperCollectionManager.cs" />
-    <Compile Include="DomainModel\SupplierCollectionManager.cs" />
+    <Compile Include="DomainModel\CustomerCustomerDemoCollectionManager.cs" />
+    <Compile Include="DomainModel\CustomerDemographicCollectionManager.cs" />
+    <Compile Include="DomainModel\CustomerQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\CustomersCollectionManager.cs" />
+    <Compile Include="DomainModel\EmployeeQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\EmployeesCollectionManager.cs" />
+    <Compile Include="DomainModel\EmployeeTerritoryCollectionManager.cs" />
+    <Compile Include="DomainModel\OrderDetailsCollectionManager.cs" />
+    <Compile Include="DomainModel\OrderProductQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\OrdersCollectionManager.cs" />
+    <Compile Include="DomainModel\OrdersQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\ProductQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\ProductsCollectionManager.cs" />
+    <Compile Include="DomainModel\RegionCollectionManager.cs" />
+    <Compile Include="DomainModel\RegionQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\ReportFormQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\ShipperQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\ShippersCollectionManager.cs" />
+    <Compile Include="DomainModel\SupplierQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\SuppliersCollectionManager.cs" />
     <Compile Include="DomainModel\System\SysOperationLockCollectionManager.cs" />
     <Compile Include="DomainModel\System\SysResetPasswordTokenCollectionManager.cs" />
     <Compile Include="DomainModel\System\SysRoleCollectionManager.cs" />
     <Compile Include="DomainModel\System\SysSettingCollectionManager.cs" />
     <Compile Include="DomainModel\System\SysSettingPropertyCollectionManager.cs" />
-    <Compile Include="DomainModel\VSalesByCategoryCollectionManager.cs" />
+    <Compile Include="DomainModel\TerritoryCollectionManager.cs" />
     <Compile Include="DomainODataClient.cs" />
     <Compile Include="DomainODataClientFactory.cs" />
     <Compile Include="Properties\ActionServiceResources.Designer.cs">
@@ -137,17 +147,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Client.Contracts\Northwind.Client.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Contracts\NorthWind.Client.Contracts.csproj">
       <Project>{8d648785-a742-4354-a01b-012e70020819}</Project>
-      <Name>Northwind.Client.Contracts</Name>
+      <Name>NorthWind.Client.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Client.Services.Contracts\Northwind.Client.Services.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Services.Contracts\NorthWind.Client.Services.Contracts.csproj">
       <Project>{eafeb21c-959c-4025-9848-856f5f5671c6}</Project>
-      <Name>Northwind.Client.Services.Contracts</Name>
+      <Name>NorthWind.Client.Services.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Common\BusinessFramework.Client.Common.csproj">
        <Project>{EA9EB61E-B762-4401-86F2-0ACBF16944D8}</Project>

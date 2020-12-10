@@ -1,9 +1,9 @@
 ﻿using System;
 using BusinessFramework.WebAPI.Contracts.Data;
-using Northwind.Contracts.Enums;
-using Northwind.WebAPI.Contracts.DataObjects;
+using NorthWind.Contracts.Enums;
+using NorthWind.WebAPI.Contracts.DataObjects;
 
-namespace Northwind.WebAPI.Contracts.Repositories
+namespace NorthWind.WebAPI.Contracts.Repositories
 {
     /// <summary>
     /// Repository for  <see cref="SysOperationResult"/> entity

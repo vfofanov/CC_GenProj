@@ -1,7 +1,7 @@
 ﻿using BusinessFramework.Contracts.Metadata;
 
 
-namespace Northwind.WebAPI.Contracts
+namespace NorthWind.WebAPI.Contracts
 {
     /// <summary>
     ///     Domain actions' keys
@@ -10,18 +10,18 @@ namespace Northwind.WebAPI.Contracts
     {
         public static class Object
         {
-            public static class OrderStatus
+            public static class Products
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.OrderStatus_Create, @"Add New 'Order status'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.OrderStatus_Update, @"Edit 'Order status'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.OrderStatus_Delete, @"Delete 'Order status'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Products_Create, @"Add New 'Products'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Products_Update, @"Edit 'Products'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Products_Delete, @"Delete 'Products'", false);
             }
 
-            public static class Product
+            public static class CustomerCustomerDemo
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Product_Create, @"Add New 'Product'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Product_Update, @"Edit 'Product'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Product_Delete, @"Delete 'Product'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.CustomerCustomerDemo_Create, @"Add New 'Customer customer demo'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.CustomerCustomerDemo_Update, @"Edit 'Customer customer demo'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.CustomerCustomerDemo_Delete, @"Delete 'Customer customer demo'", false);
             }
 
             public static class SysResetPasswordToken
@@ -38,25 +38,46 @@ namespace Northwind.WebAPI.Contracts
                 public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.SysRole_Delete, @"Delete 'Role'", true);
             }
 
-            public static class Customer
+            public static class Territory
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Customer_Create, @"Add New 'Customer'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Customer_Update, @"Edit 'Customer'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Customer_Delete, @"Delete 'Customer'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Territory_Create, @"Add New 'Territory'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Territory_Update, @"Edit 'Territory'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Territory_Delete, @"Delete 'Territory'", false);
             }
 
-            public static class Category
+            public static class EmployeeTerritory
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Category_Create, @"Add New 'Category'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Category_Update, @"Edit 'Category'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Category_Delete, @"Delete 'Category'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.EmployeeTerritory_Create, @"Add New 'Employee territory'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.EmployeeTerritory_Update, @"Edit 'Employee territory'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.EmployeeTerritory_Delete, @"Delete 'Employee territory'", false);
             }
 
-            public static class Supplier
+            public static class Customers
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Supplier_Create, @"Add New 'Supplier'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Supplier_Update, @"Edit 'Supplier'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Supplier_Delete, @"Delete 'Supplier'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Customers_Create, @"Add New 'Customers'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Customers_Update, @"Edit 'Customers'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Customers_Delete, @"Delete 'Customers'", false);
+            }
+
+            public static class Categories
+            {
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Categories_Create, @"Add New 'Categories'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Categories_Update, @"Edit 'Categories'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Categories_Delete, @"Delete 'Categories'", false);
+            }
+
+            public static class Region
+            {
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Region_Create, @"Add New 'Region'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Region_Update, @"Edit 'Region'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Region_Delete, @"Delete 'Region'", false);
+            }
+
+            public static class Suppliers
+            {
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Suppliers_Create, @"Add New 'Suppliers'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Suppliers_Update, @"Edit 'Suppliers'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Suppliers_Delete, @"Delete 'Suppliers'", false);
             }
 
             public static class SysOperationLock
@@ -66,18 +87,18 @@ namespace Northwind.WebAPI.Contracts
                 public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.SysOperationLock_Delete, @"Delete 'Operation lock'", true);
             }
 
-            public static class Order
+            public static class Orders
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Order_Create, @"Add New 'Order'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Order_Update, @"Edit 'Order'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Order_Delete, @"Delete 'Order'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Orders_Create, @"Add New 'Orders'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Orders_Update, @"Edit 'Orders'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Orders_Delete, @"Delete 'Orders'", false);
             }
 
-            public static class OrderDetail
+            public static class OrderDetails
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.OrderDetail_Create, @"Add New 'Order detail'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.OrderDetail_Update, @"Edit 'Order detail'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.OrderDetail_Delete, @"Delete 'Order detail'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.OrderDetails_Create, @"Add New 'OrderDetails'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.OrderDetails_Update, @"Edit 'OrderDetails'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.OrderDetails_Delete, @"Delete 'OrderDetails'", false);
             }
 
             public static class SysSetting
@@ -87,11 +108,18 @@ namespace Northwind.WebAPI.Contracts
                 public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.SysSetting_Delete, @"Delete 'Setting'", true);
             }
 
-            public static class Employee
+            public static class Employees
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Employee_Create, @"Add New 'Employee'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Employee_Update, @"Edit 'Employee'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Employee_Delete, @"Delete 'Employee'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Employees_Create, @"Add New 'Employees'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Employees_Update, @"Edit 'Employees'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Employees_Delete, @"Delete 'Employees'", false);
+            }
+
+            public static class CustomerDemographic
+            {
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.CustomerDemographic_Create, @"Add New 'Customer demographic'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.CustomerDemographic_Update, @"Edit 'Customer demographic'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.CustomerDemographic_Delete, @"Delete 'Customer demographic'", false);
             }
 
             public static class SysSettingProperty
@@ -101,18 +129,16 @@ namespace Northwind.WebAPI.Contracts
                 public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.SysSettingProperty_Delete, @"Delete 'Setting property'", true);
             }
 
-            public static class VSalesByCategory
+            public static class Shippers
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.VSalesByCategory_Create, @"Add New 'V sales by category'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.VSalesByCategory_Update, @"Edit 'V sales by category'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.VSalesByCategory_Delete, @"Delete 'V sales by category'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Shippers_Create, @"Add New 'Shippers'", false);
+                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Shippers_Update, @"Edit 'Shippers'", false);
+                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Shippers_Delete, @"Delete 'Shippers'", false);
             }
 
-            public static class Shipper
+            public static class ReportFormQuery
             {
-                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.Shipper_Create, @"Add New 'Shipper'", false);
-                public static readonly ObjectDomainAction Update = new ObjectDomainAction("Update", DomainActionKeys.Object.Shipper_Update, @"Edit 'Shipper'", false);
-                public static readonly ObjectDomainAction Delete = new ObjectDomainAction("Delete", DomainActionKeys.Object.Shipper_Delete, @"Delete 'Shipper'", false);
+                public static readonly ObjectDomainAction Create = new ObjectDomainAction("Create", DomainActionKeys.Object.ReportFormQuery_Create, @"Add New 'ReportFormQuery'", false);
             }
 
         }

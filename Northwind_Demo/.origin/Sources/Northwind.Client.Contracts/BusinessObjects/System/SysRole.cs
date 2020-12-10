@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Northwind.Client.Contracts.BusinessObjects
+namespace NorthWind.Client.Contracts.BusinessObjects
 {
     /// <inheritdoc />
     [Serializable]

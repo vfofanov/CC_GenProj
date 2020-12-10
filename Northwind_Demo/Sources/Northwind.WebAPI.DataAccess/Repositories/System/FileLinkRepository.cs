@@ -2,9 +2,9 @@
 using BusinessFramework.WebAPI.Contracts.Data;
 using BusinessFramework.WebAPI.Contracts.Files;
 using BusinessFramework.WebAPI.Contracts.Security;
-using Northwind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts;
 
-namespace Northwind.WebAPI.DataAccess.Repositories
+namespace NorthWind.WebAPI.DataAccess.Repositories
 {
     /// <summary>
     ///     Sys file repository. It can be used with different contexts

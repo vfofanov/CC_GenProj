@@ -5,10 +5,10 @@ using System.Diagnostics;
 using BusinessFramework.Client.Contracts.DataObjects;
 using BusinessFramework.Client.Contracts.DataObjects.Attributes;
 using BusinessFramework.Client.Contracts.DataObjects.Validation;
-using Northwind.Client.Contracts.Properties;
+using NorthWind.Client.Contracts.Properties;
 
 
-namespace Northwind.Client.Contracts.BusinessObjects.CodeBehind
+namespace NorthWind.Client.Contracts.BusinessObjects.CodeBehind
 {
     [Serializable]
 	[DebuggerDisplay("SysSetting" + " {"+ nameof(Id) +"}")]

@@ -1,8 +1,8 @@
 ﻿using System.Text;
 using System.Web;
-using Northwind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     /// <inheritdoc />
     internal sealed class WebUtilityService : IWebUtilityService

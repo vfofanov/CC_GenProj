@@ -1,6 +1,6 @@
 ﻿using BusinessFramework.WebAPI.Contracts.Services;
 
-namespace Northwind.WebAPI.Contracts
+namespace NorthWind.WebAPI.Contracts
 {
     public interface IAppSettingsService: IWebApiSettingsService
     {

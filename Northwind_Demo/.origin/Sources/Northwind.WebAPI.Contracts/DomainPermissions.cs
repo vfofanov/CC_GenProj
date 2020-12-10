@@ -1,7 +1,7 @@
 ﻿using BusinessFramework;
 
 
-namespace Northwind.WebAPI.Contracts
+namespace NorthWind.WebAPI.Contracts
 {
     /// <summary>
     /// Domain permissions
@@ -29,44 +29,44 @@ namespace Northwind.WebAPI.Contracts
         Settings = 0x20,
 
         /// <summary>
-        /// Read Order status.Read. 
+        /// Read Products.Read. 
         /// </summary>
-        OrderStatus_Read = 0x40,
+        Products_Read = 0x40,
 
         /// <summary>
-        /// Create Order status.Create. 
+        /// Create Products.Create. 
         /// </summary>
-        OrderStatus_Create = 0x80,
+        Products_Create = 0x80,
 
         /// <summary>
-        /// Update Order status.Update. 
+        /// Update Products.Update. 
         /// </summary>
-        OrderStatus_Update = 0x101,
+        Products_Update = 0x101,
 
         /// <summary>
-        /// Delete Order status.Delete. 
+        /// Delete Products.Delete. 
         /// </summary>
-        OrderStatus_Delete = 0x102,
+        Products_Delete = 0x102,
 
         /// <summary>
-        /// Read Product.Read. 
+        /// Read Customer customer demo.Read. 
         /// </summary>
-        Product_Read = 0x104,
+        CustomerCustomerDemo_Read = 0x104,
 
         /// <summary>
-        /// Create Product.Create. 
+        /// Create Customer customer demo.Create. 
         /// </summary>
-        Product_Create = 0x108,
+        CustomerCustomerDemo_Create = 0x108,
 
         /// <summary>
-        /// Update Product.Update. 
+        /// Update Customer customer demo.Update. 
         /// </summary>
-        Product_Update = 0x110,
+        CustomerCustomerDemo_Update = 0x110,
 
         /// <summary>
-        /// Delete Product.Delete. 
+        /// Delete Customer customer demo.Delete. 
         /// </summary>
-        Product_Delete = 0x120,
+        CustomerCustomerDemo_Delete = 0x120,
 
         /// <summary>
         /// Read Reset password token.Read. 
@@ -109,214 +109,294 @@ namespace Northwind.WebAPI.Contracts
         SysRole_Delete = 0x220,
 
         /// <summary>
-        /// Read Customer.Read. 
+        /// Read Territory.Read. 
         /// </summary>
-        Customer_Read = 0x240,
+        Territory_Read = 0x240,
 
         /// <summary>
-        /// Create Customer.Create. 
+        /// Create Territory.Create. 
         /// </summary>
-        Customer_Create = 0x280,
+        Territory_Create = 0x280,
 
         /// <summary>
-        /// Update Customer.Update. 
+        /// Update Territory.Update. 
         /// </summary>
-        Customer_Update = 0x301,
+        Territory_Update = 0x301,
 
         /// <summary>
-        /// Delete Customer.Delete. 
+        /// Delete Territory.Delete. 
         /// </summary>
-        Customer_Delete = 0x302,
+        Territory_Delete = 0x302,
 
         /// <summary>
-        /// Read Category.Read. 
+        /// Read Employee territory.Read. 
         /// </summary>
-        Category_Read = 0x304,
+        EmployeeTerritory_Read = 0x304,
 
         /// <summary>
-        /// Create Category.Create. 
+        /// Create Employee territory.Create. 
         /// </summary>
-        Category_Create = 0x308,
+        EmployeeTerritory_Create = 0x308,
 
         /// <summary>
-        /// Update Category.Update. 
+        /// Update Employee territory.Update. 
         /// </summary>
-        Category_Update = 0x310,
+        EmployeeTerritory_Update = 0x310,
 
         /// <summary>
-        /// Delete Category.Delete. 
+        /// Delete Employee territory.Delete. 
         /// </summary>
-        Category_Delete = 0x320,
+        EmployeeTerritory_Delete = 0x320,
 
         /// <summary>
-        /// Read Supplier.Read. 
+        /// Read Customers.Read. 
         /// </summary>
-        Supplier_Read = 0x340,
+        Customers_Read = 0x340,
 
         /// <summary>
-        /// Create Supplier.Create. 
+        /// Create Customers.Create. 
         /// </summary>
-        Supplier_Create = 0x380,
+        Customers_Create = 0x380,
 
         /// <summary>
-        /// Update Supplier.Update. 
+        /// Update Customers.Update. 
         /// </summary>
-        Supplier_Update = 0x401,
+        Customers_Update = 0x401,
 
         /// <summary>
-        /// Delete Supplier.Delete. 
+        /// Delete Customers.Delete. 
         /// </summary>
-        Supplier_Delete = 0x402,
+        Customers_Delete = 0x402,
 
         /// <summary>
-        /// Read Order.Read. 
+        /// Read Categories.Read. 
         /// </summary>
-        Order_Read = 0x404,
+        Categories_Read = 0x404,
 
         /// <summary>
-        /// Create Order.Create. 
+        /// Create Categories.Create. 
         /// </summary>
-        Order_Create = 0x408,
+        Categories_Create = 0x408,
 
         /// <summary>
-        /// Update Order.Update. 
+        /// Update Categories.Update. 
         /// </summary>
-        Order_Update = 0x410,
+        Categories_Update = 0x410,
 
         /// <summary>
-        /// Delete Order.Delete. 
+        /// Delete Categories.Delete. 
         /// </summary>
-        Order_Delete = 0x420,
+        Categories_Delete = 0x420,
 
         /// <summary>
-        /// Read Order detail.Read. 
+        /// Read Region.Read. 
         /// </summary>
-        OrderDetail_Read = 0x440,
+        Region_Read = 0x440,
 
         /// <summary>
-        /// Create Order detail.Create. 
+        /// Create Region.Create. 
         /// </summary>
-        OrderDetail_Create = 0x480,
+        Region_Create = 0x480,
 
         /// <summary>
-        /// Update Order detail.Update. 
+        /// Update Region.Update. 
         /// </summary>
-        OrderDetail_Update = 0x501,
+        Region_Update = 0x501,
 
         /// <summary>
-        /// Delete Order detail.Delete. 
+        /// Delete Region.Delete. 
         /// </summary>
-        OrderDetail_Delete = 0x502,
+        Region_Delete = 0x502,
 
         /// <summary>
-        /// Read Employee.Read. 
+        /// Read Suppliers.Read. 
         /// </summary>
-        Employee_Read = 0x504,
+        Suppliers_Read = 0x504,
 
         /// <summary>
-        /// Create Employee.Create. 
+        /// Create Suppliers.Create. 
         /// </summary>
-        Employee_Create = 0x508,
+        Suppliers_Create = 0x508,
 
         /// <summary>
-        /// Update Employee.Update. 
+        /// Update Suppliers.Update. 
         /// </summary>
-        Employee_Update = 0x510,
+        Suppliers_Update = 0x510,
 
         /// <summary>
-        /// Delete Employee.Delete. 
+        /// Delete Suppliers.Delete. 
         /// </summary>
-        Employee_Delete = 0x520,
+        Suppliers_Delete = 0x520,
 
         /// <summary>
-        /// Read V sales by category.Read. 
+        /// Read Orders.Read. 
         /// </summary>
-        VSalesByCategory_Read = 0x540,
+        Orders_Read = 0x540,
 
         /// <summary>
-        /// Create V sales by category.Create. 
+        /// Create Orders.Create. 
         /// </summary>
-        VSalesByCategory_Create = 0x580,
+        Orders_Create = 0x580,
 
         /// <summary>
-        /// Update V sales by category.Update. 
+        /// Update Orders.Update. 
         /// </summary>
-        VSalesByCategory_Update = 0x601,
+        Orders_Update = 0x601,
 
         /// <summary>
-        /// Delete V sales by category.Delete. 
+        /// Delete Orders.Delete. 
         /// </summary>
-        VSalesByCategory_Delete = 0x602,
+        Orders_Delete = 0x602,
 
         /// <summary>
-        /// Read Shipper.Read. 
+        /// Read OrderDetails.Read. 
         /// </summary>
-        Shipper_Read = 0x604,
+        OrderDetails_Read = 0x604,
 
         /// <summary>
-        /// Create Shipper.Create. 
+        /// Create OrderDetails.Create. 
         /// </summary>
-        Shipper_Create = 0x608,
+        OrderDetails_Create = 0x608,
 
         /// <summary>
-        /// Update Shipper.Update. 
+        /// Update OrderDetails.Update. 
         /// </summary>
-        Shipper_Update = 0x610,
+        OrderDetails_Update = 0x610,
 
         /// <summary>
-        /// Delete Shipper.Delete. 
+        /// Delete OrderDetails.Delete. 
         /// </summary>
-        Shipper_Delete = 0x620,
+        OrderDetails_Delete = 0x620,
 
         /// <summary>
-        /// Read qSuppliers.Read. 
+        /// Read Employees.Read. 
         /// </summary>
-        QSuppliers_Read = 0x640,
+        Employees_Read = 0x640,
 
         /// <summary>
-        /// Read qEmployees.Read. 
+        /// Create Employees.Create. 
         /// </summary>
-        QEmployees_Read = 0x680,
+        Employees_Create = 0x680,
 
         /// <summary>
-        /// Read qShippers.Read. 
+        /// Update Employees.Update. 
         /// </summary>
-        QShippers_Read = 0x701,
+        Employees_Update = 0x701,
 
         /// <summary>
-        /// Read qCategories.Read. 
+        /// Delete Employees.Delete. 
         /// </summary>
-        QCategories_Read = 0x702,
+        Employees_Delete = 0x702,
 
         /// <summary>
-        /// Read qCustomers.Read. 
+        /// Read Customer demographic.Read. 
         /// </summary>
-        QCustomers_Read = 0x704,
+        CustomerDemographic_Read = 0x704,
 
         /// <summary>
-        /// Read qProducts.Read. 
+        /// Create Customer demographic.Create. 
         /// </summary>
-        QProducts_Read = 0x708,
+        CustomerDemographic_Create = 0x708,
 
         /// <summary>
-        /// Read qOrderProducts.Read. 
+        /// Update Customer demographic.Update. 
         /// </summary>
-        QOrderProducts_Read = 0x710,
+        CustomerDemographic_Update = 0x710,
 
         /// <summary>
-        /// Read qOrders.Read. 
+        /// Delete Customer demographic.Delete. 
         /// </summary>
-        QOrders_Read = 0x720,
+        CustomerDemographic_Delete = 0x720,
 
         /// <summary>
-        /// Execute Print Order Invoice.Execute. 
+        /// Read Shippers.Read. 
         /// </summary>
-        PrintOrderInvoice_Execute = 0x740,
+        Shippers_Read = 0x740,
 
         /// <summary>
-        /// Execute GetTestData.Execute. 
+        /// Create Shippers.Create. 
         /// </summary>
-        GetTestData_Execute = 0x780,
+        Shippers_Create = 0x780,
+
+        /// <summary>
+        /// Update Shippers.Update. 
+        /// </summary>
+        Shippers_Update = 0x801,
+
+        /// <summary>
+        /// Delete Shippers.Delete. 
+        /// </summary>
+        Shippers_Delete = 0x802,
+
+        /// <summary>
+        /// Read SupplierQuery.Read. 
+        /// </summary>
+        SupplierQuery_Read = 0x804,
+
+        /// <summary>
+        /// Read EmployeeQuery.Read. 
+        /// </summary>
+        EmployeeQuery_Read = 0x808,
+
+        /// <summary>
+        /// Read ShipperQuery.Read. 
+        /// </summary>
+        ShipperQuery_Read = 0x810,
+
+        /// <summary>
+        /// Read CategoryQuery.Read. 
+        /// </summary>
+        CategoryQuery_Read = 0x820,
+
+        /// <summary>
+        /// Read ReportFormQuery.Read. 
+        /// </summary>
+        ReportFormQuery_Read = 0x840,
+
+        /// <summary>
+        /// Create ReportFormQuery.Create. 
+        /// </summary>
+        ReportFormQuery_Create = 0x880,
+
+        /// <summary>
+        /// Read CustomerQuery.Read. 
+        /// </summary>
+        CustomerQuery_Read = 0x901,
+
+        /// <summary>
+        /// Read ProductQuery.Read. 
+        /// </summary>
+        ProductQuery_Read = 0x902,
+
+        /// <summary>
+        /// Read OrderProductQuery.Read. 
+        /// </summary>
+        OrderProductQuery_Read = 0x904,
+
+        /// <summary>
+        /// Read OrdersQuery.Read. 
+        /// </summary>
+        OrdersQuery_Read = 0x908,
+
+        /// <summary>
+        /// Read RegionQuery.Read. 
+        /// </summary>
+        RegionQuery_Read = 0x910,
+
+        /// <summary>
+        /// Execute Print report.Execute. 
+        /// </summary>
+        ServerPrintSimple_Execute = 0x920,
+
+        /// <summary>
+        /// Execute Print report with parameter .Execute. 
+        /// </summary>
+        ServerPrintWithParameter_Execute = 0x940,
+
+        /// <summary>
+        /// Execute Print report with parameter .Execute. 
+        /// </summary>
+        ServerPrintWithForm_Execute = 0x980,
 
         
     }

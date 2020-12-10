@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Northwind.Common.Properties {
+namespace NorthWind.Common.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Northwind.Common.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.Common.Properties.ScreenResources", typeof(ScreenResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.Common.Properties.ScreenResources", typeof(ScreenResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -399,15 +399,6 @@ namespace Northwind.Common.Properties {
         public static string Orders_ShipperDetailRegion_Phone {
             get {
                 return ResourceManager.GetString("Orders_ShipperDetailRegion_Phone", resourceCulture);
-            }
-		}
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TestDynamicColumns.
-        /// </summary>
-        public static string TestDynamicColumns_DisplayName {
-            get {
-                return ResourceManager.GetString("TestDynamicColumns_DisplayName", resourceCulture);
             }
 		}
         
@@ -871,6 +862,24 @@ namespace Northwind.Common.Properties {
 		}
         
         /// <summary>
+        ///   Looks up a localized string similar to Document scan file.
+        /// </summary>
+        public static string Employees_qEmployees1_DocumentScanFileId {
+            get {
+                return ResourceManager.GetString("Employees_qEmployees1_DocumentScanFileId", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photo.
+        /// </summary>
+        public static string Employees_qEmployees1_Photo {
+            get {
+                return ResourceManager.GetString("Employees_qEmployees1_Photo", resourceCulture);
+            }
+		}
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
         public static string Employees_qEmployees1_Address {
@@ -930,6 +939,51 @@ namespace Northwind.Common.Properties {
         public static string Employees_qEmployees1_Notes {
             get {
                 return ResourceManager.GetString("Employees_qEmployees1_Notes", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Region (identity).
+        /// </summary>
+        public static string Region_DisplayName {
+            get {
+                return ResourceManager.GetString("Region_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Region id.
+        /// </summary>
+        public static string Region_blockRegion1_Id {
+            get {
+                return ResourceManager.GetString("Region_blockRegion1_Id", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Region description.
+        /// </summary>
+        public static string Region_blockRegion1_RegionDescription {
+            get {
+                return ResourceManager.GetString("Region_blockRegion1_RegionDescription", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Charts.
+        /// </summary>
+        public static string Charts_DisplayName {
+            get {
+                return ResourceManager.GetString("Charts_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Id.
+        /// </summary>
+        public static string Charts_BlockRegion1_Id {
+            get {
+                return ResourceManager.GetString("Charts_BlockRegion1_Id", resourceCulture);
             }
 		}
         

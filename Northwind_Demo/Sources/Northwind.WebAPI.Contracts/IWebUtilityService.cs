@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Northwind.WebAPI.Contracts
+namespace NorthWind.WebAPI.Contracts
 {
     public interface IWebUtilityService
     {

@@ -1,9 +1,9 @@
 ﻿using BusinessFramework.Client.Contracts.Screens;
 using FutureTechnologies.DI.Contracts;
-using Northwind.Common.Screens;
+using NorthWind.Common.Screens;
 
 
-namespace Northwind.Console
+namespace NorthWind.Console
 {
     partial class DependencyInjectionConfig
     {
@@ -12,11 +12,12 @@ namespace Northwind.Console
             registrator.Transient<IScreenViewModel, CustomersScreenViewModel>("customers");
             registrator.Transient<IScreenViewModel, ShippersScreenViewModel>("shippers");
             registrator.Transient<IScreenViewModel, OrdersScreenViewModel>("orders");
-            registrator.Transient<IScreenViewModel, TestDynamicColumnsScreenViewModel>("testDynamicColumns");
             registrator.Transient<IScreenViewModel, CategoriesScreenViewModel>("categories");
             registrator.Transient<IScreenViewModel, ProductsScreenViewModel>("products");
             registrator.Transient<IScreenViewModel, SuppliersScreenViewModel>("suppliers");
             registrator.Transient<IScreenViewModel, EmployeesScreenViewModel>("employees");
+            registrator.Transient<IScreenViewModel, RegionScreenViewModel>("region");
+            registrator.Transient<IScreenViewModel, ChartsScreenViewModel>("charts");
         }
     }
 }

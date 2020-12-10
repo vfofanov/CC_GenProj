@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Northwind.Common.Properties {
+namespace NorthWind.Common.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Northwind.Common.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.Common.Properties.ScreenGroupResources", typeof(ScreenGroupResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.Common.Properties.ScreenGroupResources", typeof(ScreenGroupResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -84,6 +84,15 @@ namespace Northwind.Common.Properties {
         public static string Employees_DisplayName {
             get {
                 return ResourceManager.GetString("Employees_DisplayName", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Experimental.
+        /// </summary>
+        public static string Experimental_DisplayName {
+            get {
+                return ResourceManager.GetString("Experimental_DisplayName", resourceCulture);
             }
 		}
         

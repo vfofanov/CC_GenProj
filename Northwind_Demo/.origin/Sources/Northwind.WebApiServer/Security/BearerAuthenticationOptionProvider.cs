@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin.Security.OAuth;
-using Northwind.WebAPI.Contracts.Security;
+using NorthWind.WebAPI.Contracts.Security;
 
-namespace Northwind.WebApiServer.Security
+namespace NorthWind.WebApiServer.Security
 {
     /// <inheritdoc />
     public class BearerAuthenticationOptionProvider : IBearerAuthenticationOptionProvider

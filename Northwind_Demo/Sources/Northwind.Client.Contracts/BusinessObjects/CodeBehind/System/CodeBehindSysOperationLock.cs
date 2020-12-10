@@ -5,11 +5,11 @@ using System.Diagnostics;
 using BusinessFramework.Client.Contracts.DataObjects;
 using BusinessFramework.Client.Contracts.DataObjects.Attributes;
 using BusinessFramework.Client.Contracts.DataObjects.Validation;
-using Northwind.Client.Contracts.Properties;
-using Northwind.Contracts.DataObjects;
+using NorthWind.Client.Contracts.Properties;
+using NorthWind.Contracts.DataObjects;
 
 
-namespace Northwind.Client.Contracts.BusinessObjects.CodeBehind
+namespace NorthWind.Client.Contracts.BusinessObjects.CodeBehind
 {
     [Serializable]
 	[DebuggerDisplay("SysOperationLock" + " {"+ nameof(OperationName) +"}" + " {"+ nameof(OperationContext) +"}")]

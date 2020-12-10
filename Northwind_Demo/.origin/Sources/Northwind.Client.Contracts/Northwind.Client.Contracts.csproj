@@ -8,8 +8,8 @@
     <ProjectGuid>{8D648785-A742-4354-A01B-012E70020819}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.Client.Contracts</RootNamespace>
-    <AssemblyName>Northwind.Client.Contracts</AssemblyName>
+    <RootNamespace>NorthWind.Client.Contracts</RootNamespace>
+    <AssemblyName>NorthWind.Client.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -67,52 +67,62 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessObjects\Category.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCategory.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCustomer.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindEmployee.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrder.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrderDetail.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrderStatus.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindProduct.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQCategories.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQCustomers.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQEmployees.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQOrderProducts.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQOrders.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQProducts.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQShippers.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindQSuppliers.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindShipper.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindSupplier.cs" />
-    <Compile Include="BusinessObjects\CodeBehind\CodeBehindVSalesByCategory.cs" />
+    <Compile Include="BusinessObjects\Categories.cs" />
+    <Compile Include="BusinessObjects\CategoryQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCategories.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCategoryQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCustomerCustomerDemo.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCustomerDemographic.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCustomerQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindCustomers.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindEmployeeQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindEmployees.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindEmployeeTerritory.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrderDetails.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrderProductQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrders.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindOrdersQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindProductQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindProducts.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindRegion.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindRegionQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindReportFormQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindShipperQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindShippers.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindSupplierQuery.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindSuppliers.cs" />
+    <Compile Include="BusinessObjects\CodeBehind\CodeBehindTerritory.cs" />
     <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysOperationLock.cs" />
     <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysResetPasswordToken.cs" />
     <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysRole.cs" />
     <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysSetting.cs" />
     <Compile Include="BusinessObjects\CodeBehind\System\CodeBehindSysSettingProperty.cs" />
-    <Compile Include="BusinessObjects\Customer.cs" />
-    <Compile Include="BusinessObjects\Employee.cs" />
-    <Compile Include="BusinessObjects\Order.cs" />
-    <Compile Include="BusinessObjects\OrderDetail.cs" />
-    <Compile Include="BusinessObjects\OrderStatus.cs" />
-    <Compile Include="BusinessObjects\Product.cs" />
-    <Compile Include="BusinessObjects\QCategories.cs" />
-    <Compile Include="BusinessObjects\QCustomers.cs" />
-    <Compile Include="BusinessObjects\QEmployees.cs" />
-    <Compile Include="BusinessObjects\QOrderProducts.cs" />
-    <Compile Include="BusinessObjects\QOrders.cs" />
-    <Compile Include="BusinessObjects\QProducts.cs" />
-    <Compile Include="BusinessObjects\QShippers.cs" />
-    <Compile Include="BusinessObjects\QSuppliers.cs" />
-    <Compile Include="BusinessObjects\Shipper.cs" />
-    <Compile Include="BusinessObjects\Supplier.cs" />
+    <Compile Include="BusinessObjects\CustomerCustomerDemo.cs" />
+    <Compile Include="BusinessObjects\CustomerDemographic.cs" />
+    <Compile Include="BusinessObjects\CustomerQuery.cs" />
+    <Compile Include="BusinessObjects\Customers.cs" />
+    <Compile Include="BusinessObjects\EmployeeQuery.cs" />
+    <Compile Include="BusinessObjects\Employees.cs" />
+    <Compile Include="BusinessObjects\EmployeeTerritory.cs" />
+    <Compile Include="BusinessObjects\OrderDetails.cs" />
+    <Compile Include="BusinessObjects\OrderProductQuery.cs" />
+    <Compile Include="BusinessObjects\Orders.cs" />
+    <Compile Include="BusinessObjects\OrdersQuery.cs" />
+    <Compile Include="BusinessObjects\ProductQuery.cs" />
+    <Compile Include="BusinessObjects\Products.cs" />
+    <Compile Include="BusinessObjects\Region.cs" />
+    <Compile Include="BusinessObjects\RegionQuery.cs" />
+    <Compile Include="BusinessObjects\ReportFormQuery.cs" />
+    <Compile Include="BusinessObjects\ShipperQuery.cs" />
+    <Compile Include="BusinessObjects\Shippers.cs" />
+    <Compile Include="BusinessObjects\SupplierQuery.cs" />
+    <Compile Include="BusinessObjects\Suppliers.cs" />
     <Compile Include="BusinessObjects\System\SysOperationLock.cs" />
     <Compile Include="BusinessObjects\System\SysResetPasswordToken.cs" />
     <Compile Include="BusinessObjects\System\SysRole.cs" />
     <Compile Include="BusinessObjects\System\SysSetting.cs" />
     <Compile Include="BusinessObjects\System\SysSettingProperty.cs" />
-    <Compile Include="BusinessObjects\VSalesByCategory.cs" />
+    <Compile Include="BusinessObjects\Territory.cs" />
     <Compile Include="DomainObjectKeys.cs" />
     <Compile Include="Properties\ObjectResources.Designer.cs">
       <DependentUpon>ObjectResources.resx</DependentUpon>
@@ -132,9 +142,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Contracts\BusinessFramework.Client.Contracts.csproj">
        <Project>{9C997456-B515-4678-9F1C-A4131F85E6A3}</Project>

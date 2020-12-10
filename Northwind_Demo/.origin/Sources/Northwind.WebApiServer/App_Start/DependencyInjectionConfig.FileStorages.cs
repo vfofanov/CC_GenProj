@@ -5,7 +5,7 @@ using FutureTechnologies.DI;
 using FutureTechnologies.DI.Contracts;
 
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     static partial class DependencyInjectionConfig
     {

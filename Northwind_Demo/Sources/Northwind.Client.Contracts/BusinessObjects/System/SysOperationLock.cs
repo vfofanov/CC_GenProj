@@ -1,9 +1,9 @@
 ﻿using System;
 using BusinessFramework.Client.Contracts.DataObjects;
-using Northwind.Contracts.DataObjects;
+using NorthWind.Contracts.DataObjects;
 
 
-namespace Northwind.Client.Contracts.BusinessObjects
+namespace NorthWind.Client.Contracts.BusinessObjects
 {
 
     [Serializable]

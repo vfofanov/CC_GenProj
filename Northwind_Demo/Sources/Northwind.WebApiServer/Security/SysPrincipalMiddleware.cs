@@ -5,7 +5,7 @@ using BusinessFramework.WebAPI.Security;
 using BusinessFramework.WebAPI.Utils.IoC;
 using Microsoft.Owin;
 
-namespace Northwind.WebApiServer.Security
+namespace NorthWind.WebApiServer.Security
 {
     /// <summary>
     /// OWIN middleware for put authorization principal to request context

@@ -7,8 +7,8 @@
     <ProjectGuid>{0AFA703C-B408-42DC-8490-5726A12506F3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.WebAPI.DataAccess</RootNamespace>
-    <AssemblyName>Northwind.WebAPI.DataAccess</AssemblyName>
+    <RootNamespace>NorthWind.WebAPI.DataAccess</RootNamespace>
+    <AssemblyName>NorthWind.WebAPI.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -23,7 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
-    <DocumentationFile>bin\Debug\Northwind.WebAPI.DataAccess.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\NorthWind.WebAPI.DataAccess.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Build\Server\Northwind.WebAPI.DataAccess.xml</DocumentationFile>
+    <DocumentationFile>..\..\Build\Server\NorthWind.WebAPI.DataAccess.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -120,17 +120,20 @@
     <Compile Include="ApiDbContext.cs" />
     <Compile Include="ApiDbContext.Entities.cs" />
     <Compile Include="Mapping\ApiDbContextMapping.cs" />
-    <Compile Include="Mapping\CategoryDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindCategoryDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindCustomerDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindEmployeeDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindOrderDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindOrderDetailDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindOrderStatusDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindProductDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindShipperDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindSupplierDatabaseMapping.cs" />
-    <Compile Include="Mapping\CodeBehind\CodeBehindVSalesByCategoryDatabaseMapping.cs" />
+    <Compile Include="Mapping\CategoriesDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindCategoriesDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindCustomerCustomerDemoDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindCustomerDemographicDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindCustomersDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindEmployeesDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindEmployeeTerritoryDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindOrderDetailsDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindOrdersDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindProductsDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindRegionDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindShippersDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindSuppliersDatabaseMapping.cs" />
+    <Compile Include="Mapping\CodeBehind\CodeBehindTerritoryDatabaseMapping.cs" />
     <Compile Include="Mapping\CodeBehind\System\CodeBehindSysInfoDatabaseMapping.cs" />
     <Compile Include="Mapping\CodeBehind\System\CodeBehindSysObjectClassDatabaseMapping.cs" />
     <Compile Include="Mapping\CodeBehind\System\CodeBehindSysObjectDatabaseMapping.cs" />
@@ -150,14 +153,17 @@
     <Compile Include="Mapping\CodeBehind\System\CodeBehindSysUserPermissionsDisplayViewDatabaseMapping.cs" />
     <Compile Include="Mapping\CodeBehind\System\CodeBehindSysUserRoleDatabaseMapping.cs" />
     <Compile Include="Mapping\CodeBehind\System\CodeBehindSysUsersDisplayViewDatabaseMapping.cs" />
-    <Compile Include="Mapping\CustomerDatabaseMapping.cs" />
-    <Compile Include="Mapping\EmployeeDatabaseMapping.cs" />
-    <Compile Include="Mapping\OrderDatabaseMapping.cs" />
-    <Compile Include="Mapping\OrderDetailDatabaseMapping.cs" />
-    <Compile Include="Mapping\OrderStatusDatabaseMapping.cs" />
-    <Compile Include="Mapping\ProductDatabaseMapping.cs" />
-    <Compile Include="Mapping\ShipperDatabaseMapping.cs" />
-    <Compile Include="Mapping\SupplierDatabaseMapping.cs" />
+    <Compile Include="Mapping\CustomerCustomerDemoDatabaseMapping.cs" />
+    <Compile Include="Mapping\CustomerDemographicDatabaseMapping.cs" />
+    <Compile Include="Mapping\CustomersDatabaseMapping.cs" />
+    <Compile Include="Mapping\EmployeesDatabaseMapping.cs" />
+    <Compile Include="Mapping\EmployeeTerritoryDatabaseMapping.cs" />
+    <Compile Include="Mapping\OrderDetailsDatabaseMapping.cs" />
+    <Compile Include="Mapping\OrdersDatabaseMapping.cs" />
+    <Compile Include="Mapping\ProductsDatabaseMapping.cs" />
+    <Compile Include="Mapping\RegionDatabaseMapping.cs" />
+    <Compile Include="Mapping\ShippersDatabaseMapping.cs" />
+    <Compile Include="Mapping\SuppliersDatabaseMapping.cs" />
     <Compile Include="Mapping\System\FileLinkMapping.cs" />
     <Compile Include="Mapping\System\SysInfoDatabaseMapping.cs" />
     <Compile Include="Mapping\System\SysObjectClassDatabaseMapping.cs" />
@@ -178,7 +184,7 @@
     <Compile Include="Mapping\System\SysUserPermissionsDisplayViewDatabaseMapping.cs" />
     <Compile Include="Mapping\System\SysUserRoleDatabaseMapping.cs" />
     <Compile Include="Mapping\System\SysUsersDisplayViewDatabaseMapping.cs" />
-    <Compile Include="Mapping\VSalesByCategoryDatabaseMapping.cs" />
+    <Compile Include="Mapping\TerritoryDatabaseMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\CommonResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -190,25 +196,31 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Repositories\CategoryRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindCategoryRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindCustomerRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindEmployeeRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindOrderDetailRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindOrderRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindOrderStatusRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindProductRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindQCategoriesRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindQCustomersRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindQEmployeesRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindQOrderProductsRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindQOrdersRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindQProductsRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindQShippersRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindQSuppliersRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindShipperRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindSupplierRepository.cs" />
-    <Compile Include="Repositories\CodeBehind\CodeBehindVSalesByCategoryRepository.cs" />
+    <Compile Include="Repositories\CategoriesRepository.cs" />
+    <Compile Include="Repositories\CategoryQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindCategoriesRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindCategoryQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindCustomerCustomerDemoRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindCustomerDemographicRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindCustomerQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindCustomersRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindEmployeeQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindEmployeesRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindEmployeeTerritoryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindOrderDetailsRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindOrderProductQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindOrdersQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindOrdersRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindProductQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindProductsRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindRegionQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindRegionRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindReportFormQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindShipperQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindShippersRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindSupplierQueryRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindSuppliersRepository.cs" />
+    <Compile Include="Repositories\CodeBehind\CodeBehindTerritoryRepository.cs" />
     <Compile Include="Repositories\CodeBehind\System\CodeBehindSysInfoRepository.cs" />
     <Compile Include="Repositories\CodeBehind\System\CodeBehindSysObjectClassRepository.cs" />
     <Compile Include="Repositories\CodeBehind\System\CodeBehindSysObjectRepository.cs" />
@@ -228,22 +240,26 @@
     <Compile Include="Repositories\CodeBehind\System\CodeBehindSysUserRepository.cs" />
     <Compile Include="Repositories\CodeBehind\System\CodeBehindSysUserRoleRepository.cs" />
     <Compile Include="Repositories\CodeBehind\System\CodeBehindSysUsersDisplayViewRepository.cs" />
-    <Compile Include="Repositories\CustomerRepository.cs" />
-    <Compile Include="Repositories\EmployeeRepository.cs" />
-    <Compile Include="Repositories\OrderDetailRepository.cs" />
-    <Compile Include="Repositories\OrderRepository.cs" />
-    <Compile Include="Repositories\OrderStatusRepository.cs" />
-    <Compile Include="Repositories\ProductRepository.cs" />
-    <Compile Include="Repositories\QCategoriesRepository.cs" />
-    <Compile Include="Repositories\QCustomersRepository.cs" />
-    <Compile Include="Repositories\QEmployeesRepository.cs" />
-    <Compile Include="Repositories\QOrderProductsRepository.cs" />
-    <Compile Include="Repositories\QOrdersRepository.cs" />
-    <Compile Include="Repositories\QProductsRepository.cs" />
-    <Compile Include="Repositories\QShippersRepository.cs" />
-    <Compile Include="Repositories\QSuppliersRepository.cs" />
-    <Compile Include="Repositories\ShipperRepository.cs" />
-    <Compile Include="Repositories\SupplierRepository.cs" />
+    <Compile Include="Repositories\CustomerCustomerDemoRepository.cs" />
+    <Compile Include="Repositories\CustomerDemographicRepository.cs" />
+    <Compile Include="Repositories\CustomerQueryRepository.cs" />
+    <Compile Include="Repositories\CustomersRepository.cs" />
+    <Compile Include="Repositories\EmployeeQueryRepository.cs" />
+    <Compile Include="Repositories\EmployeesRepository.cs" />
+    <Compile Include="Repositories\EmployeeTerritoryRepository.cs" />
+    <Compile Include="Repositories\OrderDetailsRepository.cs" />
+    <Compile Include="Repositories\OrderProductQueryRepository.cs" />
+    <Compile Include="Repositories\OrdersQueryRepository.cs" />
+    <Compile Include="Repositories\OrdersRepository.cs" />
+    <Compile Include="Repositories\ProductQueryRepository.cs" />
+    <Compile Include="Repositories\ProductsRepository.cs" />
+    <Compile Include="Repositories\RegionQueryRepository.cs" />
+    <Compile Include="Repositories\RegionRepository.cs" />
+    <Compile Include="Repositories\ReportFormQueryRepository.cs" />
+    <Compile Include="Repositories\ShipperQueryRepository.cs" />
+    <Compile Include="Repositories\ShippersRepository.cs" />
+    <Compile Include="Repositories\SupplierQueryRepository.cs" />
+    <Compile Include="Repositories\SuppliersRepository.cs" />
     <Compile Include="Repositories\System\FileLinkRepository.cs" />
     <Compile Include="Repositories\System\SysInfoRepository.cs" />
     <Compile Include="Repositories\System\SysObjectClassRepository.cs" />
@@ -264,19 +280,19 @@
     <Compile Include="Repositories\System\SysUserRepository.cs" />
     <Compile Include="Repositories\System\SysUserRoleRepository.cs" />
     <Compile Include="Repositories\System\SysUsersDisplayViewRepository.cs" />
-    <Compile Include="Repositories\VSalesByCategoryRepository.cs" />
+    <Compile Include="Repositories\TerritoryRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.WebAPI.Contracts\Northwind.WebAPI.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.WebAPI.Contracts\NorthWind.WebAPI.Contracts.csproj">
       <Project>{d3460f1a-d56e-4d69-ae87-050f54ebc01f}</Project>
-      <Name>Northwind.WebAPI.Contracts</Name>
+      <Name>NorthWind.WebAPI.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
        <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>

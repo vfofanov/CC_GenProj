@@ -1,0 +1,196 @@
+09.12.2020 11:43:12 | Information | ------------------- [ Application Started ] -------------------
+12/9/2020 11:43:12 AM | Information | Current culture set to "en-US"
+12/9/2020 11:43:12 AM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost:9351
+12/9/2020 11:44:12 AM | Information | Security system initialized for admin.
+12/9/2020 11:44:12 AM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost:9351
+12/9/2020 11:44:13 AM | Information | SysSettingProperty objects read
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly NorthWind.Console, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI.Contracts, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Startup, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI.UnityContainer, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportingFramework.Client, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly NorthWind.Client, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Common, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Connection, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly NorthWind.Contracts, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.EnterpriseLibrary.Logging, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly NorthWind.Common, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Excel, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Word, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Aspose.Cells, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Utils, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics.Controls, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly Thinktecture.IdentityModel.Client.Net45, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportSystem.Core, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportSystem.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportingFramework.Manager, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportingFramework.Updater, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly ReportSystem.UI, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:44:14 AM | Verbose | Initializing resources of assembly MSSQL.ReportModule, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+09.12.2020 11:45:13 | Information | ------------------- [ Application Started ] -------------------
+12/9/2020 11:45:13 AM | Information | Current culture set to "en-US"
+12/9/2020 11:45:13 AM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost:9351
+12/9/2020 11:45:19 AM | Information | Security system initialized for admin.
+12/9/2020 11:45:19 AM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost:9351
+12/9/2020 11:45:20 AM | Information | SysSettingProperty objects read
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly NorthWind.Console, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI.Contracts, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Startup, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI.UnityContainer, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportingFramework.Client, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly NorthWind.Client, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Common, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Connection, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly NorthWind.Contracts, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.EnterpriseLibrary.Logging, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly NorthWind.Common, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Excel, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Word, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Aspose.Cells, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Utils, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics.Controls, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly Thinktecture.IdentityModel.Client.Net45, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportSystem.Core, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportSystem.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportingFramework.Manager, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportingFramework.Updater, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly ReportSystem.UI, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:20 AM | Verbose | Initializing resources of assembly MSSQL.ReportModule, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:45:45 AM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost:9351
+09.12.2020 11:46:55 | Information | ------------------- [ Application Started ] -------------------
+12/9/2020 11:46:55 AM | Information | Current culture set to "en-US"
+12/9/2020 11:46:55 AM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost.fiddler:9351
+12/9/2020 11:47:00 AM | Information | Security system initialized for admin.
+12/9/2020 11:47:00 AM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost.fiddler:9351
+12/9/2020 11:47:01 AM | Information | SysSettingProperty objects read
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly NorthWind.Console, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI.Contracts, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Startup, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI.UnityContainer, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly FutureTechnologies.DI, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportingFramework.Client, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly NorthWind.Client, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Common, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.Connection, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly NorthWind.Contracts, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.EnterpriseLibrary.Logging, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly NorthWind.Common, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Excel, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Word, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportingFramework.Central.Aspose.Cells, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Utils, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics.Controls, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly Thinktecture.IdentityModel.Client.Net45, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportSystem.Core, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportSystem.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportingFramework.Manager, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportingFramework.Updater, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly ReportSystem.UI, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/9/2020 11:47:02 AM | Verbose | Initializing resources of assembly MSSQL.ReportModule, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+10.12.2020 14:01:14 | Information | ------------------- [ Application Started ] -------------------
+12/10/2020 2:01:14 PM | Information | Current culture set to "en-US"
+12/10/2020 2:01:14 PM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost.fiddler:9351
+12/10/2020 2:01:29 PM | Information | Security system initialized for admin.
+12/10/2020 2:01:29 PM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost.fiddler:9351
+12/10/2020 2:01:30 PM | Information | SysSettingProperty objects read
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly NorthWind.Console, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly FutureTechnologies.DI.Contracts, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.Startup, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly FutureTechnologies.DI.UnityContainer, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly FutureTechnologies.DI, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportingFramework.Client, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly NorthWind.Client, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.Common, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.Connection, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly NorthWind.Contracts, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.EnterpriseLibrary.Logging, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly NorthWind.Common, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Excel, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Word, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportingFramework.Central.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportingFramework.Central.Aspose.Cells, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Utils, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics.Controls, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly Thinktecture.IdentityModel.Client.Net45, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportSystem.Core, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportSystem.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportingFramework.Manager, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportingFramework.Updater, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly ReportSystem.UI, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 2:01:31 PM | Verbose | Initializing resources of assembly MSSQL.ReportModule, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+10.12.2020 20:30:17 | Information | ------------------- [ Application Started ] -------------------
+12/10/2020 8:30:17 PM | Information | Current culture set to "en-US"
+12/10/2020 8:30:17 PM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost.fiddler:9351
+12/10/2020 8:30:22 PM | Information | Security system initialized for admin.
+12/10/2020 8:30:22 PM | Verbose | Server connection from app.config. CentralServiceUri:http://localhost.fiddler:9351
+12/10/2020 8:30:24 PM | Information | SysSettingProperty objects read
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly NorthWind.Console, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly FutureTechnologies.DI.Contracts, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.Startup, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly FutureTechnologies.DI.UnityContainer, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly FutureTechnologies.DI, Version=2.0.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportingFramework.Client, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly NorthWind.Client, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.Common, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.Connection, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly NorthWind.Contracts, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.EnterpriseLibrary.Logging, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly NorthWind.Common, Version=1.0.0.50, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Excel, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportingFramework.Central.Interop.Word, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportingFramework.Central.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportingFramework.Central.Aspose.Cells, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Utils, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly BusinessFramework.Client.WinForms.Infragistics.Controls, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly Thinktecture.IdentityModel.Client.Net45, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportSystem.Core, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportSystem.Contracts, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportingFramework.Manager, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportingFramework.Updater, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly ReportSystem.UI, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null
+12/10/2020 8:30:24 PM | Verbose | Initializing resources of assembly MSSQL.ReportModule, Version=1.5.0.213, Culture=neutral, PublicKeyToken=null

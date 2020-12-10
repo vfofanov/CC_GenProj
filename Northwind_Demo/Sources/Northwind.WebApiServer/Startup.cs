@@ -11,19 +11,19 @@ using Microsoft.Owin;
 using Microsoft.Owin.Cors;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using Northwind.WebApiServer;
-using Northwind.WebApiServer.Middlewares;
-using Northwind.WebApiServer.Security;
+using NorthWind.WebApiServer;
+using NorthWind.WebApiServer.Middlewares;
+using NorthWind.WebApiServer.Security;
 using Microsoft.Owin.Logging;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.Security;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.Security;
 using IOwinLogger = Microsoft.Owin.Logging.ILogger;
 using ILogger = BusinessFramework.Contracts.ILogger;
 
 
 [assembly: OwinStartup(typeof(Startup))]
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     /// <summary>
     /// Api server startup class

@@ -1,34 +1,42 @@
 using BusinessFramework.Client.Contracts.Reporting;
 using BusinessFramework.Contracts.Actions;
-using Northwind.Client.Services.Contracts.DomainModel;
+using NorthWind.Client.ActionServices.Client.CodeBehind;
+using NorthWind.Client.Services.Contracts.DomainModel;
 
-namespace Northwind.Client.ActionServices.Client
+namespace NorthWind.Client.ActionServices.Client
 {
     /// <summary>
     /// </summary>
-    public sealed class ClientOrderManagerService : CodeBehind.CodeBehindClientOrderManagerService
+    public sealed class ClientOrderManagerService : CodeBehindClientOrderManagerService
     {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:System.Object" /> class.
         /// </summary>
-        public ClientOrderManagerService(IReportViewer reportViewer, IQOrdersCollectionManager qOrdersCollectionManager)
+        public ClientOrderManagerService(IReportViewer reportViewer, IOrdersQueryCollectionManager ordersQueryCollectionManager)
         {
             ReportViewer = reportViewer;
-            QOrdersCollectionManager = qOrdersCollectionManager;
+            OrdersQueryCollectionManager = ordersQueryCollectionManager;
         }
 
         private IReportViewer ReportViewer { get; set; }
-        private IQOrdersCollectionManager QOrdersCollectionManager { get; set; }
+        private IOrdersQueryCollectionManager OrdersQueryCollectionManager { get; set; }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="id"></param>
-        public override ActionResult PrintOrderInvoice(int id)
+        public override ActionResult ClientPrintSimple()
         {
-            var order = QOrdersCollectionManager.GetReadOnlyObjectByKey(id);
+            throw new System.NotImplementedException();
+        }
+
+        public override ActionResult ClientPrintWithParameter(int id)
+        {
+            var order = OrdersQueryCollectionManager.GetReadOnlyObjectByKey(id);
 
             ReportViewer.ForcedRun("OrderInvoice", ReportSaveFormat.Auto, ReportViewActions.SaveOpen, order);
             return ActionResult.DefaultSuccess;
+        }
+
+        public override ActionResult ClientPrintWithForm()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -1,0 +1,74 @@
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : Accept
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.HttpListener'.
+   at System.Net.HttpListener.CheckDisposed()
+   at System.Net.HttpListener.EndGetContext(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Owin.Host.HttpListener.OwinHttpListener.<ProcessRequestsAsync>d__0.MoveNext()
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : Accept
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.HttpListener'.
+   at System.Net.HttpListener.CheckDisposed()
+   at System.Net.HttpListener.EndGetContext(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Owin.Host.HttpListener.OwinHttpListener.<ProcessRequestsAsync>d__0.MoveNext()
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+serverTrace Error: 0 : Request: GET http://localhost:9351/api/security; response:405; elapsed:51ms; size:0kb
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerMiddleware Error: 0 : grant type is not recognized
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+Microsoft.Owin.Host.HttpListener.OwinHttpListener Error: 0 : IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available

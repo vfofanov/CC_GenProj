@@ -10,13 +10,13 @@ using BusinessFramework.WebAPI.Contracts.Data;
 using BusinessFramework.WebAPI.Contracts.Files.Storage;
 using BusinessFramework.WebAPI.Contracts.Services;
 using BusinessFramework.WebAPI.Contracts.Validation;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
 
 
-namespace Northwind.WebAPI.Controllers.Api
+namespace NorthWind.WebAPI.Controllers.Api
 {
     /// <summary>
     ///     Controls <see cref="SysRole" /> objects

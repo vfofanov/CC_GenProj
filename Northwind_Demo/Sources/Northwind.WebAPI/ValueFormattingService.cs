@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using BusinessFramework.Contracts.Formatting;
 
-namespace Northwind.WebAPI
+namespace NorthWind.WebAPI
 {
     /// <summary>
     /// Value formatting service
@@ -18,10 +18,11 @@ namespace Northwind.WebAPI
             _formats = new[]
             {
                 new ValueFormatting {Key = 0, Name = @"currency", DisplayName = @"Currency", Format = @"C"},
-                new ValueFormatting {Key = 1, Name = @"shortdate", DisplayName = @"Short date", Format = @"dd.MM.yyyy"},
-                new ValueFormatting {Key = 2, Name = @"shortdatetime", DisplayName = @"Short date and time", Format = @"dd.MM.yyyy HH:mm"},
-                new ValueFormatting {Key = 3, Name = @"shorttime", DisplayName = @"Short time", Format = @"HH:mm"},
-                new ValueFormatting {Key = 4, Name = @"year", DisplayName = @"Year", Format = @"year"},
+                new ValueFormatting {Key = 1, Name = @"float", DisplayName = @"Float", Format = @""},
+                new ValueFormatting {Key = 2, Name = @"shortdate", DisplayName = @"Short date", Format = @"DD.MM.YYYY"},
+                new ValueFormatting {Key = 3, Name = @"shortdatetime", DisplayName = @"Short date and time", Format = @"DD.MM.YYYY HH:mm"},
+                new ValueFormatting {Key = 4, Name = @"shorttime", DisplayName = @"Short time", Format = @"HH:mm"},
+                new ValueFormatting {Key = 5, Name = @"year", DisplayName = @"Year", Format = @"year"},
             };
         }
 

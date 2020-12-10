@@ -4,14 +4,14 @@ using System.Linq;
 using System.Web.Http;
 using BusinessFramework.WebAPI.Common.Controllers;
 using BusinessFramework.WebAPI.Common.Request;
-using Northwind.Contracts;
-using Northwind.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
+using NorthWind.Contracts;
+using NorthWind.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
 
 
-namespace Northwind.WebAPI.Controllers.OData
+namespace NorthWind.WebAPI.Controllers.OData
 {
     /// <summary>
     ///     Controls <see cref="SysOperationLock" /> objects

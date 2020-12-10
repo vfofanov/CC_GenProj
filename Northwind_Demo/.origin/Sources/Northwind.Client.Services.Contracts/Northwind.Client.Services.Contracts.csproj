@@ -8,8 +8,8 @@
     <ProjectGuid>{EAFEB21C-959C-4025-9848-856F5F5671C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.Client.Services.Contracts</RootNamespace>
-    <AssemblyName>Northwind.Client.Services.Contracts</AssemblyName>
+    <RootNamespace>NorthWind.Client.Services.Contracts</RootNamespace>
+    <AssemblyName>NorthWind.Client.Services.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -47,26 +47,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionServices\IClientOrderManagerService.cs" />
-    <Compile Include="ActionServices\ITestDynamicColumnsActionService.cs" />
-    <Compile Include="DomainModel\ICategoryCollectionManager.cs" />
-    <Compile Include="DomainModel\ICustomerCollectionManager.cs" />
-    <Compile Include="DomainModel\IEmployeeCollectionManager.cs" />
-    <Compile Include="DomainModel\IOrderCollectionManager.cs" />
-    <Compile Include="DomainModel\IOrderDetailCollectionManager.cs" />
-    <Compile Include="DomainModel\IOrderStatusCollectionManager.cs" />
-    <Compile Include="DomainModel\IProductCollectionManager.cs" />
-    <Compile Include="DomainModel\IQCategoriesCollectionManager.cs" />
-    <Compile Include="DomainModel\IQCustomersCollectionManager.cs" />
-    <Compile Include="DomainModel\IQEmployeesCollectionManager.cs" />
-    <Compile Include="DomainModel\IQOrderProductsCollectionManager.cs" />
-    <Compile Include="DomainModel\IQOrdersCollectionManager.cs" />
-    <Compile Include="DomainModel\IQProductsCollectionManager.cs" />
-    <Compile Include="DomainModel\IQShippersCollectionManager.cs" />
-    <Compile Include="DomainModel\IQSuppliersCollectionManager.cs" />
-    <Compile Include="DomainModel\IShipperCollectionManager.cs" />
-    <Compile Include="DomainModel\ISupplierCollectionManager.cs" />
-    <Compile Include="DomainModel\IVSalesByCategoryCollectionManager.cs" />
+    <Compile Include="ActionServices\IReportService.cs" />
+    <Compile Include="DomainModel\ICategoriesCollectionManager.cs" />
+    <Compile Include="DomainModel\ICategoryQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\ICustomerCustomerDemoCollectionManager.cs" />
+    <Compile Include="DomainModel\ICustomerDemographicCollectionManager.cs" />
+    <Compile Include="DomainModel\ICustomerQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\ICustomersCollectionManager.cs" />
+    <Compile Include="DomainModel\IEmployeeQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\IEmployeesCollectionManager.cs" />
+    <Compile Include="DomainModel\IEmployeeTerritoryCollectionManager.cs" />
+    <Compile Include="DomainModel\IOrderDetailsCollectionManager.cs" />
+    <Compile Include="DomainModel\IOrderProductQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\IOrdersCollectionManager.cs" />
+    <Compile Include="DomainModel\IOrdersQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\IProductQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\IProductsCollectionManager.cs" />
+    <Compile Include="DomainModel\IRegionCollectionManager.cs" />
+    <Compile Include="DomainModel\IRegionQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\IReportFormQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\IShipperQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\IShippersCollectionManager.cs" />
+    <Compile Include="DomainModel\ISupplierQueryCollectionManager.cs" />
+    <Compile Include="DomainModel\ISuppliersCollectionManager.cs" />
+    <Compile Include="DomainModel\ITerritoryCollectionManager.cs" />
     <Compile Include="DomainModel\System\ISysOperationLockCollectionManager.cs" />
     <Compile Include="DomainModel\System\ISysResetPasswordTokenCollectionManager.cs" />
     <Compile Include="DomainModel\System\ISysRoleCollectionManager.cs" />
@@ -81,13 +85,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Client.Contracts\Northwind.Client.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Contracts\NorthWind.Client.Contracts.csproj">
       <Project>{8d648785-a742-4354-a01b-012e70020819}</Project>
-      <Name>Northwind.Client.Contracts</Name>
+      <Name>NorthWind.Client.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Contracts\BusinessFramework.Client.Contracts.csproj">
        <Project>{9C997456-B515-4678-9F1C-A4131F85E6A3}</Project>

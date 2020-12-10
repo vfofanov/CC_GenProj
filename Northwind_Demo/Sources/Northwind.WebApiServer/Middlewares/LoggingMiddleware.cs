@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using BusinessFramework.Contracts;
 using Microsoft.Owin;
 
-namespace Northwind.WebApiServer.Middlewares
+namespace NorthWind.WebApiServer.Middlewares
 {
     /// <summary>
     ///     OWIN middleware for Tracing

@@ -1,6 +1,6 @@
 ﻿using BusinessFramework.Client.Common.Services;
 
-namespace Northwind.Console.Services
+namespace NorthWind.Console.Services
 {
     internal sealed class MessageDialogServiceExceptionResolver : BaseMessageDialogServiceExceptionResolver
     {        

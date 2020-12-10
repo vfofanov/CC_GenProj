@@ -19,20 +19,20 @@ using BusinessFramework.Client.Startup.Services;
 using BusinessFramework.Contracts;
 using BusinessFramework.EnterpriseLibrary.Logging;
 using FutureTechnologies.DI.Contracts;
-using Northwind.Client.Services;
-using Northwind.Common;
-using Northwind.Common.Settings;
-using Northwind.Console.Services;
-using Northwind.Contracts;
+using NorthWind.Client.Services;
+using NorthWind.Common;
+using NorthWind.Common.Settings;
+using NorthWind.Console.Services;
+using NorthWind.Contracts;
 
-namespace Northwind.Console
+namespace NorthWind.Console
 {
     internal partial class DependencyInjectionConfig
     {
         public static void ConfigureCommon(IClientContainerRegistrator registrator)
         {
             registrator.Singleton<IEnvironmentService, EnvironmentService>(
-                new Parameter("applicationName", "Northwind"),
+                new Parameter("applicationName", "NorthWind"),
                 new Parameter("applicationVersion", "1.0.0.0"),
                 new Parameter("applicationPath", AppDomain.CurrentDomain.BaseDirectory));
 

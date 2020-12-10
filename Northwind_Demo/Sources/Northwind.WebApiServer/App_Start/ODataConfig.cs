@@ -3,9 +3,9 @@ using System.Web.Http;
 using Microsoft.AspNet.OData.Batch;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNet.OData.Query;
-using Northwind.Contracts.OData;
+using NorthWind.Contracts.OData;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     /// <summary>
     /// OData configuration

@@ -5,9 +5,9 @@ using BusinessFramework.Contracts.DataObjects;
 using BusinessFramework.WebAPI.Contracts.DataObjects;
 using BusinessFramework.WebAPI.Contracts.Metadata;
 using Newtonsoft.Json;
-using Northwind.Contracts.DataObjects;
+using NorthWind.Contracts.DataObjects;
 
-namespace Northwind.WebAPI.Contracts.DataObjects
+namespace NorthWind.WebAPI.Contracts.DataObjects
 {    
     public partial class SysUser : ClassicApiEntity<int>
     {	
@@ -29,6 +29,7 @@ namespace Northwind.WebAPI.Contracts.DataObjects
 
         public virtual DateTime CreateDate { get; set; }
 
+        [JsonIgnore]
         public virtual DateTime? DeactivationDate { get; set; }
 
         public virtual string Description { get; set; }
@@ -37,18 +38,25 @@ namespace Northwind.WebAPI.Contracts.DataObjects
 
         public virtual string EMail { get; set; }
 
+        [JsonIgnore]
         public virtual string EmailToken { get; set; }
 
+        [JsonIgnore]
         public virtual bool FullAccess { get; set; }
 
+        [JsonIgnore]
         public virtual bool IsAnonymous { get; set; }
 
+        [JsonIgnore]
         public virtual bool IsDeactivated { get; set; }
 
+        [JsonIgnore]
         public virtual bool IsEmailConfirmed { get; set; }
 
+        [JsonIgnore]
         public virtual bool IsSystemUser { get; set; }
 
+        [JsonIgnore]
         public virtual byte[] PasswordHash { get; set; }
 
         [JsonIgnore]

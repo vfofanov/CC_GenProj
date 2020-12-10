@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace @Northwind.WebApiServer.Properties {
+namespace @NorthWind.WebApiServer.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace @Northwind.WebApiServer.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.WebApiServer.Properties.CommonResources", typeof(CommonResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.WebApiServer.Properties.CommonResources", typeof(CommonResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,7 +70,7 @@ namespace @Northwind.WebApiServer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Northwind Web API Help Page.
+        ///   Looks up a localized string similar to NorthWind Web API Help Page.
         /// </summary>
         public static string HelpPageTitle {
             get {

@@ -1,7 +1,7 @@
 ﻿using System.Web.Http.ExceptionHandling;
 using BusinessFramework.Contracts;
 
-namespace Northwind.WebApiServer.Middlewares
+namespace NorthWind.WebApiServer.Middlewares
 {
     internal sealed class AppExceptionLogger : ExceptionLogger
     {

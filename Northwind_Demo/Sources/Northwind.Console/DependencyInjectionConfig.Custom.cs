@@ -1,6 +1,6 @@
 ﻿using FutureTechnologies.DI.Contracts;
 
-namespace Northwind.Console
+namespace NorthWind.Console
 {
     partial class DependencyInjectionConfig
     {

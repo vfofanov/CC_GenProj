@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Northwind.Client.Properties {
+namespace NorthWind.Client.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Northwind.Client.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.Client.Properties.UserManagementResources", typeof(UserManagementResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.Client.Properties.UserManagementResources", typeof(UserManagementResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

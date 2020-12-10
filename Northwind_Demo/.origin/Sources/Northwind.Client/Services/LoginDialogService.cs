@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using BusinessFramework.Client.Contracts.Connection;
 using BusinessFramework.Client.Contracts.Services.Dialogs;
 using BusinessFramework.Client.Contracts.Services.Security;
-using Northwind.Client.Forms.Security;
+using NorthWind.Client.Forms.Security;
 
 namespace BusinessFramework.Client.WinForms.IG.Services
 {

@@ -1,5 +1,5 @@
 ﻿
-namespace Northwind.WebAPI.Controllers
+namespace NorthWind.WebAPI.Controllers
 {
     /// <summary>
     /// OData settings

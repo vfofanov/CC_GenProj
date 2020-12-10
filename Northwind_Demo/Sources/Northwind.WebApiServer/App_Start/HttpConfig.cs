@@ -5,7 +5,7 @@ using System.Web.Http;
 using BusinessFramework.Contracts;
 using Newtonsoft.Json.Serialization;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     /// <summary>
     /// Common http configuration

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Data;
 using ReportingFramework.Central.Contracts.Data;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Contracts.Reporting;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts.Reporting;
 
 
-namespace Northwind.WebAPI.Reporting
+namespace NorthWind.WebAPI.Reporting
 {
     /// <inheritdoc />
     public sealed class ReportDataExtractor: IReportDataExtractor

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.Owin;
 using Westwind.Utilities;
 
-namespace Northwind.WebApiServer.Middlewares
+namespace NorthWind.WebApiServer.Middlewares
 {
     /// <summary>
     ///     OWIN middleware for set current culture

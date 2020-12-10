@@ -3,7 +3,7 @@ using BusinessFramework.WebAPI.Common.Notifiers.Factories;
 using BusinessFramework.WebAPI.Contracts.Notifiers;
 using FutureTechnologies.DI.Contracts;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     internal static partial class DependencyInjectionConfig
     {

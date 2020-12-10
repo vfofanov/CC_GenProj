@@ -12,13 +12,13 @@ using BusinessFramework.WebAPI.Common.Request;
 using BusinessFramework.WebAPI.Common.Security;
 using BusinessFramework.WebAPI.Contracts.Security;
 using BusinessFramework.WebAPI.GuiSettingsControllers;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
-using Northwind.WebAPI.Controllers.Properties;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
+using NorthWind.WebAPI.Controllers.Properties;
 
 // ReSharper disable UnusedParameter.Local
 
-namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
+namespace NorthWind.WebAPI.Controllers.GuiSettings.Screens
 {
     /// <summary>
     ///  Employees screen settings controller
@@ -41,7 +41,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
         /// <returns></returns>		
         public IHttpActionResult Get()
         {            
-            if (!(Security.AuthorizeAll(DomainPermissions.QEmployees_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.EmployeeQuery_Read)))
             {
                 return GetInternalForbiddenResult();
             }
@@ -93,7 +93,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                 {
 				    Name = "qEmployees",
                     Actions = GetQEmployeesActions(),
-				    Controller = "QEmployees",
+				    Controller = "EmployeeQuery",
 				    Content = GetQEmployeesContent(context),
                 };
 				           
@@ -107,7 +107,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetQEmployeesContent(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QEmployees_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.EmployeeQuery_Read)))
             {
 			    return null;
 			}
@@ -115,40 +115,40 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "LastName", Key = DomainObjectPropertyKeys.QEmployees.LastName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "LastName", Key = DomainObjectPropertyKeys.EmployeeQuery.LastName, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees_LastName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "FirstName", Key = DomainObjectPropertyKeys.QEmployees.FirstName, DataType = FieldDataType.String},
+			    Field = new Field {Name = "FirstName", Key = DomainObjectPropertyKeys.EmployeeQuery.FirstName, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees_FirstName,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "TitleOfCourtesy", Key = DomainObjectPropertyKeys.QEmployees.TitleOfCourtesy, DataType = FieldDataType.String},
+			    Field = new Field {Name = "TitleOfCourtesy", Key = DomainObjectPropertyKeys.EmployeeQuery.TitleOfCourtesy, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees_TitleOfCourtesy,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "Title", Key = DomainObjectPropertyKeys.QEmployees.Title, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Title", Key = DomainObjectPropertyKeys.EmployeeQuery.Title, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees_Title,                
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "BirthDate", Key = DomainObjectPropertyKeys.QEmployees.BirthDate, DataType = FieldDataType.DateTime},
+			    Field = new Field {Name = "BirthDate", Key = DomainObjectPropertyKeys.EmployeeQuery.BirthDate, DataType = FieldDataType.DateTime},
 				Title = ScreenResources.Employees_qEmployees_BirthDate,                
-				Format = 2,
+				Format = 3,
 				Sortable = true,
 			});
             fields.Add(new GridDataBlockContentField
 			{
-			    Field = new Field {Name = "HireDate", Key = DomainObjectPropertyKeys.QEmployees.HireDate, DataType = FieldDataType.DateTime},
+			    Field = new Field {Name = "HireDate", Key = DomainObjectPropertyKeys.EmployeeQuery.HireDate, DataType = FieldDataType.DateTime},
 				Title = ScreenResources.Employees_qEmployees_HireDate,                
-				Format = 2,
+				Format = 3,
 				Sortable = true,
 			});
 
@@ -202,7 +202,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		        var item = new DataBlock 
                 {
 				    Name = "qEmployees1",
-				    Controller = "QEmployees",
+				    Controller = "EmployeeQuery",
 				    Content = GetQEmployees1Content(context),
                     Depends = new[]
                     {
@@ -220,57 +220,71 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private DataBlockContent GetQEmployees1Content(ScreenSettingsContext context)
         {
 		    
-            if (!(Security.AuthorizeAll(DomainPermissions.QEmployees_Read) && Security.AuthorizeAll(DomainPermissions.QEmployees_Read)))
+            if (!(Security.AuthorizeAll(DomainPermissions.EmployeeQuery_Read) && Security.AuthorizeAll(DomainPermissions.EmployeeQuery_Read)))
             {
 			    return null;
 			}
-            var fields = new List<DetailsDataBlockContentField>(7);
+            var fields = new List<DetailsDataBlockContentField>(9);
 
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Address", Key = DomainObjectPropertyKeys.QEmployees.Address, DataType = FieldDataType.String},
+			    Field = new Field {Name = "DocumentScanFileId", Key = DomainObjectPropertyKeys.EmployeeQuery.DocumentScanFileId, DataType = FieldDataType.None},
+				Title = ScreenResources.Employees_qEmployees1_DocumentScanFileId,
+				LineCount = 1,    
+				IsEndLine = true,       
+			});
+            fields.Add(new DetailsDataBlockContentField
+			{
+			    Field = new Field {Name = "Photo", Key = DomainObjectPropertyKeys.EmployeeQuery.Photo, DataType = FieldDataType.Image},
+				Title = ScreenResources.Employees_qEmployees1_Photo,
+				LineCount = 1,    
+				IsEndLine = true,       
+			});
+            fields.Add(new DetailsDataBlockContentField
+			{
+			    Field = new Field {Name = "Address", Key = DomainObjectPropertyKeys.EmployeeQuery.Address, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees1_Address,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "City", Key = DomainObjectPropertyKeys.QEmployees.City, DataType = FieldDataType.String},
+			    Field = new Field {Name = "City", Key = DomainObjectPropertyKeys.EmployeeQuery.City, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees1_City,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Region", Key = DomainObjectPropertyKeys.QEmployees.Region, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Region", Key = DomainObjectPropertyKeys.EmployeeQuery.Region, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees1_Region,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "PostalCode", Key = DomainObjectPropertyKeys.QEmployees.PostalCode, DataType = FieldDataType.String},
+			    Field = new Field {Name = "PostalCode", Key = DomainObjectPropertyKeys.EmployeeQuery.PostalCode, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees1_PostalCode,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Country", Key = DomainObjectPropertyKeys.QEmployees.Country, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Country", Key = DomainObjectPropertyKeys.EmployeeQuery.Country, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees1_Country,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "HomePhone", Key = DomainObjectPropertyKeys.QEmployees.HomePhone, DataType = FieldDataType.String},
+			    Field = new Field {Name = "HomePhone", Key = DomainObjectPropertyKeys.EmployeeQuery.HomePhone, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees1_HomePhone,
 				LineCount = 1,    
 				IsEndLine = true,       
 			});
             fields.Add(new DetailsDataBlockContentField
 			{
-			    Field = new Field {Name = "Notes", Key = DomainObjectPropertyKeys.QEmployees.Notes, DataType = FieldDataType.String},
+			    Field = new Field {Name = "Notes", Key = DomainObjectPropertyKeys.EmployeeQuery.Notes, DataType = FieldDataType.String},
 				Title = ScreenResources.Employees_qEmployees1_Notes,
 				LineCount = 1,    
 				IsEndLine = true,       
@@ -286,7 +300,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
 		private WorkActionItem[] GetQEmployeesActions()
         {
 		    var actions = new List<WorkActionItem>(5);
-            if (Security.AuthorizeAll(DomainPermissions.Employee_Create))
+            if (Security.AuthorizeAll(DomainPermissions.Employees_Create))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -298,7 +312,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qEmployeesWizardCreateNew",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Employee_Read))
+            if (Security.AuthorizeAll(DomainPermissions.Employees_Read))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -310,7 +324,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qEmployeesWizardView",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Employee_Update))
+            if (Security.AuthorizeAll(DomainPermissions.Employees_Update))
 		    {
     		    actions.Add(new WorkAction
                 {
@@ -322,7 +336,7 @@ namespace Northwind.WebAPI.Controllers.GuiSettings.Screens
                     ActionName = "qEmployeesWizardEdit",
                 });
             }
-            if (Security.AuthorizeAll(DomainPermissions.Employee_Delete))
+            if (Security.AuthorizeAll(DomainPermissions.Employees_Delete))
 		    {
     		    actions.Add(new WorkAction
                 {

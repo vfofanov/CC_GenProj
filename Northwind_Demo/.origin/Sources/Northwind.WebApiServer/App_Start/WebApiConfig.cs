@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     /// <summary>
     /// Web Api configuration

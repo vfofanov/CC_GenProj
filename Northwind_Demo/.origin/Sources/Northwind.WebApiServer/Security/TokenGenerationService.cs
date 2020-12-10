@@ -2,15 +2,15 @@
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Security.Claims;
-using Northwind.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
+using NorthWind.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Linq;
-using Northwind.WebAPI.Contracts.Security;
+using NorthWind.WebAPI.Contracts.Security;
 
-namespace Northwind.WebApiServer.Security
+namespace NorthWind.WebApiServer.Security
 {
     static class TokenGenerationParameters
     {

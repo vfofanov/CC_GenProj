@@ -1,6 +1,6 @@
 ﻿
 
-namespace Northwind.Contracts.Enums
+namespace NorthWind.Contracts.Enums
 {
     /// <summary>
     ///     

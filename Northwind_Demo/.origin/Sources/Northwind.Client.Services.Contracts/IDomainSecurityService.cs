@@ -1,7 +1,7 @@
 ﻿using BusinessFramework.Client.Contracts.Services.Security;
-using Northwind.Contracts;
+using NorthWind.Contracts;
 
-namespace Northwind.Common
+namespace NorthWind.Common
 {
     /// <summary>
     /// Domain security service

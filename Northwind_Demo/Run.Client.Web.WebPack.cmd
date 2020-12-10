@@ -5,7 +5,7 @@
 
 ECHO Starting Web Client via WebPack ...
 
-cd "Sources\Northwind.Web.Angular"
+cd "Sources\NorthWind.Web.Angular"
 
 CALL npm run dev
 

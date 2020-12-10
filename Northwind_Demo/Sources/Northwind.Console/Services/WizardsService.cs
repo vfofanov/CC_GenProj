@@ -1,7 +1,7 @@
 ﻿using BusinessFramework.Client.Contracts.Wizards;
 using FutureTechnologies.DI.Contracts;
 
-namespace Northwind.Console.Services
+namespace NorthWind.Console.Services
 {
     internal sealed class WizardsService : IWizardsService
     {

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using BusinessFramework.Client.Contracts.DataObjects.Interfaces;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Contracts.DataObjects;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Contracts.DataObjects;
 
 
-namespace Northwind.Client.Services.Contracts.DomainModel
+namespace NorthWind.Client.Services.Contracts.DomainModel
 {
 	public interface ISysOperationLockCollectionManager : IObjectCollectionManager<SysOperationLock, SysOperationLockKey>
     {

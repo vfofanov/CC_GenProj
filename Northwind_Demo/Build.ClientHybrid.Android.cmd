@@ -2,7 +2,7 @@
 
 SET currentDir=%CD%
 cd Sources
-cd Northwind.Web.Angular
+cd NorthWind.Web.Angular
 
 CALL npm run cordova:android
 
@@ -12,7 +12,7 @@ cd Build
 if exist "AndroidClientHybrid" rmdir /s /q AndroidClientHybrid
 
 ECHO Copy AndroidClientHybrid Files ...
-cd "%currentDir%\Sources\Northwind.Web.Angular"
+cd "%currentDir%\Sources\NorthWind.Web.Angular"
 mkdir "%currentDir%\Build\AndroidClientHybrid"
 xcopy cordova\platforms\android\app\build\outputs\apk\debug\app-debug.apk "%currentDir%\Build\AndroidClientHybrid"
 

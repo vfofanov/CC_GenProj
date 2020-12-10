@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace @Northwind.WebAPI.Controllers.Properties {
+namespace @NorthWind.WebAPI.Controllers.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace @Northwind.WebAPI.Controllers.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.WebAPI.Controllers.Properties.CommonResources", typeof(CommonResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.WebAPI.Controllers.Properties.CommonResources", typeof(CommonResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

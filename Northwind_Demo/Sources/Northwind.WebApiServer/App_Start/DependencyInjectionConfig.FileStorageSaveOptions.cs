@@ -1,15 +1,16 @@
 ﻿using BusinessFramework.WebAPI.Contracts.Files.Storage;
 using FutureTechnologies.DI.Contracts;
-using Northwind.WebAPI.File;
+using NorthWind.WebAPI.File;
 
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     internal static partial class DependencyInjectionConfig
     {
         public static void ConfigureFileStorageSaveOptions(IServerContainerRegistrator registrator)
         {
 		    registrator.PerRequest<IFileStorageSaveOptionsSwitcher, FileStorageSaveOptionsSwitcher>();            
+            registrator.PerRequest<EmployeesFileStorageSaveOptionsResolver>();
         }
     }
 }

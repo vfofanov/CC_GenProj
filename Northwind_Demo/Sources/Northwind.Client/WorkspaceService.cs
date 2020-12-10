@@ -4,10 +4,10 @@ using BusinessFramework.Client.Contracts.Services;
 using BusinessFramework.Client.Contracts.Services.Dialogs;
 using BusinessFramework.Client.WinForms.IG.Forms;
 using FutureTechnologies.DI.Contracts;
-using Northwind.Client.Forms;
-using Northwind.Client.Forms.Security;
+using NorthWind.Client.Forms;
+using NorthWind.Client.Forms.Security;
 
-namespace Northwind.Client
+namespace NorthWind.Client
 {
     public sealed class WorkspaceService : IWorkspaceService
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Configuration;
 using System.Linq;
-using Northwind.WebAPI.Contracts.Security;
+using NorthWind.WebAPI.Contracts.Security;
 
-namespace Northwind.WebApiServer.Security
+namespace NorthWind.WebApiServer.Security
 {
     class TokenConfigurationService : ITokenConfigurationService
     {

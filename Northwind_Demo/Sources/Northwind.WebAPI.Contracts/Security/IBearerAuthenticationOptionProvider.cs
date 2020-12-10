@@ -1,6 +1,6 @@
 ﻿using Microsoft.Owin.Security.OAuth;
 
-namespace Northwind.WebAPI.Contracts.Security
+namespace NorthWind.WebAPI.Contracts.Security
 {
     /// <summary>
     /// Bearer auth options provider

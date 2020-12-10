@@ -15,27 +15,27 @@ using BusinessFramework.Client.Contracts.Wizards;
 using BusinessFramework.Contracts;
 using BusinessFramework.Contracts.Actions;
 using BusinessFramework.Contracts.Reporting;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.ActionServices;
-using Northwind.Client.Services.Contracts.DomainModel;
-using Northwind.Common.Properties;
-using Northwind.Common.Wizards;
-using Northwind.Contracts.DataObjects;
-using Northwind.Contracts.Enums;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.ActionServices;
+using NorthWind.Client.Services.Contracts.DomainModel;
+using NorthWind.Common.Properties;
+using NorthWind.Common.Wizards;
+using NorthWind.Contracts.DataObjects;
+using NorthWind.Contracts.Enums;
 
 
-namespace Northwind.Common.Screens.CodeBehind
+namespace NorthWind.Common.Screens.CodeBehind
 {
     public abstract class CodeBehindSuppliersScreenViewModel : ScreenViewModel
     {
-        protected CodeBehindSuppliersScreenViewModel(IEntityManagementService entityManagementService, IQSuppliersCollectionManager qSuppliersCollectionManager, IScreenCommandFactory screenCommandFactory)
+        protected CodeBehindSuppliersScreenViewModel(IEntityManagementService entityManagementService, IScreenCommandFactory screenCommandFactory, ISupplierQueryCollectionManager supplierQueryCollectionManager)
         {
             EntityManagementService = entityManagementService;
-            QSuppliersCollectionManager = qSuppliersCollectionManager;
             ScreenCommandFactory = screenCommandFactory;
+            SupplierQueryCollectionManager = supplierQueryCollectionManager;
 
 	        //DataBlocks
-            BlockRegion1 = new MultiItemsScreenBlockViewModel<QSuppliers, int>("blockRegion1", GetblockRegion1Data, QSuppliersCollectionManager, GetblockRegion1RowStyle);
+            BlockRegion1 = new MultiItemsScreenBlockViewModel<SupplierQuery, int>("blockRegion1", GetblockRegion1Data, SupplierQueryCollectionManager, GetblockRegion1RowStyle);
 			BlockRegion1.PropertyChanged += OnblockRegion1PropertyChanged;
             //Actions
             BlockRegion1CreateNew1 = ScreenCommandFactory.CreateFunc("blockRegion1CreateNew1", DoBlockRegion1CreateNew1, CanExecuteBlockRegion1CreateNew1);
@@ -48,13 +48,13 @@ namespace Northwind.Common.Screens.CodeBehind
 		//Dependencies
         protected IEntityManagementService EntityManagementService { get; private set; }
 
-        protected IQSuppliersCollectionManager QSuppliersCollectionManager { get; private set; }
-
         protected IScreenCommandFactory ScreenCommandFactory { get; private set; }
+
+        protected ISupplierQueryCollectionManager SupplierQueryCollectionManager { get; private set; }
 
 
 	    //DataBlocks
-        protected MultiItemsScreenBlockViewModel<QSuppliers, int> BlockRegion1 { get; private set; }
+        protected MultiItemsScreenBlockViewModel<SupplierQuery, int> BlockRegion1 { get; private set; }
         //Actions
         protected ScreenCommand BlockRegion1CreateNew1 { get; private set; }
         protected ScreenCommand BlockRegion1ActionView1 { get; private set; }
@@ -123,13 +123,13 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 
         #region	Data Blocks
-        protected virtual IQueryable<QSuppliers> GetblockRegion1Data(QuickFilter filter)
+        protected virtual IQueryable<SupplierQuery> GetblockRegion1Data(QuickFilter filter)
         {
 
-            return QSuppliersCollectionManager.GetObjects(filter);
+            return SupplierQueryCollectionManager.GetObjects(filter);
         }
 
-        protected virtual IRowStyle GetblockRegion1RowStyle(QSuppliers qSuppliers)
+        protected virtual IRowStyle GetblockRegion1RowStyle(SupplierQuery supplierQuery)
         {
             return null;
         }
@@ -157,9 +157,9 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 		#endregion
 		#region	Actions
-        protected virtual WizardNewResult<Supplier> DoBlockRegion1CreateNew1(ScreenActionCommand command)
+        protected virtual WizardNewResult<Suppliers> DoBlockRegion1CreateNew1(ScreenActionCommand command)
         {
-            var result = EntityManagementService.New(DomainWizards.SuppliersWizard, DoBlockRegion1CreateNew1_SetParameters, DoBlockRegion1CreateNew1_SetDefaults);
+            var result = EntityManagementService.New(DomainWizards.SupplierWizard, DoBlockRegion1CreateNew1_SetParameters, DoBlockRegion1CreateNew1_SetDefaults);
             if (result.SaveToServerComplete)
             {
                 BlockRegion1.RaiseDataChanged();
@@ -168,12 +168,12 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
         
-        protected virtual void DoBlockRegion1CreateNew1_SetDefaults(SuppliersWizardParameters parameters, Supplier entity)
+        protected virtual void DoBlockRegion1CreateNew1_SetDefaults(SupplierWizardParameters parameters, Suppliers entity)
         {
         }
         
           
-        protected virtual void DoBlockRegion1CreateNew1_SetParameters(SuppliersWizardParameters parameters)
+        protected virtual void DoBlockRegion1CreateNew1_SetParameters(SupplierWizardParameters parameters)
         {
         }
 
@@ -188,10 +188,10 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var key = BlockRegion1.ActiveItem.Id;
             
-            EntityManagementService.View(DomainWizards.SuppliersWizard, key, DoBlockRegion1ActionView1_SetParameters);
+            EntityManagementService.View(DomainWizards.SupplierWizard, key, DoBlockRegion1ActionView1_SetParameters);
         }
           
-        protected virtual void DoBlockRegion1ActionView1_SetParameters(SuppliersWizardParameters parameters)
+        protected virtual void DoBlockRegion1ActionView1_SetParameters(SupplierWizardParameters parameters)
         {
         }
 
@@ -205,11 +205,11 @@ namespace Northwind.Common.Screens.CodeBehind
            return true;
         }
 
-        protected virtual WizardEditResult<Supplier> DoBlockRegion1Edit1(ScreenActionCommand command)
+        protected virtual WizardEditResult<Suppliers> DoBlockRegion1Edit1(ScreenActionCommand command)
         {
         
             var key = BlockRegion1.ActiveItem.Id;
-            var result = EntityManagementService.Edit(DomainWizards.SuppliersWizard, key, DoBlockRegion1Edit1_SetParameters);
+            var result = EntityManagementService.Edit(DomainWizards.SupplierWizard, key, DoBlockRegion1Edit1_SetParameters);
             if (result.SaveToServerComplete)
             {
                 BlockRegion1.UpdateActiveObject();
@@ -218,7 +218,7 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
           
-        protected virtual void DoBlockRegion1Edit1_SetParameters(SuppliersWizardParameters parameters)
+        protected virtual void DoBlockRegion1Edit1_SetParameters(SupplierWizardParameters parameters)
         {
         }
 
@@ -237,7 +237,7 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var keys = BlockRegion1.SelectedItems.Select(obj => obj.Id).ToArray();
             
-            var result = EntityManagementService.Delete<Supplier, int>(keys);
+            var result = EntityManagementService.Delete<Suppliers, int>(keys);
             if(result)
             {
                 BlockRegion1.RemoveSelectedObjects();

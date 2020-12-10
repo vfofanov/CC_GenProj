@@ -7,10 +7,10 @@ using BusinessFramework.Client.Common.DomainModel.Dao;
 using BusinessFramework.Client.Contracts.Connection;
 using BusinessFramework.Client.Contracts.DataObjects.CustomSettings;
 using BusinessFramework.Client.Contracts.Services.Dialogs;
-using Northwind.Client.Services.Contracts.DomainModel;
-using Northwind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.DomainModel;
+using NorthWind.Client.Contracts.BusinessObjects;
 
-namespace Northwind.Client.ServerServices.DomainModel
+namespace NorthWind.Client.ServerServices.DomainModel
 {
     /// <inheritdoc cref="CodeBehind.CodeBehindSysSettingCollectionManager" />
     public sealed class SysSettingCollectionManager : CodeBehind.CodeBehindSysSettingCollectionManager, ISysSettingCollectionManager

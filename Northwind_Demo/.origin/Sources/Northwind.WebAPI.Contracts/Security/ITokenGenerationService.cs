@@ -2,7 +2,7 @@
 using Microsoft.Owin.Security;
 using Newtonsoft.Json.Linq;
 
-namespace Northwind.WebAPI.Contracts.Security
+namespace NorthWind.WebAPI.Contracts.Security
 {
     /// <summary>
     /// Service for generate access token by user name

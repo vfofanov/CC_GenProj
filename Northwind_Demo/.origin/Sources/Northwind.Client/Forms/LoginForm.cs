@@ -6,7 +6,7 @@ using BusinessFramework.Client.Contracts.Properties;
 using BusinessFramework.Client.Contracts.Services.Security;
 using BusinessFramework.Client.WinForms.IG.Forms;
 
-namespace Northwind.Client.Forms.Security
+namespace NorthWind.Client.Forms.Security
 {
     internal partial class LoginForm : CcDialogBase
     {

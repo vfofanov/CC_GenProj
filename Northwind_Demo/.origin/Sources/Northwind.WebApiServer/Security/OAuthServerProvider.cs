@@ -6,10 +6,10 @@ using BusinessFramework.WebAPI.Security;
 using BusinessFramework.WebAPI.Utils.IoC;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.OAuth;
-using Northwind.WebApiServer.Properties;
-using Northwind.WebAPI.Contracts.Security;
+using NorthWind.WebApiServer.Properties;
+using NorthWind.WebAPI.Contracts.Security;
 
-namespace Northwind.WebApiServer.Security
+namespace NorthWind.WebApiServer.Security
 {
     /// <summary>
     /// OAuth server provider

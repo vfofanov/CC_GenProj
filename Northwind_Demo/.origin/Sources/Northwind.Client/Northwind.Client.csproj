@@ -8,8 +8,8 @@
     <ProjectGuid>{7DF16B04-8D03-4D28-A137-3B1D12BB1D71}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.Client</RootNamespace>
-    <AssemblyName>Northwind.Client</AssemblyName>
+    <RootNamespace>NorthWind.Client</RootNamespace>
+    <AssemblyName>NorthWind.Client</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>
@@ -204,21 +204,21 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Client.Contracts\Northwind.Client.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Contracts\NorthWind.Client.Contracts.csproj">
       <Project>{8d648785-a742-4354-a01b-012e70020819}</Project>
-      <Name>Northwind.Client.Contracts</Name>
+      <Name>NorthWind.Client.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Client.Services.Contracts\Northwind.Client.Services.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Services.Contracts\NorthWind.Client.Services.Contracts.csproj">
       <Project>{eafeb21c-959c-4025-9848-856f5f5671c6}</Project>
-      <Name>Northwind.Client.Services.Contracts</Name>
+      <Name>NorthWind.Client.Services.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Common\Northwind.Common.csproj">
+    <ProjectReference Include="..\NorthWind.Common\NorthWind.Common.csproj">
       <Project>{ec1bcd80-f9b3-4ee9-be46-99792ee1997d}</Project>
-      <Name>Northwind.Common</Name>
+      <Name>NorthWind.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Common\BusinessFramework.Client.Common.csproj">
        <Project>{EA9EB61E-B762-4401-86F2-0ACBF16944D8}</Project>
@@ -291,8 +291,6 @@
 
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionServices\Client\ClientOrderManagerService.cs" />
-    <Compile Include="ActionServices\Client\CodeBehind\CodeBehindClientOrderManagerService.cs" />
     <Compile Include="CustomSettings\ISettingsView.cs" />
     <Compile Include="CustomSettings\SettingsPresenter.cs" />
     <Compile Include="CustomSettings\SettingsTreeControl.cs" />
@@ -307,127 +305,149 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\ActionServiceResources.Designer.cs">
-      <DependentUpon>ActionServiceResources.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\UserManagementResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UserManagementResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Reporting\Controllers\Object\CategoryObjController.cs" />
-    <Compile Include="Reporting\Controllers\Object\CategoryObjListController.cs" />
-    <Compile Include="Reporting\Controllers\Object\OrderObjController.cs" />
-    <Compile Include="Reporting\Controllers\Object\OrderObjListController.cs" />
-    <Compile Include="Reporting\Controllers\Object\QCategoriesObjController.cs" />
-    <Compile Include="Reporting\Controllers\Object\QCategoriesObjListController.cs" />
-    <Compile Include="Reporting\Controllers\Object\QOrdersObjController.cs" />
-    <Compile Include="Reporting\Controllers\Object\QOrdersObjListController.cs" />
-    <Compile Include="Reporting\Controllers\Object\VSalesByCategoryObjController.cs" />
-    <Compile Include="Reporting\Controllers\Object\VSalesByCategoryObjListController.cs" />
+    <Compile Include="Reporting\Controllers\Object\CategoriesObjController.cs" />
+    <Compile Include="Reporting\Controllers\Object\CategoriesObjListController.cs" />
+    <Compile Include="Reporting\Controllers\Object\CategoryQueryObjController.cs" />
+    <Compile Include="Reporting\Controllers\Object\CategoryQueryObjListController.cs" />
+    <Compile Include="Reporting\Controllers\Object\OrdersObjController.cs" />
+    <Compile Include="Reporting\Controllers\Object\OrdersObjListController.cs" />
+    <Compile Include="Reporting\Controllers\Object\OrdersQueryObjController.cs" />
+    <Compile Include="Reporting\Controllers\Object\OrdersQueryObjListController.cs" />
+    <Compile Include="Reporting\Controllers\Object\ReportFormQueryObjController.cs" />
+    <Compile Include="Reporting\Controllers\Object\ReportFormQueryObjListController.cs" />
     <Compile Include="Reporting\Module.cs" />
     <Compile Include="Reporting\ReportController.cs" />
     <Compile Include="Services\LoginDialogService.cs" />
     <Compile Include="Services\OperationLockService.cs" />
-    <Compile Include="Wizards\CategoriesWizard\CategoriesWizard.cs" />
-    <Compile Include="Wizards\CategoriesWizard\CategoriesWizardPresenter.cs" />
-    <Compile Include="Wizards\CategoriesWizard\CodeBehindCategoriesWizardPresenter.cs" />
-    <Compile Include="Wizards\CategoriesWizard\Page1.cs">
+    <Compile Include="Wizards\CategoryWizard\CategoryWizard.cs" />
+    <Compile Include="Wizards\CategoryWizard\CategoryWizardPresenter.cs" />
+    <Compile Include="Wizards\CategoryWizard\CodeBehindCategoryWizardPresenter.cs" />
+    <Compile Include="Wizards\CategoryWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\CategoriesWizard\Page1.Designer.cs">
+    <Compile Include="Wizards\CategoryWizard\Page1.Designer.cs">
       <DependentUpon>Page1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\CustomersWizard\CodeBehindCustomersWizardPresenter.cs" />
-    <Compile Include="Wizards\CustomersWizard\CustomersWizard.cs" />
-    <Compile Include="Wizards\CustomersWizard\CustomersWizardPresenter.cs" />
-    <Compile Include="Wizards\CustomersWizard\Page1.cs">
+    <Compile Include="Wizards\CustomerCompactWizard\CodeBehindCustomerCompactWizardPresenter.cs" />
+    <Compile Include="Wizards\CustomerCompactWizard\CustomerCompactWizard.cs" />
+    <Compile Include="Wizards\CustomerCompactWizard\CustomerCompactWizardPresenter.cs" />
+    <Compile Include="Wizards\CustomerCompactWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\CustomersWizard\Page1.Designer.cs">
+    <Compile Include="Wizards\CustomerCompactWizard\Page1.Designer.cs">
       <DependentUpon>Page1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\CustomersWizard\Page2.cs">
+    <Compile Include="Wizards\CustomerWizard\CodeBehindCustomerWizardPresenter.cs" />
+    <Compile Include="Wizards\CustomerWizard\CustomerWizard.cs" />
+    <Compile Include="Wizards\CustomerWizard\CustomerWizardPresenter.cs" />
+    <Compile Include="Wizards\CustomerWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\CustomersWizard\Page2.Designer.cs">
+    <Compile Include="Wizards\CustomerWizard\Page1.Designer.cs">
+      <DependentUpon>Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\CustomerWizard\Page2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\CustomerWizard\Page2.Designer.cs">
       <DependentUpon>Page2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\EmployeesWizard\CodeBehindEmployeesWizardPresenter.cs" />
-    <Compile Include="Wizards\EmployeesWizard\EmployeesWizard.cs" />
-    <Compile Include="Wizards\EmployeesWizard\EmployeesWizardPresenter.cs" />
-    <Compile Include="Wizards\EmployeesWizard\Page1.cs">
+    <Compile Include="Wizards\EmployeeWizard\CodeBehindEmployeeWizardPresenter.cs" />
+    <Compile Include="Wizards\EmployeeWizard\EmployeeWizard.cs" />
+    <Compile Include="Wizards\EmployeeWizard\EmployeeWizardPresenter.cs" />
+    <Compile Include="Wizards\EmployeeWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\EmployeesWizard\Page1.Designer.cs">
+    <Compile Include="Wizards\EmployeeWizard\Page1.Designer.cs">
       <DependentUpon>Page1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\EmployeesWizard\Page2.cs">
+    <Compile Include="Wizards\EmployeeWizard\Page2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\EmployeesWizard\Page2.Designer.cs">
+    <Compile Include="Wizards\EmployeeWizard\Page2.Designer.cs">
       <DependentUpon>Page2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\OrderDetailsWizard\CodeBehindOrderDetailsWizardPresenter.cs" />
-    <Compile Include="Wizards\OrderDetailsWizard\OrderDetailsWizard.cs" />
-    <Compile Include="Wizards\OrderDetailsWizard\OrderDetailsWizardPresenter.cs" />
-    <Compile Include="Wizards\OrderDetailsWizard\Page1.cs">
+    <Compile Include="Wizards\OrderDetailWizard\CodeBehindOrderDetailWizardPresenter.cs" />
+    <Compile Include="Wizards\OrderDetailWizard\OrderDetailWizard.cs" />
+    <Compile Include="Wizards\OrderDetailWizard\OrderDetailWizardPresenter.cs" />
+    <Compile Include="Wizards\OrderDetailWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\OrderDetailsWizard\Page1.Designer.cs">
+    <Compile Include="Wizards\OrderDetailWizard\Page1.Designer.cs">
       <DependentUpon>Page1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\OrdersWizard\CodeBehindOrdersWizardPresenter.cs" />
-    <Compile Include="Wizards\OrdersWizard\OrdersWizard.cs" />
-    <Compile Include="Wizards\OrdersWizard\OrdersWizardPresenter.cs" />
-    <Compile Include="Wizards\OrdersWizard\Page1.cs">
+    <Compile Include="Wizards\OrderWizard\CodeBehindOrderWizardPresenter.cs" />
+    <Compile Include="Wizards\OrderWizard\OrderWizard.cs" />
+    <Compile Include="Wizards\OrderWizard\OrderWizardPresenter.cs" />
+    <Compile Include="Wizards\OrderWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\OrdersWizard\Page1.Designer.cs">
+    <Compile Include="Wizards\OrderWizard\Page1.Designer.cs">
       <DependentUpon>Page1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\OrdersWizard\Page2.cs">
+    <Compile Include="Wizards\OrderWizard\Page2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\OrdersWizard\Page2.Designer.cs">
+    <Compile Include="Wizards\OrderWizard\Page2.Designer.cs">
       <DependentUpon>Page2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\ProductsWizard\CodeBehindProductsWizardPresenter.cs" />
-    <Compile Include="Wizards\ProductsWizard\Page1.cs">
+    <Compile Include="Wizards\ProductWizard\CodeBehindProductWizardPresenter.cs" />
+    <Compile Include="Wizards\ProductWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\ProductsWizard\Page1.Designer.cs">
+    <Compile Include="Wizards\ProductWizard\Page1.Designer.cs">
       <DependentUpon>Page1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\ProductsWizard\ProductsWizard.cs" />
-    <Compile Include="Wizards\ProductsWizard\ProductsWizardPresenter.cs" />
-    <Compile Include="Wizards\ShippersWizard\CodeBehindShippersWizardPresenter.cs" />
-    <Compile Include="Wizards\ShippersWizard\Page1.cs">
+    <Compile Include="Wizards\ProductWizard\ProductWizard.cs" />
+    <Compile Include="Wizards\ProductWizard\ProductWizardPresenter.cs" />
+    <Compile Include="Wizards\RegionWizard\CodeBehindRegionWizardPresenter.cs" />
+    <Compile Include="Wizards\RegionWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\ShippersWizard\Page1.Designer.cs">
+    <Compile Include="Wizards\RegionWizard\Page1.Designer.cs">
       <DependentUpon>Page1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\ShippersWizard\ShippersWizard.cs" />
-    <Compile Include="Wizards\ShippersWizard\ShippersWizardPresenter.cs" />
-    <Compile Include="Wizards\SuppliersWizard\CodeBehindSuppliersWizardPresenter.cs" />
-    <Compile Include="Wizards\SuppliersWizard\Page1.cs">
+    <Compile Include="Wizards\RegionWizard\RegionWizard.cs" />
+    <Compile Include="Wizards\RegionWizard\RegionWizardPresenter.cs" />
+    <Compile Include="Wizards\ReportFormQueryWizard\CodeBehindReportFormQueryWizardPresenter.cs" />
+    <Compile Include="Wizards\ReportFormQueryWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\SuppliersWizard\Page1.Designer.cs">
+    <Compile Include="Wizards\ReportFormQueryWizard\Page1.Designer.cs">
       <DependentUpon>Page1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\SuppliersWizard\Page2.cs">
+    <Compile Include="Wizards\ReportFormQueryWizard\ReportFormQueryWizard.cs" />
+    <Compile Include="Wizards\ReportFormQueryWizard\ReportFormQueryWizardPresenter.cs" />
+    <Compile Include="Wizards\ShipperWizard\CodeBehindShipperWizardPresenter.cs" />
+    <Compile Include="Wizards\ShipperWizard\Page1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Wizards\SuppliersWizard\Page2.Designer.cs">
+    <Compile Include="Wizards\ShipperWizard\Page1.Designer.cs">
+      <DependentUpon>Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\ShipperWizard\ShipperWizard.cs" />
+    <Compile Include="Wizards\ShipperWizard\ShipperWizardPresenter.cs" />
+    <Compile Include="Wizards\SupplierWizard\CodeBehindSupplierWizardPresenter.cs" />
+    <Compile Include="Wizards\SupplierWizard\Page1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\SupplierWizard\Page1.Designer.cs">
+      <DependentUpon>Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\SupplierWizard\Page2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\SupplierWizard\Page2.Designer.cs">
       <DependentUpon>Page2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wizards\SuppliersWizard\SuppliersWizard.cs" />
-    <Compile Include="Wizards\SuppliersWizard\SuppliersWizardPresenter.cs" />
+    <Compile Include="Wizards\SupplierWizard\SupplierWizard.cs" />
+    <Compile Include="Wizards\SupplierWizard\SupplierWizardPresenter.cs" />
     <Compile Include="WorkspaceService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -669,22 +689,30 @@
     <EmbeddedResource Include="Forms\LoginForm.ru.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\ActionServiceResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ActionServiceResources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\UserManagementResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>UserManagementResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Images\OrderDetail16.png" />
-    <EmbeddedResource Include="Resources\Images\OrderDetail24.png" />
-    <EmbeddedResource Include="Resources\Images\OrderDetail32.png" />
-    <EmbeddedResource Include="Resources\Images\OrderDetail48.png" />
-    <EmbeddedResource Include="Resources\Images\OrderStatus16.png" />
-    <EmbeddedResource Include="Resources\Images\OrderStatus24.png" />
-    <EmbeddedResource Include="Resources\Images\OrderStatus32.png" />
-    <EmbeddedResource Include="Resources\Images\OrderStatus48.png" />
+    <EmbeddedResource Include="Resources\Images\CustomerCustomerDemo16.png" />
+    <EmbeddedResource Include="Resources\Images\CustomerCustomerDemo24.png" />
+    <EmbeddedResource Include="Resources\Images\CustomerCustomerDemo32.png" />
+    <EmbeddedResource Include="Resources\Images\CustomerCustomerDemo48.png" />
+    <EmbeddedResource Include="Resources\Images\CustomerDemographic16.png" />
+    <EmbeddedResource Include="Resources\Images\CustomerDemographic24.png" />
+    <EmbeddedResource Include="Resources\Images\CustomerDemographic32.png" />
+    <EmbeddedResource Include="Resources\Images\CustomerDemographic48.png" />
+    <EmbeddedResource Include="Resources\Images\EmployeeTerritory16.png" />
+    <EmbeddedResource Include="Resources\Images\EmployeeTerritory24.png" />
+    <EmbeddedResource Include="Resources\Images\EmployeeTerritory32.png" />
+    <EmbeddedResource Include="Resources\Images\EmployeeTerritory48.png" />
+    <EmbeddedResource Include="Resources\Images\OrderDetails16.png" />
+    <EmbeddedResource Include="Resources\Images\OrderDetails24.png" />
+    <EmbeddedResource Include="Resources\Images\OrderDetails32.png" />
+    <EmbeddedResource Include="Resources\Images\OrderDetails48.png" />
+    <EmbeddedResource Include="Resources\Images\Region16.png" />
+    <EmbeddedResource Include="Resources\Images\Region24.png" />
+    <EmbeddedResource Include="Resources\Images\Region32.png" />
+    <EmbeddedResource Include="Resources\Images\Region48.png" />
     <EmbeddedResource Include="Resources\Images\SysOperationLock16.png" />
     <EmbeddedResource Include="Resources\Images\SysOperationLock24.png" />
     <EmbeddedResource Include="Resources\Images\SysOperationLock32.png" />
@@ -705,6 +733,10 @@
     <EmbeddedResource Include="Resources\Images\SysSettingProperty24.png" />
     <EmbeddedResource Include="Resources\Images\SysSettingProperty32.png" />
     <EmbeddedResource Include="Resources\Images\SysSettingProperty48.png" />
+    <EmbeddedResource Include="Resources\Images\Territory16.png" />
+    <EmbeddedResource Include="Resources\Images\Territory24.png" />
+    <EmbeddedResource Include="Resources\Images\Territory32.png" />
+    <EmbeddedResource Include="Resources\Images\Territory48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

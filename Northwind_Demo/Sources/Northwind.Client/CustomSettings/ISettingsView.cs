@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using BusinessFramework.Client.Contracts.Services.Settings;
-using Northwind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Contracts.BusinessObjects;
 
-namespace Northwind.Client.CustomSettings
+namespace NorthWind.Client.CustomSettings
 {
     public interface ISettingsView
     {

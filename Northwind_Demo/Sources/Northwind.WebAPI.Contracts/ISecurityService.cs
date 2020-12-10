@@ -1,8 +1,8 @@
 ﻿using BusinessFramework.Contracts.Security;
 using BusinessFramework.WebAPI.Contracts.Security;
-using Northwind.Contracts;
+using NorthWind.Contracts;
 
-namespace Northwind.WebAPI.Contracts
+namespace NorthWind.WebAPI.Contracts
 {
     /// <summary>
     /// Security service interface

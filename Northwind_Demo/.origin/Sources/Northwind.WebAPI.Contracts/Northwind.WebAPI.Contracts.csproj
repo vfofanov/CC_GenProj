@@ -7,8 +7,8 @@
     <ProjectGuid>{D3460F1A-D56E-4D69-AE87-050F54EBC01F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Northwind.WebAPI.Contracts</RootNamespace>
-    <AssemblyName>Northwind.WebAPI.Contracts</AssemblyName>
+    <RootNamespace>NorthWind.WebAPI.Contracts</RootNamespace>
+    <AssemblyName>NorthWind.WebAPI.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -84,24 +84,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionServices\ITestDynamicColumnsActionService.cs" />
-    <Compile Include="DataObjects\Category.cs" />
-    <Compile Include="DataObjects\Customer.cs" />
-    <Compile Include="DataObjects\Employee.cs" />
-    <Compile Include="DataObjects\Order.cs" />
-    <Compile Include="DataObjects\OrderDetail.cs" />
-    <Compile Include="DataObjects\OrderStatus.cs" />
-    <Compile Include="DataObjects\Product.cs" />
-    <Compile Include="DataObjects\QCategories.cs" />
-    <Compile Include="DataObjects\QCustomers.cs" />
-    <Compile Include="DataObjects\QEmployees.cs" />
-    <Compile Include="DataObjects\QOrderProducts.cs" />
-    <Compile Include="DataObjects\QOrders.cs" />
-    <Compile Include="DataObjects\QProducts.cs" />
-    <Compile Include="DataObjects\QShippers.cs" />
-    <Compile Include="DataObjects\QSuppliers.cs" />
-    <Compile Include="DataObjects\Shipper.cs" />
-    <Compile Include="DataObjects\Supplier.cs" />
+    <Compile Include="ActionServices\IReportService.cs" />
+    <Compile Include="DataObjects\Categories.cs" />
+    <Compile Include="DataObjects\CategoryQuery.cs" />
+    <Compile Include="DataObjects\CustomerCustomerDemo.cs" />
+    <Compile Include="DataObjects\CustomerDemographic.cs" />
+    <Compile Include="DataObjects\CustomerQuery.cs" />
+    <Compile Include="DataObjects\Customers.cs" />
+    <Compile Include="DataObjects\EmployeeQuery.cs" />
+    <Compile Include="DataObjects\Employees.cs" />
+    <Compile Include="DataObjects\EmployeeTerritory.cs" />
+    <Compile Include="DataObjects\OrderDetails.cs" />
+    <Compile Include="DataObjects\OrderProductQuery.cs" />
+    <Compile Include="DataObjects\Orders.cs" />
+    <Compile Include="DataObjects\OrdersQuery.cs" />
+    <Compile Include="DataObjects\ProductQuery.cs" />
+    <Compile Include="DataObjects\Products.cs" />
+    <Compile Include="DataObjects\Region.cs" />
+    <Compile Include="DataObjects\RegionQuery.cs" />
+    <Compile Include="DataObjects\ReportFormQuery.cs" />
+    <Compile Include="DataObjects\ShipperQuery.cs" />
+    <Compile Include="DataObjects\Shippers.cs" />
+    <Compile Include="DataObjects\SupplierQuery.cs" />
+    <Compile Include="DataObjects\Suppliers.cs" />
     <Compile Include="DataObjects\System\SysInfo.cs" />
     <Compile Include="DataObjects\System\SysObject.cs" />
     <Compile Include="DataObjects\System\SysObjectClass.cs" />
@@ -122,7 +127,7 @@
     <Compile Include="DataObjects\System\SysUserPermissionsDisplayView.cs" />
     <Compile Include="DataObjects\System\SysUserRole.cs" />
     <Compile Include="DataObjects\System\SysUsersDisplayView.cs" />
-    <Compile Include="DataObjects\VSalesByCategory.cs" />
+    <Compile Include="DataObjects\Territory.cs" />
     <Compile Include="DomainActionKeys.Custom.cs" />
     <Compile Include="DomainActionKeys.Object.cs" />
     <Compile Include="DomainActions.Custom.cs" />
@@ -139,24 +144,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reporting\IReportDataExtractor.cs" />
     <Compile Include="Reporting\IReportingService.cs" />
-    <Compile Include="Repositories\ICategoryRepository.cs" />
-    <Compile Include="Repositories\ICustomerRepository.cs" />
-    <Compile Include="Repositories\IEmployeeRepository.cs" />
-    <Compile Include="Repositories\IOrderDetailRepository.cs" />
-    <Compile Include="Repositories\IOrderRepository.cs" />
-    <Compile Include="Repositories\IOrderStatusRepository.cs" />
-    <Compile Include="Repositories\IProductRepository.cs" />
-    <Compile Include="Repositories\IQCategoriesRepository.cs" />
-    <Compile Include="Repositories\IQCustomersRepository.cs" />
-    <Compile Include="Repositories\IQEmployeesRepository.cs" />
-    <Compile Include="Repositories\IQOrderProductsRepository.cs" />
-    <Compile Include="Repositories\IQOrdersRepository.cs" />
-    <Compile Include="Repositories\IQProductsRepository.cs" />
-    <Compile Include="Repositories\IQShippersRepository.cs" />
-    <Compile Include="Repositories\IQSuppliersRepository.cs" />
-    <Compile Include="Repositories\IShipperRepository.cs" />
-    <Compile Include="Repositories\ISupplierRepository.cs" />
-    <Compile Include="Repositories\IVSalesByCategoryRepository.cs" />
+    <Compile Include="Repositories\ICategoriesRepository.cs" />
+    <Compile Include="Repositories\ICategoryQueryRepository.cs" />
+    <Compile Include="Repositories\ICustomerCustomerDemoRepository.cs" />
+    <Compile Include="Repositories\ICustomerDemographicRepository.cs" />
+    <Compile Include="Repositories\ICustomerQueryRepository.cs" />
+    <Compile Include="Repositories\ICustomersRepository.cs" />
+    <Compile Include="Repositories\IEmployeeQueryRepository.cs" />
+    <Compile Include="Repositories\IEmployeesRepository.cs" />
+    <Compile Include="Repositories\IEmployeeTerritoryRepository.cs" />
+    <Compile Include="Repositories\IOrderDetailsRepository.cs" />
+    <Compile Include="Repositories\IOrderProductQueryRepository.cs" />
+    <Compile Include="Repositories\IOrdersQueryRepository.cs" />
+    <Compile Include="Repositories\IOrdersRepository.cs" />
+    <Compile Include="Repositories\IProductQueryRepository.cs" />
+    <Compile Include="Repositories\IProductsRepository.cs" />
+    <Compile Include="Repositories\IRegionQueryRepository.cs" />
+    <Compile Include="Repositories\IRegionRepository.cs" />
+    <Compile Include="Repositories\IReportFormQueryRepository.cs" />
+    <Compile Include="Repositories\IShipperQueryRepository.cs" />
+    <Compile Include="Repositories\IShippersRepository.cs" />
+    <Compile Include="Repositories\ISupplierQueryRepository.cs" />
+    <Compile Include="Repositories\ISuppliersRepository.cs" />
+    <Compile Include="Repositories\ITerritoryRepository.cs" />
     <Compile Include="Repositories\System\ISysInfoRepository.cs" />
     <Compile Include="Repositories\System\ISysObjectClassRepository.cs" />
     <Compile Include="Repositories\System\ISysObjectRepository.cs" />
@@ -187,9 +197,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Contracts\BusinessFramework.Contracts.csproj">
        <Project>{E5BC1D69-6D2B-4280-A11A-23BCCE4F9068}</Project>

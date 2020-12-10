@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using ColoredConsole;
 using Microsoft.Owin;
 
-namespace Northwind.WebApiServer.Middlewares
+namespace NorthWind.WebApiServer.Middlewares
 {
     /// <summary>
     /// OWIN middleware for Tracing

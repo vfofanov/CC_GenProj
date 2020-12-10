@@ -6,10 +6,10 @@ using BusinessFramework.WebAPI.Contracts.Security.Hash;
 using BusinessFramework.WebAPI.Contracts.Services;
 using BusinessFramework.WebAPI.Security;
 using ColoredConsole;
-using Northwind.WebAPI.Contracts.DataObjects;
-using Northwind.WebAPI.Contracts.Repositories;
+using NorthWind.WebAPI.Contracts.DataObjects;
+using NorthWind.WebAPI.Contracts.Repositories;
 
-namespace Northwind.WebAPI.Security
+namespace NorthWind.WebAPI.Security
 {
     /// <inheritdoc />
     public sealed class PrincipalManager : IPrincipalManager

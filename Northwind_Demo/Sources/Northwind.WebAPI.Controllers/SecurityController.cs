@@ -2,10 +2,10 @@
 using BusinessFramework.Contracts.Security;
 using BusinessFramework.WebAPI.Common.Controllers;
 using BusinessFramework.WebAPI.Common.Request;
-using Northwind.Contracts;
-using Northwind.WebAPI.Contracts;
+using NorthWind.Contracts;
+using NorthWind.WebAPI.Contracts;
 
-namespace Northwind.WebApi.Controllers
+namespace NorthWind.WebApi.Controllers
 {
     /// <summary>
     ///     Controls public security context

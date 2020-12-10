@@ -7,10 +7,10 @@ using BusinessFramework.WebAPI.Files;
 using BusinessFramework.WebAPI.ServerStatus;
 using BusinessFramework.WebAPI.Services;
 using FutureTechnologies.DI.Contracts;
-using Northwind.WebAPI;
-using Northwind.WebAPI.Contracts;
+using NorthWind.WebAPI;
+using NorthWind.WebAPI.Contracts;
 
-namespace Northwind.WebApiServer
+namespace NorthWind.WebApiServer
 {
     internal static partial class DependencyInjectionConfig
     {

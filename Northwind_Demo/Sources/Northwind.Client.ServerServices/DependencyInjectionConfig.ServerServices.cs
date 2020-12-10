@@ -1,15 +1,15 @@
 ﻿using FutureTechnologies.DI.Contracts;
-using Northwind.Client.ServerServices.ActionServices.Server;
-using Northwind.Client.Services.Contracts.ActionServices;
+using NorthWind.Client.ServerServices.ActionServices.Server;
+using NorthWind.Client.Services.Contracts.ActionServices;
 
 
-namespace Northwind.Client.ServerServices
+namespace NorthWind.Client.ServerServices
 {
     partial class DependencyInjectionConfig
     {
         private static void ConfigureServerServices(IClientContainerRegistrator registrator)
         {
-            registrator.PerSession<ITestDynamicColumnsActionService, TestDynamicColumnsActionService>();
+            registrator.PerSession<IReportService, ReportService>();
         }
     }
 }

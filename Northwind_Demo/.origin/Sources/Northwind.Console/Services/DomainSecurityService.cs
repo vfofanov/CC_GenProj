@@ -3,10 +3,10 @@ using BusinessFramework;
 using BusinessFramework.Client.Common.Services.Security;
 using BusinessFramework.Client.Contracts.Connection;
 using BusinessFramework.Client.Contracts.Services.Security;
-using Northwind.Common;
-using Northwind.Contracts;
+using NorthWind.Common;
+using NorthWind.Contracts;
 
-namespace Northwind.Console.Services
+namespace NorthWind.Console.Services
 {
     internal sealed class DomainSecurityService : SecurityService<PublicDomainPermissions>, IDomainSecurityService
     {

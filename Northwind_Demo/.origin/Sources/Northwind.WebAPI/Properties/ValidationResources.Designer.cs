@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Northwind.WebAPI.Properties {
+namespace NorthWind.WebAPI.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Northwind.WebAPI.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Northwind.WebAPI.Properties.ValidationResources", typeof(ValidationResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.WebAPI.Properties.ValidationResources", typeof(ValidationResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -198,27 +198,45 @@ namespace Northwind.WebAPI.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Product_Id_RequiredMsg {
+        public static string Products_Id_RequiredMsg {
             get {
-                return ResourceManager.GetString("Product_Id_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Products_Id_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Product_ProductName_RequiredMsg {
+        public static string Products_ProductName_RequiredMsg {
             get {
-                return ResourceManager.GetString("Product_ProductName_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Products_ProductName_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Product_Discontinued_RequiredMsg {
+        public static string Products_Discontinued_RequiredMsg {
             get {
-                return ResourceManager.GetString("Product_Discontinued_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Products_Discontinued_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string CustomerCustomerDemo_CustomerID_RequiredMsg {
+            get {
+                return ResourceManager.GetString("CustomerCustomerDemo_CustomerID_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string CustomerCustomerDemo_CustomerTypeID_RequiredMsg {
+            get {
+                return ResourceManager.GetString("CustomerCustomerDemo_CustomerTypeID_RequiredMsg", resourceCulture);
             }
 		}
         
@@ -342,6 +360,51 @@ namespace Northwind.WebAPI.Properties {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string Territory_Id_RequiredMsg {
+            get {
+                return ResourceManager.GetString("Territory_Id_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Territory_TerritoryDescription_RequiredMsg {
+            get {
+                return ResourceManager.GetString("Territory_TerritoryDescription_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Territory_RegionID_RequiredMsg {
+            get {
+                return ResourceManager.GetString("Territory_RegionID_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string EmployeeTerritory_EmployeeID_RequiredMsg {
+            get {
+                return ResourceManager.GetString("EmployeeTerritory_EmployeeID_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string EmployeeTerritory_TerritoryID_RequiredMsg {
+            get {
+                return ResourceManager.GetString("EmployeeTerritory_TerritoryID_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string SysUser_Id_RequiredMsg {
             get {
                 return ResourceManager.GetString("SysUser_Id_RequiredMsg", resourceCulture);
@@ -450,54 +513,72 @@ namespace Northwind.WebAPI.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Customer_Id_RequiredMsg {
+        public static string Customers_Id_RequiredMsg {
             get {
-                return ResourceManager.GetString("Customer_Id_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Customers_Id_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Customer_CompanyName_RequiredMsg {
+        public static string Customers_CompanyName_RequiredMsg {
             get {
-                return ResourceManager.GetString("Customer_CompanyName_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Customers_CompanyName_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Category_Id_RequiredMsg {
+        public static string Categories_Id_RequiredMsg {
             get {
-                return ResourceManager.GetString("Category_Id_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Categories_Id_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Category_CategoryName_RequiredMsg {
+        public static string Categories_CategoryName_RequiredMsg {
             get {
-                return ResourceManager.GetString("Category_CategoryName_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Categories_CategoryName_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Region_Id_RequiredMsg {
+            get {
+                return ResourceManager.GetString("Region_Id_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Region_RegionDescription_RequiredMsg {
+            get {
+                return ResourceManager.GetString("Region_RegionDescription_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Supplier_Id_RequiredMsg {
+        public static string Suppliers_Id_RequiredMsg {
             get {
-                return ResourceManager.GetString("Supplier_Id_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Suppliers_Id_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Supplier_CompanyName_RequiredMsg {
+        public static string Suppliers_CompanyName_RequiredMsg {
             get {
-                return ResourceManager.GetString("Supplier_CompanyName_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Suppliers_CompanyName_RequiredMsg", resourceCulture);
             }
 		}
         
@@ -576,9 +657,18 @@ namespace Northwind.WebAPI.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Order_Id_RequiredMsg {
+        public static string Orders_Id_RequiredMsg {
             get {
-                return ResourceManager.GetString("Order_Id_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Orders_Id_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Required field.
+        /// </summary>
+        public static string Orders_CustomerID_RequiredMsg {
+            get {
+                return ResourceManager.GetString("Orders_CustomerID_RequiredMsg", resourceCulture);
             }
 		}
         
@@ -630,54 +720,45 @@ namespace Northwind.WebAPI.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string OrderDetail_Id_RequiredMsg {
+        public static string OrderDetails_OrderID_RequiredMsg {
             get {
-                return ResourceManager.GetString("OrderDetail_Id_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("OrderDetails_OrderID_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string OrderDetail_OrderID_RequiredMsg {
+        public static string OrderDetails_ProductID_RequiredMsg {
             get {
-                return ResourceManager.GetString("OrderDetail_OrderID_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("OrderDetails_ProductID_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string OrderDetail_ProductID_RequiredMsg {
+        public static string OrderDetails_UnitPrice_RequiredMsg {
             get {
-                return ResourceManager.GetString("OrderDetail_ProductID_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("OrderDetails_UnitPrice_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string OrderDetail_UnitPrice_RequiredMsg {
+        public static string OrderDetails_Quantity_RequiredMsg {
             get {
-                return ResourceManager.GetString("OrderDetail_UnitPrice_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("OrderDetails_Quantity_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string OrderDetail_Quantity_RequiredMsg {
+        public static string OrderDetails_Discount_RequiredMsg {
             get {
-                return ResourceManager.GetString("OrderDetail_Quantity_RequiredMsg", resourceCulture);
-            }
-		}
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Required field.
-        /// </summary>
-        public static string OrderDetail_Discount_RequiredMsg {
-            get {
-                return ResourceManager.GetString("OrderDetail_Discount_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("OrderDetails_Discount_RequiredMsg", resourceCulture);
             }
 		}
         
@@ -729,27 +810,27 @@ namespace Northwind.WebAPI.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Employee_Id_RequiredMsg {
+        public static string Employees_Id_RequiredMsg {
             get {
-                return ResourceManager.GetString("Employee_Id_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Employees_Id_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Employee_LastName_RequiredMsg {
+        public static string Employees_LastName_RequiredMsg {
             get {
-                return ResourceManager.GetString("Employee_LastName_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Employees_LastName_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string Employee_FirstName_RequiredMsg {
+        public static string Employees_FirstName_RequiredMsg {
             get {
-                return ResourceManager.GetString("Employee_FirstName_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Employees_FirstName_RequiredMsg", resourceCulture);
             }
 		}
         
@@ -795,6 +876,15 @@ namespace Northwind.WebAPI.Properties {
         public static string SysObjectClass_DisplayName_RequiredMsg {
             get {
                 return ResourceManager.GetString("SysObjectClass_DisplayName_RequiredMsg", resourceCulture);
+            }
+		}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string CustomerDemographic_Id_RequiredMsg {
+            get {
+                return ResourceManager.GetString("CustomerDemographic_Id_RequiredMsg", resourceCulture);
             }
 		}
         
@@ -873,45 +963,18 @@ namespace Northwind.WebAPI.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string VSalesByCategory_Id_RequiredMsg {
+        public static string Shippers_Id_RequiredMsg {
             get {
-                return ResourceManager.GetString("VSalesByCategory_Id_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Shippers_Id_RequiredMsg", resourceCulture);
             }
 		}
         
         /// <summary>
         ///   Looks up a localized string similar to Required field.
         /// </summary>
-        public static string VSalesByCategory_CategoryName_RequiredMsg {
+        public static string Shippers_CompanyName_RequiredMsg {
             get {
-                return ResourceManager.GetString("VSalesByCategory_CategoryName_RequiredMsg", resourceCulture);
-            }
-		}
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Required field.
-        /// </summary>
-        public static string VSalesByCategory_ProductName_RequiredMsg {
-            get {
-                return ResourceManager.GetString("VSalesByCategory_ProductName_RequiredMsg", resourceCulture);
-            }
-		}
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Required field.
-        /// </summary>
-        public static string Shipper_Id_RequiredMsg {
-            get {
-                return ResourceManager.GetString("Shipper_Id_RequiredMsg", resourceCulture);
-            }
-		}
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Required field.
-        /// </summary>
-        public static string Shipper_CompanyName_RequiredMsg {
-            get {
-                return ResourceManager.GetString("Shipper_CompanyName_RequiredMsg", resourceCulture);
+                return ResourceManager.GetString("Shippers_CompanyName_RequiredMsg", resourceCulture);
             }
 		}
         

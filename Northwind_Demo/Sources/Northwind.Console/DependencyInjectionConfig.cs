@@ -5,10 +5,10 @@ using BusinessFramework.Client.Contracts.Wizards;
 using BusinessFramework.Contracts;
 using FutureTechnologies.DI.Contracts;
 using ReportingFramework.Client;
-using Northwind.Client.Reporting;
-using Northwind.Console.Services;
+using NorthWind.Client.Reporting;
+using NorthWind.Console.Services;
 
-namespace Northwind.Console
+namespace NorthWind.Console
 {
     internal static partial class DependencyInjectionConfig
     {

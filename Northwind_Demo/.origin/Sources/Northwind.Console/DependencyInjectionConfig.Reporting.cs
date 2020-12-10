@@ -14,7 +14,7 @@ using ReportingFramework.Central.Interop.Word;
 using ReportingFramework.Central.Interop.Word.FileHandlers;
 using ReportingFramework.Client.ReportSystem.ReportAdapters;
 
-namespace Northwind.Console
+namespace NorthWind.Console
 {
     partial class DependencyInjectionConfig
     {

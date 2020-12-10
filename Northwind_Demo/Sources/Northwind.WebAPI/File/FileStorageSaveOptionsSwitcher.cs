@@ -1,10 +1,10 @@
 ﻿using System;
 using BusinessFramework.WebAPI.Contracts.Files.Storage;
 using FutureTechnologies.DI.Contracts;
-using Northwind.WebAPI.Contracts;
+using NorthWind.WebAPI.Contracts;
 
 
-namespace Northwind.WebAPI.File
+namespace NorthWind.WebAPI.File
 {
     /// <inheritdoc />
     public sealed class FileStorageSaveOptionsSwitcher : FileStorageSaveOptionsSwitcherBase
@@ -22,6 +22,8 @@ namespace Northwind.WebAPI.File
         {
             switch (fieldId)
             {
+                case DomainObjectPropertyKeys.Employees.DocumentScanFileId:
+                    return _scope.Resolve<EmployeesFileStorageSaveOptionsResolver>();
                 default:
                     throw new ArgumentOutOfRangeException(nameof(fieldId), $"Unknown fieldId={fieldId}");
             }

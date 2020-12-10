@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using ReportingFramework.Central.Contracts.Data;
 
-namespace Northwind.WebAPI.Contracts.Reporting
+namespace NorthWind.WebAPI.Contracts.Reporting
 {
     /// <summary>
     /// Service for extract data for the reporting

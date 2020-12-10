@@ -121,7 +121,7 @@
     <value>Неправильный пароль и/или пользователь. Убедитесь, что данные указаны верно.</value>
   </data>
   <data name="HelpPageTitle" xml:space="preserve">
-    <value>Northwind Web API страница помощи</value>
+    <value>NorthWind Web API страница помощи</value>
   </data>
   <data name="LengthValidationMessage" xml:space="preserve">
     <value>Длина вводимого текста должна быть от {0} до {1} символов</value>

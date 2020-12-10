@@ -10,7 +10,7 @@
     <ApplicationIcon>app.ico</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>Northwind.Console</AssemblyName>
+    <AssemblyName>NorthWind.Console</AssemblyName>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
@@ -18,7 +18,7 @@
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
     <DelaySign>false</DelaySign>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Northwind.Console</RootNamespace>
+    <RootNamespace>NorthWind.Console</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject>
     </StartupObject>
@@ -392,18 +392,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="app.ico" />
-    <EmbeddedResource Include="Resources\Images\action-create-new16.png" />
-    <EmbeddedResource Include="Resources\Images\action-create-new24.png" />
-    <EmbeddedResource Include="Resources\Images\action-delete16.png" />
-    <EmbeddedResource Include="Resources\Images\action-delete24.png" />
-    <EmbeddedResource Include="Resources\Images\action-edit16.png" />
-    <EmbeddedResource Include="Resources\Images\action-edit24.png" />
-    <EmbeddedResource Include="Resources\Images\action-open-report16.png" />
-    <EmbeddedResource Include="Resources\Images\action-open-report24.png" />
-    <EmbeddedResource Include="Resources\Images\action-refresh16.png" />
-    <EmbeddedResource Include="Resources\Images\action-refresh24.png" />
-    <EmbeddedResource Include="Resources\Images\action-view16.png" />
-    <EmbeddedResource Include="Resources\Images\action-view24.png" />
     <EmbeddedResource Include="Resources\Images\Categories16.png" />
     <EmbeddedResource Include="Resources\Images\Categories24.png" />
     <EmbeddedResource Include="Resources\Images\Categories32.png" />
@@ -720,29 +708,29 @@
     </PublishFile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwind.Client.Contracts\Northwind.Client.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Contracts\NorthWind.Client.Contracts.csproj">
       <Project>{8d648785-a742-4354-a01b-012e70020819}</Project>
-      <Name>Northwind.Client.Contracts</Name>
+      <Name>NorthWind.Client.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Client.ServerServices\Northwind.Client.ServerServices.csproj">
+    <ProjectReference Include="..\NorthWind.Client.ServerServices\NorthWind.Client.ServerServices.csproj">
       <Project>{3e976800-d63b-4011-ab41-001a2e67624e}</Project>
-      <Name>Northwind.Client.ServerServices</Name>
+      <Name>NorthWind.Client.ServerServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Client.Services.Contracts\Northwind.Client.Services.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Client.Services.Contracts\NorthWind.Client.Services.Contracts.csproj">
       <Project>{eafeb21c-959c-4025-9848-856f5f5671c6}</Project>
-      <Name>Northwind.Client.Services.Contracts</Name>
+      <Name>NorthWind.Client.Services.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Client\Northwind.Client.csproj">
+    <ProjectReference Include="..\NorthWind.Client\NorthWind.Client.csproj">
       <Project>{7df16b04-8d03-4d28-a137-3b1d12bb1d71}</Project>
-      <Name>Northwind.Client</Name>
+      <Name>NorthWind.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Common\Northwind.Common.csproj">
+    <ProjectReference Include="..\NorthWind.Common\NorthWind.Common.csproj">
       <Project>{ec1bcd80-f9b3-4ee9-be46-99792ee1997d}</Project>
-      <Name>Northwind.Common</Name>
+      <Name>NorthWind.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+    <ProjectReference Include="..\NorthWind.Contracts\NorthWind.Contracts.csproj">
       <Project>{91020dda-9841-44cd-a2c6-5c5265b71f6e}</Project>
-      <Name>Northwind.Contracts</Name>
+      <Name>NorthWind.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\CodeCruiser\Framework\BusinessFramework.Client.Common\BusinessFramework.Client.Common.csproj">
        <Project>{EA9EB61E-B762-4401-86F2-0ACBF16944D8}</Project>

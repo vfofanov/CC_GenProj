@@ -1,4 +1,4 @@
-﻿namespace Northwind.Common
+﻿namespace NorthWind.Common
 {
     /// <summary>
     ///     Domain objects' keys

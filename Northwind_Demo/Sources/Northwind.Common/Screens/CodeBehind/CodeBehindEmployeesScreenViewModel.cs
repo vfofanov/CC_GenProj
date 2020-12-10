@@ -15,29 +15,29 @@ using BusinessFramework.Client.Contracts.Wizards;
 using BusinessFramework.Contracts;
 using BusinessFramework.Contracts.Actions;
 using BusinessFramework.Contracts.Reporting;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.ActionServices;
-using Northwind.Client.Services.Contracts.DomainModel;
-using Northwind.Common.Properties;
-using Northwind.Common.Wizards;
-using Northwind.Contracts.DataObjects;
-using Northwind.Contracts.Enums;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.ActionServices;
+using NorthWind.Client.Services.Contracts.DomainModel;
+using NorthWind.Common.Properties;
+using NorthWind.Common.Wizards;
+using NorthWind.Contracts.DataObjects;
+using NorthWind.Contracts.Enums;
 
 
-namespace Northwind.Common.Screens.CodeBehind
+namespace NorthWind.Common.Screens.CodeBehind
 {
     public abstract class CodeBehindEmployeesScreenViewModel : ScreenViewModel
     {
-        protected CodeBehindEmployeesScreenViewModel(IEntityManagementService entityManagementService, IQEmployeesCollectionManager qEmployeesCollectionManager, IScreenCommandFactory screenCommandFactory)
+        protected CodeBehindEmployeesScreenViewModel(IEmployeeQueryCollectionManager employeeQueryCollectionManager, IEntityManagementService entityManagementService, IScreenCommandFactory screenCommandFactory)
         {
+            EmployeeQueryCollectionManager = employeeQueryCollectionManager;
             EntityManagementService = entityManagementService;
-            QEmployeesCollectionManager = qEmployeesCollectionManager;
             ScreenCommandFactory = screenCommandFactory;
 
 	        //DataBlocks
-            QEmployees = new MultiItemsScreenBlockViewModel<QEmployees, int>("qEmployees", GetqEmployeesData, QEmployeesCollectionManager, GetqEmployeesRowStyle);
+            QEmployees = new MultiItemsScreenBlockViewModel<EmployeeQuery, int>("qEmployees", GetqEmployeesData, EmployeeQueryCollectionManager, GetqEmployeesRowStyle);
 			QEmployees.PropertyChanged += OnqEmployeesPropertyChanged;
-            QEmployees1 = new ActiveItemScreenBlockViewModel<QEmployees>("qEmployees1");
+            QEmployees1 = new ActiveItemScreenBlockViewModel<EmployeeQuery>("qEmployees1");
             //Actions
             QEmployeesWizardCreateNew = ScreenCommandFactory.CreateFunc("qEmployeesWizardCreateNew", DoQEmployeesWizardCreateNew, CanExecuteQEmployeesWizardCreateNew);
             QEmployeesWizardView = ScreenCommandFactory.Create("qEmployeesWizardView", DoQEmployeesWizardView, CanExecuteQEmployeesWizardView);
@@ -47,16 +47,16 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 
 		//Dependencies
-        protected IEntityManagementService EntityManagementService { get; private set; }
+        protected IEmployeeQueryCollectionManager EmployeeQueryCollectionManager { get; private set; }
 
-        protected IQEmployeesCollectionManager QEmployeesCollectionManager { get; private set; }
+        protected IEntityManagementService EntityManagementService { get; private set; }
 
         protected IScreenCommandFactory ScreenCommandFactory { get; private set; }
 
 
 	    //DataBlocks
-        protected MultiItemsScreenBlockViewModel<QEmployees, int> QEmployees { get; private set; }
-        protected ActiveItemScreenBlockViewModel<QEmployees> QEmployees1 { get; private set; }
+        protected MultiItemsScreenBlockViewModel<EmployeeQuery, int> QEmployees { get; private set; }
+        protected ActiveItemScreenBlockViewModel<EmployeeQuery> QEmployees1 { get; private set; }
         //Actions
         protected ScreenCommand QEmployeesWizardCreateNew { get; private set; }
         protected ScreenCommand QEmployeesWizardView { get; private set; }
@@ -128,13 +128,13 @@ namespace Northwind.Common.Screens.CodeBehind
         }
 
         #region	Data Blocks
-        protected virtual IQueryable<QEmployees> GetqEmployeesData(QuickFilter filter)
+        protected virtual IQueryable<EmployeeQuery> GetqEmployeesData(QuickFilter filter)
         {
 
-            return QEmployeesCollectionManager.GetObjects(filter);
+            return EmployeeQueryCollectionManager.GetObjects(filter);
         }
 
-        protected virtual IRowStyle GetqEmployeesRowStyle(QEmployees qEmployees)
+        protected virtual IRowStyle GetqEmployeesRowStyle(EmployeeQuery employeeQuery)
         {
             return null;
         }
@@ -165,16 +165,16 @@ namespace Northwind.Common.Screens.CodeBehind
 			    QEmployeesDeleteEntity.RaiseCanExecuteChanged();
 			}
         }
-        protected virtual IRowStyle GetqEmployees1RowStyle(QEmployees qEmployees)
+        protected virtual IRowStyle GetqEmployees1RowStyle(EmployeeQuery employeeQuery)
         {
             return null;
         }
 
 		#endregion
 		#region	Actions
-        protected virtual WizardNewResult<Employee> DoQEmployeesWizardCreateNew(ScreenActionCommand command)
+        protected virtual WizardNewResult<Employees> DoQEmployeesWizardCreateNew(ScreenActionCommand command)
         {
-            var result = EntityManagementService.New(DomainWizards.EmployeesWizard, DoQEmployeesWizardCreateNew_SetParameters, DoQEmployeesWizardCreateNew_SetDefaults);
+            var result = EntityManagementService.New(DomainWizards.EmployeeWizard, DoQEmployeesWizardCreateNew_SetParameters, DoQEmployeesWizardCreateNew_SetDefaults);
             if (result.SaveToServerComplete)
             {
                 QEmployees.RaiseDataChanged();
@@ -183,12 +183,12 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
         
-        protected virtual void DoQEmployeesWizardCreateNew_SetDefaults(EmployeesWizardParameters parameters, Employee entity)
+        protected virtual void DoQEmployeesWizardCreateNew_SetDefaults(EmployeeWizardParameters parameters, Employees entity)
         {
         }
         
           
-        protected virtual void DoQEmployeesWizardCreateNew_SetParameters(EmployeesWizardParameters parameters)
+        protected virtual void DoQEmployeesWizardCreateNew_SetParameters(EmployeeWizardParameters parameters)
         {
         }
 
@@ -203,10 +203,10 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var key = QEmployees.ActiveItem.Id;
             
-            EntityManagementService.View(DomainWizards.EmployeesWizard, key, DoQEmployeesWizardView_SetParameters);
+            EntityManagementService.View(DomainWizards.EmployeeWizard, key, DoQEmployeesWizardView_SetParameters);
         }
           
-        protected virtual void DoQEmployeesWizardView_SetParameters(EmployeesWizardParameters parameters)
+        protected virtual void DoQEmployeesWizardView_SetParameters(EmployeeWizardParameters parameters)
         {
         }
 
@@ -220,11 +220,11 @@ namespace Northwind.Common.Screens.CodeBehind
            return true;
         }
 
-        protected virtual WizardEditResult<Employee> DoQEmployeesWizardEdit(ScreenActionCommand command)
+        protected virtual WizardEditResult<Employees> DoQEmployeesWizardEdit(ScreenActionCommand command)
         {
         
             var key = QEmployees.ActiveItem.Id;
-            var result = EntityManagementService.Edit(DomainWizards.EmployeesWizard, key, DoQEmployeesWizardEdit_SetParameters);
+            var result = EntityManagementService.Edit(DomainWizards.EmployeeWizard, key, DoQEmployeesWizardEdit_SetParameters);
             if (result.SaveToServerComplete)
             {
                 QEmployees.UpdateActiveObject();
@@ -233,7 +233,7 @@ namespace Northwind.Common.Screens.CodeBehind
             return result;
         }
           
-        protected virtual void DoQEmployeesWizardEdit_SetParameters(EmployeesWizardParameters parameters)
+        protected virtual void DoQEmployeesWizardEdit_SetParameters(EmployeeWizardParameters parameters)
         {
         }
 
@@ -252,7 +252,7 @@ namespace Northwind.Common.Screens.CodeBehind
         
             var keys = QEmployees.SelectedItems.Select(obj => obj.Id).ToArray();
             
-            var result = EntityManagementService.Delete<Employee, int>(keys);
+            var result = EntityManagementService.Delete<Employees, int>(keys);
             if(result)
             {
                 QEmployees.RemoveSelectedObjects();

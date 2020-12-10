@@ -1,6 +1,6 @@
 ﻿using BusinessFramework.WebAPI.Contracts.Security;
 
-namespace Northwind.WebAPI.Contracts.DataObjects
+namespace NorthWind.WebAPI.Contracts.DataObjects
 {
     partial class SysUser : ISysUser
     {

@@ -3,7 +3,7 @@ using BusinessFramework.Client.Startup;
 using FutureTechnologies.DI.Contracts;
 using FutureTechnologies.DI.UnityContainer;
 
-namespace Northwind.Console
+namespace NorthWind.Console
 {
     public class Program
     {

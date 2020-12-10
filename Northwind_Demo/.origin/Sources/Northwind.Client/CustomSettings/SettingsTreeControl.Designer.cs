@@ -1,7 +1,7 @@
 ﻿using BusinessFramework.Client.WinForms.IG.Controls;
 using BusinessFramework.Client.WinForms.IG.Controls.PropertyGridEx;
 
-namespace Northwind.Client.CustomSettings
+namespace NorthWind.Client.CustomSettings
 {
 	partial class SettingsTreeControl
 	{

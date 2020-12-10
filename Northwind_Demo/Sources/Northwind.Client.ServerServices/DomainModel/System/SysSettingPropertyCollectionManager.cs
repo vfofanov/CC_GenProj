@@ -1,11 +1,11 @@
 ﻿using System.Linq;
-using Northwind.Client.Contracts.BusinessObjects;
-using Northwind.Client.Services.Contracts.DomainModel;
+using NorthWind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Services.Contracts.DomainModel;
 using BusinessFramework.Client.Common.DomainModel;
 using BusinessFramework.Client.Contracts.Connection;
 using BusinessFramework.Client.Contracts.Services.Dialogs;
 
-namespace Northwind.Client.ServerServices.DomainModel
+namespace NorthWind.Client.ServerServices.DomainModel
 {
     /// <inheritdoc cref="CodeBehind.CodeBehindSysSettingPropertyCollectionManager" />
     public sealed class SysSettingPropertyCollectionManager : CodeBehind.CodeBehindSysSettingPropertyCollectionManager, ISysSettingPropertyCollectionManager

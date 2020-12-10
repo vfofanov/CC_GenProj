@@ -1,7 +1,7 @@
-﻿using Northwind.WebAPI.Contracts.DataObjects;
+﻿using NorthWind.WebAPI.Contracts.DataObjects;
 
 
-namespace Northwind.WebAPI.DataAccess.Mapping
+namespace NorthWind.WebAPI.DataAccess.Mapping
 {
     /// <summary>
     /// Database mapping for <see cref="SysUser"/> to table CCSystem.Users

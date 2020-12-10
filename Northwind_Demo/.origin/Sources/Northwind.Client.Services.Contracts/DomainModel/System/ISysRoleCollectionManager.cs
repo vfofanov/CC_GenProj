@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using BusinessFramework.Client.Contracts.DataObjects.Interfaces;
-using Northwind.Client.Contracts.BusinessObjects;
+using NorthWind.Client.Contracts.BusinessObjects;
 
 
-namespace Northwind.Client.Services.Contracts.DomainModel
+namespace NorthWind.Client.Services.Contracts.DomainModel
 {
 	public interface ISysRoleCollectionManager : IClassicCollectionManager<SysRole, int>
     {
